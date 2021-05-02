@@ -31,6 +31,10 @@ public class UraMod {
         public static final int port = 25565;
         public final boolean singleplayer = true;
 
+        public UraMod()
+        {
+                MinecraftForge.EVENT_BUS.register(new RegisteringHandler());
+        }
 
         @Mod.EventHandler
         public void preInit(FMLPreInitializationEvent event)

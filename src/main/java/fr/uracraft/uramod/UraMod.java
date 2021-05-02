@@ -1,6 +1,9 @@
 package fr.uracraft.uramod;
 
+import fr.uracraft.uramod.events.EventCustomMainMenu;
 import fr.uracraft.uramod.proxy.CommonProxy;
+import net.minecraft.block.Block;
+import net.minecraft.block.material.Material;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.SidedProxy;
@@ -18,22 +21,22 @@ public class UraMod {
 
         private static Logger logger;
 
-        public UraMod()
-        {
-                MinecraftForge.EVENT_BUS.register(new RegisteringHandler());
-        }
-
         @Mod.Instance(UraMod.MODID)
         public static UraMod instance;
 
         @SidedProxy(clientSide="fr.uracraft.uramod.proxy.ClientProxy", serverSide="fr.uracraft.uramod.proxy.CommonProxy")
         public static CommonProxy proxy;
 
+        public static final String ip = "localhost";
+        public static final int port = 25565;
+        public final boolean singleplayer = true;
+
 
         @Mod.EventHandler
         public void preInit(FMLPreInitializationEvent event)
         {
             logger = event.getModLog();
+            MinecraftForge.EVENT_BUS.register(new EventCustomMainMenu());
         }
 
         @Mod.EventHandler
@@ -42,6 +45,7 @@ public class UraMod {
                 proxy.registerRender();
                 RegisteringHandler.registerEntities();
                 UraFurnaceRecipes.registerFurnaceRecipes(event);
+
         }
 
         @Mod.EventHandler

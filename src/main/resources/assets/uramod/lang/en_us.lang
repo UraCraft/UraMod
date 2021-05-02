@@ -1,9 +1,13 @@
 itemGroup.uramod=UraMod
 
-item.uramod.ura_ingot.name=Ura ingot
+item.uramod.ura_ingot.name=Ura Ingot
+item.uramod.tin_ingot.name=Tin Ingot
+item.uramod.silver_ingot.name=Silver Ingot
+item.uramod.neodymium.name=Neodymium
+item.uramod.copper_ingot.name=Copper Ingot
 
-tile.uramod.tin_ore.name= Tin Ore
-tile.uramod.neodymium_ore.name= Neodymium Ore
-tile.uramod.silver_ore.name= Silver Ore
-tile.uramod.copper_ore.name= Copper Ore
-tile.uramod.ura_ore.name= Ura Ore
+tile.uramod.tin_ore.name=Tin Ore
+tile.uramod.neodymium_ore.name=Neodymium Ore
+tile.uramod.silver_ore.name=Silver Ore
+tile.uramod.copper_ore.name=Copper Ore
+tile.uramod.ura_ore.name= UraOre

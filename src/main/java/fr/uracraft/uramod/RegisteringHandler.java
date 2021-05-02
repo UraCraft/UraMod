@@ -24,6 +24,10 @@ public class RegisteringHandler {
     public void registerItems(RegistryEvent.Register<Item> event) {
         event.getRegistry().registerAll(
                 UraItems.URA_INGOT,
+                UraItems.NEODYMIUM,
+                UraItems.SILVER_INGOT,
+                UraItems.COPPER_INGOT,
+                UraItems.TIN_INGOT,
                 UraItems.COPPER_ORE_ITEM,
                 UraItems.SILVER_ORE_ITEM,
                 UraItems.URA_ORE_ITEM,

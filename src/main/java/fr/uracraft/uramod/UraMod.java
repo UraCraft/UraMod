@@ -41,6 +41,7 @@ public class UraMod {
         {
                 proxy.registerRender();
                 RegisteringHandler.registerEntities();
+                UraFurnaceRecipes.registerFurnaceRecipes(event);
         }
 
         @Mod.EventHandler

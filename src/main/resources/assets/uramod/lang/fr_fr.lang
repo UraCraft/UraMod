@@ -1,6 +1,10 @@
 itemGroup.uramod=UraMod
 
-item.uramod.ura_ingot.name=Lingot d'ura
+item.uramod.ura_ingot.name=L'ingot d'Ura
+item.uramod.tin_ingot.name=L'ingot d'Étain
+item.uramod.silver_ingot.name=L'ingot d'Argent
+item.uramod.neodymium.name=Néodyme
+item.uramod.copper_ingot.name=L'ingot de Cuivre
 
 tile.uramod.tin_ore.name= Minerai d'Étain
 tile.uramod.neodymium_ore.name= Minerai de Néodyme

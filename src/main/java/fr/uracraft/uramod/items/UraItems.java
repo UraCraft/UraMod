@@ -15,7 +15,6 @@ import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
-import scala.sys.process.ProcessBuilderImpl;
 
 import static fr.uracraft.uramod.UraCreativeTabs.URAMOD;
 
@@ -23,6 +22,11 @@ import static fr.uracraft.uramod.UraCreativeTabs.URAMOD;
 public class UraItems {
 
     public final static Item URA_INGOT = new SimpleItem("ura_ingot",URAMOD);
+    public final static Item NEODYMIUM = new SimpleItem("neodymium",URAMOD);
+    public final static Item COPPER_INGOT = new SimpleItem("copper_ingot",URAMOD);
+    public final static Item TIN_INGOT = new SimpleItem("tin_ingot",URAMOD);
+    public final static Item SILVER_INGOT = new SimpleItem("silver_ingot",URAMOD);
+
     public final static Item URA_ORE_ITEM = new SimpleItemBlock(UraBlocks.URA_ORE);
     public final static Item SILVER_ORE_ITEM = new SimpleItemBlock(UraBlocks.SILVER_ORE);
     public final static Item TIN_ORE_ITEM = new SimpleItemBlock(UraBlocks.TIN_ORE);
@@ -33,6 +37,11 @@ public class UraItems {
     @SubscribeEvent
     public static void registerItemModels(ModelRegistryEvent event) {
         registerModel(URA_INGOT);
+        registerModel(NEODYMIUM);
+        registerModel(COPPER_INGOT);
+        registerModel(TIN_INGOT);
+        registerModel(SILVER_INGOT);
+
         registerModel(URA_ORE_ITEM);
         registerModel(SILVER_ORE_ITEM);
         registerModel(TIN_ORE_ITEM);

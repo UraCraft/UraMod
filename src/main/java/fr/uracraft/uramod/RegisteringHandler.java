@@ -32,7 +32,23 @@ public class RegisteringHandler {
                 UraItems.SILVER_ORE_ITEM,
                 UraItems.URA_ORE_ITEM,
                 UraItems.TIN_ORE_ITEM,
-                UraItems.NEODYMIUM_ORE_ITEM
+                UraItems.NEODYMIUM_ORE_ITEM,
+                UraItems.PAINT_BUCKET_WHITE,
+                UraItems.PAINT_BUCKET_ORANGE,
+                UraItems.PAINT_BUCKET_MAGENTA,
+                UraItems.PAINT_BUCKET_LIGHT_BLUE,
+                UraItems.PAINT_BUCKET_YELLOW,
+                UraItems.PAINT_BUCKET_LIME,
+                UraItems.PAINT_BUCKET_PINK,
+                UraItems.PAINT_BUCKET_GRAY,
+                UraItems.PAINT_BUCKET_SILVER,
+                UraItems.PAINT_BUCKET_CYAN,
+                UraItems.PAINT_BUCKET_PURPLE,
+                UraItems.PAINT_BUCKET_BLUE,
+                UraItems.PAINT_BUCKET_BROWN,
+                UraItems.PAINT_BUCKET_GREEN,
+                UraItems.PAINT_BUCKET_RED,
+                UraItems.PAINT_BUCKET_BLACK
         );
     }
 

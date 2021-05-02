@@ -1,8 +1,6 @@
 package fr.uracraft.uramod;
 
 import fr.uracraft.uramod.proxy.CommonProxy;
-import net.minecraft.block.Block;
-import net.minecraft.block.material.Material;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.SidedProxy;
@@ -19,6 +17,11 @@ public class UraMod {
         public static final String VERSION = "0.1";
 
         private static Logger logger;
+
+        public UraMod()
+        {
+                MinecraftForge.EVENT_BUS.register(new RegisteringHandler());
+        }
 
         @Mod.Instance(UraMod.MODID)
         public static UraMod instance;
@@ -37,6 +40,7 @@ public class UraMod {
         public void init(FMLInitializationEvent event)
         {
                 proxy.registerRender();
+                RegisteringHandler.registerEntities();
         }
 
         @Mod.EventHandler

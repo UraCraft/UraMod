@@ -5,7 +5,6 @@ import net.minecraft.client.Minecraft;
 import net.minecraft.client.gui.FontRenderer;
 import net.minecraft.client.resources.I18n;
 import net.minecraft.util.math.BlockPos;
-import net.minecraft.util.math.MathHelper;
 import net.minecraftforge.client.event.RenderGameOverlayEvent;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 import net.minecraftforge.fml.relauncher.Side;
@@ -48,11 +47,10 @@ public class DebugLayout {
             event.setCanceled(true);
 
             this.drawString(minecraft.fontRenderer, "UraCraft V" + UraMod.VERSION, 10, 10, 12211667);
-            String fps = String.valueOf(Minecraft.getDebugFPS()) + " fps";
+            String fps = Minecraft.getDebugFPS() + " fps";
             int f = Integer.parseInt(fps.substring(0, fps.length() - 4));
             int s = f * 10 / minecraft.gameSettings.limitFramerate;
             this.drawString(Minecraft.getMinecraft().fontRenderer, fps, 10, 30, fpscolor(s));
-            int angle = MathHelper.floor((double) (Minecraft.getMinecraft().player.rotationYaw * 4.0F / 360.0F) + 0.5D) & 3;
             String direction = "";
             double rot = (minecraft.player.rotationYaw - 90) % 360;
             if (rot < 0) {

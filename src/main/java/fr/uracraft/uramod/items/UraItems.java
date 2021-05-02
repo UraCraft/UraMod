@@ -10,11 +10,12 @@ import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
+import static fr.uracraft.uramod.UraCreativeTabs.URAMOD;
 
 @Mod.EventBusSubscriber(value = Side.CLIENT, modid= UraMod.MODID)
 public class UraItems {
 
-    public final static Item URA_INGOT = new SimpleItem("ura_ingot");
+    public final static Item URA_INGOT = new SimpleItem("ura_ingot",URAMOD);
 
     @SideOnly(Side.CLIENT)
     @SubscribeEvent

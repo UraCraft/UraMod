@@ -1,9 +1,29 @@
 itemGroup.uramod=UraMod
 
-item.uramod.ura_ingot.name=Ura ingot
+item.uramod.ura_ingot.name=Ura Ingot
+item.uramod.tin_ingot.name=Tin Ingot
+item.uramod.silver_ingot.name=Silver Ingot
+item.uramod.neodymium.name=Neodymium
+item.uramod.copper_ingot.name=Copper Ingot
+item.uramod.paint_black.name=Paint Bucket black
+item.uramod.paint_blue.name=Paint Bucket blue
+item.uramod.paint_brown.name=Paint Bucket brown
+item.uramod.paint_cyan.name=Paint Bucket cyan
+item.uramod.paint_gray.name=Paint Bucket gray
+item.uramod.paint_green.name=Paint Bucket green
+item.uramod.paint_light_blue.name=Paint Bucket light blue
+item.uramod.paint_lime.name=Paint Bucket lime
+item.uramod.paint_magenta.name=Paint Bucket magenta
+item.uramod.paint_orange.name=Paint Bucket orange
+item.uramod.paint_pink.name=Paint Bucket pink
+item.uramod.paint_purple.name=Paint Bucket purple
+item.uramod.paint_red.name=Paint Bucket red
+item.uramod.paint_silver.name=Paint Bucket silver
+item.uramod.paint_white.name=Paint Bucket white
+item.uramod.paint_yellow.name=Paint Bucket yellow
 
-tile.uramod.tin_ore.name= Tin Ore
-tile.uramod.neodymium_ore.name= Neodymium Ore
-tile.uramod.silver_ore.name= Silver Ore
-tile.uramod.copper_ore.name= Copper Ore
-tile.uramod.ura_ore.name= Ura Ore
+tile.uramod.tin_ore.name=Tin Ore
+tile.uramod.neodymium_ore.name=Neodymium Ore
+tile.uramod.silver_ore.name=Silver Ore
+tile.uramod.copper_ore.name=Copper Ore
+tile.uramod.ura_ore.name= UraOre

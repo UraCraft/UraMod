@@ -43,6 +43,9 @@ public class UraMod {
         public void init(FMLInitializationEvent event)
         {
                 proxy.registerRender();
+                RegisteringHandler.registerEntities();
+                UraFurnaceRecipes.registerFurnaceRecipes(event);
+
         }
 
         @Mod.EventHandler

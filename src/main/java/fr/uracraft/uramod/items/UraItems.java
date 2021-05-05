@@ -25,6 +25,9 @@ public class UraItems {
     public final static Item SILVER_INGOT = new SimpleItem("silver_ingot",URAMOD);
 
     public final static Item URA_NUGGET = new SimpleItem("ura_nugget",URAMOD);
+    public final static Item SILVER_NUGGET = new SimpleItem("silver_nugget",URAMOD);
+    public final static Item TIN_NUGGET = new SimpleItem("tin_nugget",URAMOD);
+    public final static Item COPPER_NUGGET = new SimpleItem("copper_nugget",URAMOD);
 
     public final static Item PAINT_BUCKET_WHITE = new ItemPaint(0);
     public final static Item PAINT_BUCKET_ORANGE = new ItemPaint(1);
@@ -50,6 +53,10 @@ public class UraItems {
     public final static Item NEODYMIUM_ORE_ITEM = new SimpleItemBlock(UraBlocks.NEODYMIUM_ORE);
 
     public final static Item URA_BLOCK_ITEM = new SimpleItemBlock(UraBlocks.URA_BLOCK);
+    public final static Item SILVER_BLOCK_ITEM = new SimpleItemBlock(UraBlocks.SILVER_BLOCK);
+    public final static Item TIN_BLOCK_ITEM = new SimpleItemBlock(UraBlocks.TIN_BLOCK);
+    public final static Item COPPER_BLOCK_ITEM = new SimpleItemBlock(UraBlocks.COPPER_BLOCK);
+    public final static Item NEODYMIUM_BLOCK_ITEM = new SimpleItemBlock(UraBlocks.NEODYMIUM_BLOCK);
 
     @SideOnly(Side.CLIENT)
     @SubscribeEvent
@@ -61,13 +68,21 @@ public class UraItems {
         registerModel(SILVER_INGOT);
 
         registerModel(URA_NUGGET);
+        registerModel(SILVER_NUGGET);
+        registerModel(TIN_NUGGET);
+        registerModel(COPPER_NUGGET);
 
         registerModel(URA_ORE_ITEM);
         registerModel(SILVER_ORE_ITEM);
         registerModel(TIN_ORE_ITEM);
         registerModel(COPPER_ORE_ITEM);
         registerModel(NEODYMIUM_ORE_ITEM);
+
         registerModel(URA_BLOCK_ITEM);
+        registerModel(SILVER_BLOCK_ITEM);
+        registerModel(TIN_BLOCK_ITEM);
+        registerModel(COPPER_BLOCK_ITEM);
+        registerModel(NEODYMIUM_BLOCK_ITEM);
 
         registerModel(PAINT_BUCKET_WHITE,"paint");
         registerModel(PAINT_BUCKET_ORANGE,"paint");

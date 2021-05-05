@@ -15,6 +15,10 @@ public class UraBlocks {
     public final static Block NEODYMIUM_ORE = new NeodymiumOre();
 
     public final static Block URA_BLOCK = new SimpleBlock("ura_block",URAMOD);
+    public final static Block SILVER_BLOCK = new SimpleBlock("silver_block",URAMOD);
+    public final static Block TIN_BLOCK = new SimpleBlock("tin_block",URAMOD);
+    public final static Block COPPER_BLOCK = new SimpleBlock("copper_block",URAMOD);
+    public final static Block NEODYMIUM_BLOCK = new SimpleBlock("neodymium_block",URAMOD);
 
     public static void setBlockName(Block block, String name)
     {

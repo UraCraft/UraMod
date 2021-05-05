@@ -17,7 +17,11 @@ public class RegisteringHandler {
                 UraBlocks.URA_ORE,
                 UraBlocks.TIN_ORE,
                 UraBlocks.NEODYMIUM_ORE,
-                UraBlocks.URA_BLOCK
+                UraBlocks.URA_BLOCK,
+                UraBlocks.SILVER_BLOCK,
+                UraBlocks.TIN_BLOCK,
+                UraBlocks.COPPER_BLOCK,
+                UraBlocks.NEODYMIUM_BLOCK
         );
     }
 
@@ -25,6 +29,9 @@ public class RegisteringHandler {
     public void registerItems(RegistryEvent.Register<Item> event) {
         event.getRegistry().registerAll(
                 UraItems.URA_NUGGET,
+                UraItems.SILVER_NUGGET,
+                UraItems.TIN_NUGGET,
+                UraItems.COPPER_NUGGET,
                 UraItems.URA_INGOT,
                 UraItems.NEODYMIUM,
                 UraItems.SILVER_INGOT,
@@ -35,6 +42,10 @@ public class RegisteringHandler {
                 UraItems.URA_ORE_ITEM,
                 UraItems.TIN_ORE_ITEM,
                 UraItems.URA_BLOCK_ITEM,
+                UraItems.SILVER_BLOCK_ITEM,
+                UraItems.TIN_BLOCK_ITEM,
+                UraItems.COPPER_BLOCK_ITEM,
+                UraItems.NEODYMIUM_BLOCK_ITEM,
                 UraItems.NEODYMIUM_ORE_ITEM,
                 UraItems.PAINT_BUCKET_WHITE,
                 UraItems.PAINT_BUCKET_ORANGE,

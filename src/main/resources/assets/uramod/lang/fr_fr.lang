@@ -29,3 +29,14 @@ tile.uramod.neodymium_ore.name= Minerai de Néodyme
 tile.uramod.silver_ore.name= Minerai d'Argent
 tile.uramod.copper_ore.name= Minerai de Cuivre
 tile.uramod.ura_ore.name= Minerai d'Ura
+
+tile.uramod.tin_block.name=Bloc d'Etain
+tile.uramod.neodymium_block.name=Bloc de Neodyme
+tile.uramod.silver_block.name=Bloc d'Argent
+tile.uramod.copper_block.name=Bloc de Cuivre
+tile.uramod.ura_block.name=Bloc d'Ura
+
+item.uramod.ura_nugget.name=Pépite d'Ura
+item.uramod.silver_nugget.name=Pépite d'Argent
+item.uramod.tin_nugget.name=Pépite d'Etain
+item.uramod.copper_nugget.name=Pépite de Cuivre

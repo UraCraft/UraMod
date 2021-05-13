@@ -18,6 +18,8 @@ import static fr.uracraft.uramod.UraCreativeTabs.URAMOD;
 @Mod.EventBusSubscriber(value = Side.CLIENT, modid= UraMod.MODID)
 public class UraItems {
 
+    public final static Item HANG_GLIDER = new ItemHang_Glider();
+
     public final static Item URA_INGOT = new SimpleItem("ura_ingot",URAMOD);
     public final static Item NEODYMIUM = new SimpleItem("neodymium",URAMOD);
     public final static Item COPPER_INGOT = new SimpleItem("copper_ingot",URAMOD);
@@ -61,6 +63,8 @@ public class UraItems {
     @SideOnly(Side.CLIENT)
     @SubscribeEvent
     public static void registerItemModels(ModelRegistryEvent event) {
+        registerModel(HANG_GLIDER);
+
         registerModel(URA_INGOT);
         registerModel(NEODYMIUM);
         registerModel(COPPER_INGOT);

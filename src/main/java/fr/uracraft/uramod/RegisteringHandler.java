@@ -28,6 +28,7 @@ public class RegisteringHandler {
     @SubscribeEvent
     public void registerItems(RegistryEvent.Register<Item> event) {
         event.getRegistry().registerAll(
+                UraItems.HANG_GLIDER,
                 UraItems.URA_NUGGET,
                 UraItems.SILVER_NUGGET,
                 UraItems.TIN_NUGGET,

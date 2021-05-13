@@ -2,6 +2,7 @@ itemGroup.uramod=UraMod
 
 debug.oreSpawnText=Ore Spawn :
 
+item.uramod.hang_glider.name=Hang Glider
 item.uramod.ura_ingot.name=Ura Ingot
 item.uramod.tin_ingot.name=Tin Ingot
 item.uramod.silver_ingot.name=Silver Ingot

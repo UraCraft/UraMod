@@ -2,6 +2,7 @@ itemGroup.uramod=UraMod
 
 debug.oreSpawnText=Apparaission des minerais :
 
+item.uramod.hang_glider.name=Planeur
 item.uramod.ura_ingot.name=Lingot d'Ura
 item.uramod.tin_ingot.name=Lingot d'Étain
 item.uramod.silver_ingot.name=Lingot d'Argent

@@ -20,6 +20,8 @@ public class UraBlocks {
     public final static Block COPPER_BLOCK = new SimpleBlock("copper_block",URAMOD);
     public final static Block NEODYMIUM_BLOCK = new SimpleBlock("neodymium_block",URAMOD);
 
+    public final static Block CASH_POINT = new SimpleBlock("cash_point",URAMOD);
+
     public static void setBlockName(Block block, String name)
     {
         block.setRegistryName(UraMod.MODID, name).setUnlocalizedName(UraMod.MODID + "." + name);

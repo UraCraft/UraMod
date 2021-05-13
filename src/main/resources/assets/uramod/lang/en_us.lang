@@ -37,6 +37,8 @@ tile.uramod.silver_block.name=Silver Block
 tile.uramod.copper_block.name=Copper Block
 tile.uramod.ura_block.name=Ura Block
 
+tile.uramod.cash_point.name=Cash Point
+
 item.uramod.ura_nugget.name=Ura Nugget
 item.uramod.silver_nugget.name=Silver Nugget
 item.uramod.tin_nugget.name=Tin Nugget

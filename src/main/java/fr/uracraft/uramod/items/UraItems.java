@@ -60,6 +60,8 @@ public class UraItems {
     public final static Item COPPER_BLOCK_ITEM = new SimpleItemBlock(UraBlocks.COPPER_BLOCK);
     public final static Item NEODYMIUM_BLOCK_ITEM = new SimpleItemBlock(UraBlocks.NEODYMIUM_BLOCK);
 
+    public final static Item CASH_POINT_BLOCK_ITEM = new SimpleItemBlock(UraBlocks.CASH_POINT);
+
     @SideOnly(Side.CLIENT)
     @SubscribeEvent
     public static void registerItemModels(ModelRegistryEvent event) {
@@ -87,6 +89,8 @@ public class UraItems {
         registerModel(TIN_BLOCK_ITEM);
         registerModel(COPPER_BLOCK_ITEM);
         registerModel(NEODYMIUM_BLOCK_ITEM);
+
+        registerModel(CASH_POINT_BLOCK_ITEM);
 
         registerModel(PAINT_BUCKET_WHITE,"paint");
         registerModel(PAINT_BUCKET_ORANGE,"paint");

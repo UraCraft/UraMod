@@ -37,6 +37,8 @@ tile.uramod.silver_block.name=Bloc d'Argent
 tile.uramod.copper_block.name=Bloc de Cuivre
 tile.uramod.ura_block.name=Bloc d'Ura
 
+tile.uramod.cash_point.name=Distributeur de billets
+
 item.uramod.ura_nugget.name=Pépite d'Ura
 item.uramod.silver_nugget.name=Pépite d'Argent
 item.uramod.tin_nugget.name=Pépite d'Etain

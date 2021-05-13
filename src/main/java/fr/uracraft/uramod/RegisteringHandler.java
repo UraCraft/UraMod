@@ -21,7 +21,8 @@ public class RegisteringHandler {
                 UraBlocks.SILVER_BLOCK,
                 UraBlocks.TIN_BLOCK,
                 UraBlocks.COPPER_BLOCK,
-                UraBlocks.NEODYMIUM_BLOCK
+                UraBlocks.NEODYMIUM_BLOCK,
+                UraBlocks.CASH_POINT
         );
     }
 
@@ -48,6 +49,7 @@ public class RegisteringHandler {
                 UraItems.COPPER_BLOCK_ITEM,
                 UraItems.NEODYMIUM_BLOCK_ITEM,
                 UraItems.NEODYMIUM_ORE_ITEM,
+                UraItems.CASH_POINT_BLOCK_ITEM,
                 UraItems.PAINT_BUCKET_WHITE,
                 UraItems.PAINT_BUCKET_ORANGE,
                 UraItems.PAINT_BUCKET_MAGENTA,

@@ -3,6 +3,14 @@ itemGroup.uramod=UraMod
 debug.oreSpawnText=Apparaission des minerais :
 
 item.uramod.hang_glider.name=Planeur
+item.uramod.ura_helmet.name=Casque en Ura
+item.uramod.ura_chestplate.name=Plastron en Ura
+item.uramod.ura_leggings.name=Jambières en Ura
+item.uramod.ura_boots.name=Bottes en Ura
+item.uramod.iridium_helmet.name=Casque en Iridium
+item.uramod.iridium_chestplate.name=Plastron en Iridium
+item.uramod.iridium_leggings.name=Jambières en Iridium
+item.uramod.iridium_boots.name=Bottes en Iridium
 item.uramod.ura_ingot.name=Lingot d'Ura
 item.uramod.tin_ingot.name=Lingot d'Étain
 item.uramod.silver_ingot.name=Lingot d'Argent

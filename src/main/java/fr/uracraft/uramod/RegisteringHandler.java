@@ -30,6 +30,14 @@ public class RegisteringHandler {
     public void registerItems(RegistryEvent.Register<Item> event) {
         event.getRegistry().registerAll(
                 UraItems.HANG_GLIDER,
+                UraItems.URA_HELMET,
+                UraItems.URA_CHESTPLATE,
+                UraItems.URA_LEGGINGS,
+                UraItems.URA_BOOTS,
+                UraItems.IRIDIUM_HELMET,
+                UraItems.IRIDIUM_CHESTPLATE,
+                UraItems.IRIDIUM_LEGGINGS,
+                UraItems.IRIDIUM_BOOTS,
                 UraItems.URA_NUGGET,
                 UraItems.SILVER_NUGGET,
                 UraItems.TIN_NUGGET,

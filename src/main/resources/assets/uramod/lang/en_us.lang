@@ -1,4 +1,6 @@
 itemGroup.uramod=UraMod
+itemGroup.building=Building
+itemGroup.events=Events
 
 debug.oreSpawnText=Ore Spawn :
 
@@ -46,6 +48,7 @@ tile.uramod.copper_block.name=Copper Block
 tile.uramod.ura_block.name=Ura Block
 
 tile.uramod.cash_point.name=Cash Point
+tile.uramod.dirt_stairs.name=Dirt Stairs
 
 item.uramod.ura_nugget.name=Ura Nugget
 item.uramod.silver_nugget.name=Silver Nugget

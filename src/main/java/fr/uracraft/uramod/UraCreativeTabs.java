@@ -12,4 +12,18 @@ public class UraCreativeTabs {
             return new ItemStack(UraItems.URA_INGOT);
         }
     };
+    public static final CreativeTabs BUILDING = new CreativeTabs("building") {
+
+        @Override
+        public ItemStack getTabIconItem() {
+            return new ItemStack(UraItems.URA_INGOT);
+        }
+    };
+    public static final CreativeTabs EVENTS = new CreativeTabs("events") {
+
+        @Override
+        public ItemStack getTabIconItem() {
+            return new ItemStack(UraItems.URA_INGOT);
+        }
+    };
 }

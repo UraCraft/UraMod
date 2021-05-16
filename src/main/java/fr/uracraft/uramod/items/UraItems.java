@@ -11,6 +11,7 @@ import net.minecraft.init.SoundEvents;
 import net.minecraft.inventory.EntityEquipmentSlot;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemArmor;
+import net.minecraft.item.ItemBlock;
 import net.minecraft.item.ItemStack;
 import net.minecraftforge.client.event.ModelRegistryEvent;
 import net.minecraftforge.client.model.ModelLoader;
@@ -80,6 +81,7 @@ public class UraItems {
     public final static Item NEODYMIUM_BLOCK_ITEM = new SimpleItemBlock(UraBlocks.NEODYMIUM_BLOCK);
 
     public final static Item CASH_POINT_BLOCK_ITEM = new SimpleItemBlock(UraBlocks.CASH_POINT);
+    public static final Item BLOCK_DIRT_STAIRS = new ItemBlock(UraBlocks.DIRT_STAIRS).setRegistryName(UraBlocks.DIRT_STAIRS.getRegistryName());
 
     static {
         URA_ARMOR.setRepairItem(new ItemStack(UraItems.URA_INGOT));
@@ -123,6 +125,7 @@ public class UraItems {
         registerModel(NEODYMIUM_BLOCK_ITEM);
 
         registerModel(CASH_POINT_BLOCK_ITEM);
+        registerModel(BLOCK_DIRT_STAIRS);
 
         registerModel(PAINT_BUCKET_WHITE,"paint");
         registerModel(PAINT_BUCKET_ORANGE,"paint");

@@ -1,4 +1,6 @@
 itemGroup.uramod=UraMod
+itemGroup.building=Construction
+itemGroup.events=Evénements
 
 debug.oreSpawnText=Apparaission des minerais :
 
@@ -46,6 +48,7 @@ tile.uramod.copper_block.name=Bloc de Cuivre
 tile.uramod.ura_block.name=Bloc d'Ura
 
 tile.uramod.cash_point.name=Distributeur de billets
+tile.uramod.dirt_stairs.name=Escaliers en Terre
 
 item.uramod.ura_nugget.name=Pépite d'Ura
 item.uramod.silver_nugget.name=Pépite d'Argent

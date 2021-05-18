@@ -19,7 +19,7 @@ public class RegisteringHandler {
                 UraBlocks.NEODYMIUM_ORE,
                 UraBlocks.URA_BLOCK,
                 UraBlocks.URA_FURNACE_LIT,
-                UraBlocks.URA_FURNACE
+                UraBlocks.URA_FURNACE,
                 UraBlocks.SILVER_BLOCK,
                 UraBlocks.TIN_BLOCK,
                 UraBlocks.COPPER_BLOCK,

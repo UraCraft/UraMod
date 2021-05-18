@@ -20,13 +20,31 @@ public class RegisteringHandler {
                 UraBlocks.URA_BLOCK,
                 UraBlocks.URA_FURNACE_LIT,
                 UraBlocks.URA_FURNACE
+                UraBlocks.SILVER_BLOCK,
+                UraBlocks.TIN_BLOCK,
+                UraBlocks.COPPER_BLOCK,
+                UraBlocks.NEODYMIUM_BLOCK,
+                UraBlocks.CASH_POINT,
+                UraBlocks.DIRT_STAIRS
         );
     }
 
     @SubscribeEvent
     public void registerItems(RegistryEvent.Register<Item> event) {
         event.getRegistry().registerAll(
+                UraItems.HANG_GLIDER,
+                UraItems.URA_HELMET,
+                UraItems.URA_CHESTPLATE,
+                UraItems.URA_LEGGINGS,
+                UraItems.URA_BOOTS,
+                UraItems.IRIDIUM_HELMET,
+                UraItems.IRIDIUM_CHESTPLATE,
+                UraItems.IRIDIUM_LEGGINGS,
+                UraItems.IRIDIUM_BOOTS,
                 UraItems.URA_NUGGET,
+                UraItems.SILVER_NUGGET,
+                UraItems.TIN_NUGGET,
+                UraItems.COPPER_NUGGET,
                 UraItems.URA_INGOT,
                 UraItems.NEODYMIUM,
                 UraItems.SILVER_INGOT,
@@ -37,7 +55,13 @@ public class RegisteringHandler {
                 UraItems.URA_ORE_ITEM,
                 UraItems.TIN_ORE_ITEM,
                 UraItems.URA_BLOCK_ITEM,
+                UraItems.SILVER_BLOCK_ITEM,
+                UraItems.TIN_BLOCK_ITEM,
+                UraItems.COPPER_BLOCK_ITEM,
+                UraItems.NEODYMIUM_BLOCK_ITEM,
                 UraItems.NEODYMIUM_ORE_ITEM,
+                UraItems.CASH_POINT_BLOCK_ITEM,
+                UraItems.BLOCK_DIRT_STAIRS,
                 UraItems.PAINT_BUCKET_WHITE,
                 UraItems.PAINT_BUCKET_ORANGE,
                 UraItems.PAINT_BUCKET_MAGENTA,

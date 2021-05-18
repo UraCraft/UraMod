@@ -29,3 +29,6 @@ tile.uramod.neodymium_ore.name= Minerai de Néodyme
 tile.uramod.silver_ore.name= Minerai d'Argent
 tile.uramod.copper_ore.name= Minerai de Cuivre
 tile.uramod.ura_ore.name= Minerai d'Ura
+
+tile.uramod.ura_furnace.name=Four en Ura
+container.uramod.ura_furnace=Four en Ura

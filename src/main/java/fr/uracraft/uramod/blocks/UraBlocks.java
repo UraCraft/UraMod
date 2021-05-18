@@ -13,6 +13,8 @@ public class UraBlocks {
     public final static Block TIN_ORE = new SimpleOre("tin_ore",2,URAMOD);
     public final static Block COPPER_ORE = new SimpleOre("copper_ore",2,URAMOD);
     public final static Block NEODYMIUM_ORE = new NeodymiumOre();
+    public static final Block URA_FURNACE = new BlockUraFurnace(false);
+    public static final Block URA_FURNACE_LIT = new BlockUraFurnace(true);
 
     public final static Block URA_BLOCK = new SimpleBlock("ura_block",URAMOD);
 

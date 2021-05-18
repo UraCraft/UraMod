@@ -43,6 +43,13 @@ public class UraItems {
     public final static Item PAINT_BUCKET_RED = new ItemPaint(14);
     public final static Item PAINT_BUCKET_BLACK = new ItemPaint(15);
 
+    public final static Item URA_UPGRADE = new ItemUpgrade("ura_upgrade",1600);
+    public final static Item SILVER_UPGRADE = new ItemUpgrade("silver_upgrade",600);
+    public final static Item NEODYMIUM_UPGRADE = new ItemUpgrade("neodymium_upgrade",2200);
+    public final static Item DIAMOND_UPGRADE = new ItemUpgrade("diamond_upgrade",400);
+    public final static Item IRIDIUM_UPGRADE = new ItemUpgrade("iridium_upgrade",60000);
+
+
     public final static Item URA_ORE_ITEM = new SimpleItemBlock(UraBlocks.URA_ORE);
     public final static Item SILVER_ORE_ITEM = new SimpleItemBlock(UraBlocks.SILVER_ORE);
     public final static Item TIN_ORE_ITEM = new SimpleItemBlock(UraBlocks.TIN_ORE);
@@ -50,6 +57,7 @@ public class UraItems {
     public final static Item NEODYMIUM_ORE_ITEM = new SimpleItemBlock(UraBlocks.NEODYMIUM_ORE);
 
     public final static Item URA_BLOCK_ITEM = new SimpleItemBlock(UraBlocks.URA_BLOCK);
+    public final static Item URA_FURNACE_ITEM = new SimpleItemBlock(UraBlocks.URA_FURNACE);
 
     @SideOnly(Side.CLIENT)
     @SubscribeEvent
@@ -85,6 +93,8 @@ public class UraItems {
         registerModel(PAINT_BUCKET_GREEN,"paint");
         registerModel(PAINT_BUCKET_RED,"paint");
         registerModel(PAINT_BUCKET_BLACK,"paint");
+
+        registerModel(URA_FURNACE_ITEM);
 
     }
 

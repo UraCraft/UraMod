@@ -24,6 +24,9 @@ item.uramod.paint_silver.name=Silver Paint Bucket
 item.uramod.paint_white.name=White Paint Bucket
 item.uramod.paint_yellow.name=Yellow Paint Bucket
 
+tile.uramod.ura_furnace.name=Ura furnace
+container.uramod.ura_furnace=Ura furnace
+
 tile.uramod.tin_ore.name=Tin Ore
 tile.uramod.neodymium_ore.name=Neodymium Ore
 tile.uramod.silver_ore.name=Silver Ore

@@ -62,6 +62,12 @@ public class UraItems {
     @SideOnly(Side.CLIENT)
     @SubscribeEvent
     public static void registerItemModels(ModelRegistryEvent event) {
+        registerModel(URA_UPGRADE,"upgrade");
+        registerModel(SILVER_UPGRADE,"upgrade");
+        registerModel(NEODYMIUM_UPGRADE,"upgrade");
+        registerModel(DIAMOND_UPGRADE,"upgrade");
+        registerModel(IRIDIUM_UPGRADE,"upgrade");
+
         registerModel(URA_INGOT);
         registerModel(NEODYMIUM);
         registerModel(COPPER_INGOT);

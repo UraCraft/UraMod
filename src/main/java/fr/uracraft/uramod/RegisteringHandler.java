@@ -54,7 +54,12 @@ public class RegisteringHandler {
                 UraItems.PAINT_BUCKET_GREEN,
                 UraItems.PAINT_BUCKET_RED,
                 UraItems.PAINT_BUCKET_BLACK,
-                UraItems.URA_FURNACE_ITEM
+                UraItems.URA_FURNACE_ITEM,
+                UraItems.DIAMOND_UPGRADE,
+                UraItems.URA_UPGRADE,
+                UraItems.IRIDIUM_UPGRADE,
+                UraItems.NEODYMIUM_UPGRADE,
+                UraItems.SILVER_UPGRADE
         );
     }
 

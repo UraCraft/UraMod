@@ -23,6 +23,11 @@ item.uramod.paint_red.name=Pot de Peinture Rouge
 item.uramod.paint_silver.name=Pot de Peinture Gris clair
 item.uramod.paint_white.name=Pot de Peinture Blanc
 item.uramod.paint_yellow.name=Pot de Peinture Jaune
+item.uramod.ura_upgrade.name=Amélioration en Ura
+item.uramod.silver_upgrade.name=Amélioration en Argent
+item.uramod.diamond_upgrade.name=Amélioration en Diamant
+item.uramod.neodymium_upgrade.name=Amélioration en Néodyme
+item.uramod.iridium_upgrade.name=Amélioration en Iridium
 
 tile.uramod.tin_ore.name= Minerai d'Étain
 tile.uramod.neodymium_ore.name= Minerai de Néodyme

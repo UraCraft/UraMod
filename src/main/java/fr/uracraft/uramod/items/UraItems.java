@@ -9,10 +9,7 @@ import fr.uracraft.uramod.items.utils.SimpleItemBlock;
 import net.minecraft.client.renderer.block.model.ModelResourceLocation;
 import net.minecraft.init.SoundEvents;
 import net.minecraft.inventory.EntityEquipmentSlot;
-import net.minecraft.item.Item;
-import net.minecraft.item.ItemArmor;
-import net.minecraft.item.ItemBlock;
-import net.minecraft.item.ItemStack;
+import net.minecraft.item.*;
 import net.minecraftforge.client.event.ModelRegistryEvent;
 import net.minecraftforge.client.model.ModelLoader;
 import net.minecraftforge.common.util.EnumHelper;
@@ -94,6 +91,7 @@ public class UraItems {
 
     public final static Item CASH_POINT_BLOCK_ITEM = new SimpleItemBlock(UraBlocks.CASH_POINT);
     public static final Item BLOCK_DIRT_STAIRS = new ItemBlock(UraBlocks.DIRT_STAIRS).setRegistryName(UraBlocks.DIRT_STAIRS.getRegistryName());
+    public static final Item BLOCK_DIRT_SLAB = new ItemSlab(UraBlocks.DIRT_HALFSLAB, UraBlocks.DIRT_HALFSLAB, UraBlocks.DIRT_DOUBLESLAB).setRegistryName(UraBlocks.DIRT_HALFSLAB.getRegistryName());
 
     static {
         URA_ARMOR.setRepairItem(new ItemStack(UraItems.URA_INGOT));
@@ -146,6 +144,7 @@ public class UraItems {
 
         registerModel(CASH_POINT_BLOCK_ITEM);
         registerModel(BLOCK_DIRT_STAIRS);
+        registerModel(BLOCK_DIRT_SLAB);
 
         registerModel(PAINT_BUCKET_WHITE,"paint");
         registerModel(PAINT_BUCKET_ORANGE,"paint");

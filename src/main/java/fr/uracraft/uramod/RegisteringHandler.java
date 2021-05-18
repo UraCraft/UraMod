@@ -4,8 +4,10 @@ import fr.uracraft.uramod.blocks.UraBlocks;
 import fr.uracraft.uramod.items.UraItems;
 import net.minecraft.block.Block;
 import net.minecraft.item.Item;
+import net.minecraft.item.ItemSlab;
 import net.minecraftforge.event.RegistryEvent;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
+import net.minecraftforge.fml.common.registry.ForgeRegistries;
 
 
 public class RegisteringHandler {
@@ -25,7 +27,9 @@ public class RegisteringHandler {
                 UraBlocks.COPPER_BLOCK,
                 UraBlocks.NEODYMIUM_BLOCK,
                 UraBlocks.CASH_POINT,
-                UraBlocks.DIRT_STAIRS
+                UraBlocks.DIRT_STAIRS,
+                UraBlocks.DIRT_HALFSLAB,
+                UraBlocks.DIRT_DOUBLESLAB
         );
     }
 
@@ -78,6 +82,7 @@ public class RegisteringHandler {
                 UraItems.PAINT_BUCKET_GREEN,
                 UraItems.PAINT_BUCKET_RED,
                 UraItems.PAINT_BUCKET_BLACK,
+                UraItems.BLOCK_DIRT_SLAB
                 UraItems.URA_FURNACE_ITEM,
                 UraItems.DIAMOND_UPGRADE,
                 UraItems.URA_UPGRADE,

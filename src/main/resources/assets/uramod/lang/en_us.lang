@@ -49,6 +49,7 @@ tile.uramod.ura_block.name=Ura Block
 
 tile.uramod.cash_point.name=Cash Point
 tile.uramod.dirt_stairs.name=Dirt Stairs
+tile.uramod.dirt_halfslab.name=Dirt Slab
 
 item.uramod.ura_nugget.name=Ura Nugget
 item.uramod.silver_nugget.name=Silver Nugget

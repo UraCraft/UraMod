@@ -49,6 +49,7 @@ tile.uramod.ura_block.name=Bloc d'Ura
 
 tile.uramod.cash_point.name=Distributeur de billets
 tile.uramod.dirt_stairs.name=Escaliers en Terre
+tile.uramod.dirt_halfslab.name=Dalle en Terre
 
 item.uramod.ura_nugget.name=Pépite d'Ura
 item.uramod.silver_nugget.name=Pépite d'Argent

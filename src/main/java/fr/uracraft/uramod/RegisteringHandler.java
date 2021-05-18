@@ -20,6 +20,8 @@ public class RegisteringHandler {
                 UraBlocks.TIN_ORE,
                 UraBlocks.NEODYMIUM_ORE,
                 UraBlocks.URA_BLOCK,
+                UraBlocks.URA_FURNACE_LIT,
+                UraBlocks.URA_FURNACE,
                 UraBlocks.SILVER_BLOCK,
                 UraBlocks.TIN_BLOCK,
                 UraBlocks.COPPER_BLOCK,
@@ -81,6 +83,12 @@ public class RegisteringHandler {
                 UraItems.PAINT_BUCKET_RED,
                 UraItems.PAINT_BUCKET_BLACK,
                 UraItems.BLOCK_DIRT_SLAB
+                UraItems.URA_FURNACE_ITEM,
+                UraItems.DIAMOND_UPGRADE,
+                UraItems.URA_UPGRADE,
+                UraItems.IRIDIUM_UPGRADE,
+                UraItems.NEODYMIUM_UPGRADE,
+                UraItems.SILVER_UPGRADE
         );
     }
 

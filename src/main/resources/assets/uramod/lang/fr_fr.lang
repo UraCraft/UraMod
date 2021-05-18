@@ -34,6 +34,11 @@ item.uramod.paint_red.name=Pot de Peinture Rouge
 item.uramod.paint_silver.name=Pot de Peinture Gris clair
 item.uramod.paint_white.name=Pot de Peinture Blanc
 item.uramod.paint_yellow.name=Pot de Peinture Jaune
+item.uramod.ura_upgrade.name=Amélioration en Ura
+item.uramod.silver_upgrade.name=Amélioration en Argent
+item.uramod.diamond_upgrade.name=Amélioration en Diamant
+item.uramod.neodymium_upgrade.name=Amélioration en Néodyme
+item.uramod.iridium_upgrade.name=Amélioration en Iridium
 
 tile.uramod.tin_ore.name= Minerai d'Étain
 tile.uramod.neodymium_ore.name= Minerai de Néodyme
@@ -41,6 +46,8 @@ tile.uramod.silver_ore.name= Minerai d'Argent
 tile.uramod.copper_ore.name= Minerai de Cuivre
 tile.uramod.ura_ore.name= Minerai d'Ura
 
+tile.uramod.ura_furnace.name=Four en Ura
+container.uramod.ura_furnace=Four en Ura
 tile.uramod.tin_block.name=Bloc d'Etain
 tile.uramod.neodymium_block.name=Bloc de Neodyme
 tile.uramod.silver_block.name=Bloc d'Argent
@@ -55,3 +62,4 @@ item.uramod.ura_nugget.name=Pépite d'Ura
 item.uramod.silver_nugget.name=Pépite d'Argent
 item.uramod.tin_nugget.name=Pépite d'Etain
 item.uramod.copper_nugget.name=Pépite de Cuivre
+

@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "uramod:ura_furnace_lit"
+    },
+    "facing=south": {
+      "model": "uramod:ura_furnace_lit",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "uramod:ura_furnace_lit",
+      "y": 270
+    },
+    "facing=east": {
+      "model": "uramod:ura_furnace_lit",
+      "y": 90
+    }
+  }
+}

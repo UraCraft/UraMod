@@ -59,6 +59,14 @@ public class UraItems {
     public final static Item PAINT_BUCKET_RED = new ItemPaint(14);
     public final static Item PAINT_BUCKET_BLACK = new ItemPaint(15);
 
+
+    public final static Item URA_UPGRADE = new ItemUpgrade("ura_upgrade",1600);
+    public final static Item SILVER_UPGRADE = new ItemUpgrade("silver_upgrade",600);
+    public final static Item NEODYMIUM_UPGRADE = new ItemUpgrade("neodymium_upgrade",2200);
+    public final static Item DIAMOND_UPGRADE = new ItemUpgrade("diamond_upgrade",400);
+    public final static Item IRIDIUM_UPGRADE = new ItemUpgrade("iridium_upgrade",60000);
+
+
     public static final Item URA_HELMET = new UraArmor("ura_helmet", 1, EntityEquipmentSlot.HEAD);
     public static final Item URA_CHESTPLATE = new UraArmor("ura_chestplate", 1, EntityEquipmentSlot.CHEST);
     public static final Item URA_LEGGINGS = new UraArmor("ura_leggings", 2, EntityEquipmentSlot.LEGS);
@@ -68,6 +76,7 @@ public class UraItems {
     public static final Item IRIDIUM_LEGGINGS = new IridiumArmor("iridium_leggings", 2, EntityEquipmentSlot.LEGS);
     public static final Item IRIDIUM_BOOTS = new IridiumArmor("iridium_boots", 1, EntityEquipmentSlot.FEET);
 
+
     public final static Item URA_ORE_ITEM = new SimpleItemBlock(UraBlocks.URA_ORE);
     public final static Item SILVER_ORE_ITEM = new SimpleItemBlock(UraBlocks.SILVER_ORE);
     public final static Item TIN_ORE_ITEM = new SimpleItemBlock(UraBlocks.TIN_ORE);
@@ -75,6 +84,9 @@ public class UraItems {
     public final static Item NEODYMIUM_ORE_ITEM = new SimpleItemBlock(UraBlocks.NEODYMIUM_ORE);
 
     public final static Item URA_BLOCK_ITEM = new SimpleItemBlock(UraBlocks.URA_BLOCK);
+
+    public final static Item URA_FURNACE_ITEM = new SimpleItemBlock(UraBlocks.URA_FURNACE);
+
     public final static Item SILVER_BLOCK_ITEM = new SimpleItemBlock(UraBlocks.SILVER_BLOCK);
     public final static Item TIN_BLOCK_ITEM = new SimpleItemBlock(UraBlocks.TIN_BLOCK);
     public final static Item COPPER_BLOCK_ITEM = new SimpleItemBlock(UraBlocks.COPPER_BLOCK);
@@ -87,9 +99,17 @@ public class UraItems {
         URA_ARMOR.setRepairItem(new ItemStack(UraItems.URA_INGOT));
     }
 
+
     @SideOnly(Side.CLIENT)
     @SubscribeEvent
     public static void registerItemModels(ModelRegistryEvent event) {
+
+        registerModel(URA_UPGRADE,"upgrade");
+        registerModel(SILVER_UPGRADE,"upgrade");
+        registerModel(NEODYMIUM_UPGRADE,"upgrade");
+        registerModel(DIAMOND_UPGRADE,"upgrade");
+        registerModel(IRIDIUM_UPGRADE,"upgrade");
+
         registerModel(HANG_GLIDER);
 
         registerModel(URA_HELMET);
@@ -100,7 +120,7 @@ public class UraItems {
         registerModel(IRIDIUM_CHESTPLATE);
         registerModel(IRIDIUM_LEGGINGS);
         registerModel(IRIDIUM_BOOTS);
-
+      
         registerModel(URA_INGOT);
         registerModel(NEODYMIUM);
         registerModel(COPPER_INGOT);
@@ -143,6 +163,8 @@ public class UraItems {
         registerModel(PAINT_BUCKET_GREEN,"paint");
         registerModel(PAINT_BUCKET_RED,"paint");
         registerModel(PAINT_BUCKET_BLACK,"paint");
+
+        registerModel(URA_FURNACE_ITEM);
 
     }
 

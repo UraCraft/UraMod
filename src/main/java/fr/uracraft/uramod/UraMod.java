@@ -2,6 +2,8 @@ package fr.uracraft.uramod;
 
 import fr.uracraft.uramod.events.DebugLayout;
 import fr.uracraft.uramod.events.EventCustomMainMenu;
+import fr.uracraft.uramod.events.EventHang_Glider;
+import fr.uracraft.uramod.items.armors.PatchVanillaArmors;
 import fr.uracraft.uramod.proxy.CommonProxy;
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
@@ -38,9 +40,11 @@ public class UraMod {
 
     @Mod.EventHandler
     public void preInit(FMLPreInitializationEvent event) {
+        PatchVanillaArmors.armors(event);
         logger = event.getModLog();
         MinecraftForge.EVENT_BUS.register(new EventCustomMainMenu());
         MinecraftForge.EVENT_BUS.register(new DebugLayout());
+        MinecraftForge.EVENT_BUS.register(new EventHang_Glider());
     }
 
     @Mod.EventHandler

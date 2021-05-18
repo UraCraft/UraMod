@@ -1,7 +1,18 @@
 itemGroup.uramod=UraMod
+itemGroup.building=Building
+itemGroup.events=Events
 
 debug.oreSpawnText=Ore Spawn :
 
+item.uramod.hang_glider.name=Hang Glider
+item.uramod.ura_helmet.name=Ura Helmet
+item.uramod.ura_chestplate.name=Ura Chestplate
+item.uramod.ura_leggings.name=Ura Leggings
+item.uramod.ura_boots.name=Ura Boots
+item.uramod.iridium_helmet.name=Iridium Helmet
+item.uramod.iridium_chestplate.name=Iridium Chestplate
+item.uramod.iridium_leggings.name=Iridium Leggings
+item.uramod.iridium_boots.name=Iridium Boots
 item.uramod.ura_ingot.name=Ura Ingot
 item.uramod.tin_ingot.name=Tin Ingot
 item.uramod.silver_ingot.name=Silver Ingot
@@ -29,3 +40,17 @@ tile.uramod.neodymium_ore.name=Neodymium Ore
 tile.uramod.silver_ore.name=Silver Ore
 tile.uramod.copper_ore.name=Copper Ore
 tile.uramod.ura_ore.name=Ura Ore
+
+tile.uramod.tin_block.name=Tin Block
+tile.uramod.neodymium_block.name=Neodymium Block
+tile.uramod.silver_block.name=Silver Block
+tile.uramod.copper_block.name=Copper Block
+tile.uramod.ura_block.name=Ura Block
+
+tile.uramod.cash_point.name=Cash Point
+tile.uramod.dirt_stairs.name=Dirt Stairs
+
+item.uramod.ura_nugget.name=Ura Nugget
+item.uramod.silver_nugget.name=Silver Nugget
+item.uramod.tin_nugget.name=Tin Nugget
+item.uramod.copper_nugget.name=Copper Nugget

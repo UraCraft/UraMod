@@ -25,7 +25,8 @@ public class RegisteringHandler {
                 UraBlocks.COPPER_BLOCK,
                 UraBlocks.NEODYMIUM_BLOCK,
                 UraBlocks.CASH_POINT,
-                UraBlocks.DIRT_STAIRS
+                UraBlocks.DIRT_STAIRS,
+                UraBlocks.IRIDIUM_ORE
         );
     }
 
@@ -83,7 +84,9 @@ public class RegisteringHandler {
                 UraItems.URA_UPGRADE,
                 UraItems.IRIDIUM_UPGRADE,
                 UraItems.NEODYMIUM_UPGRADE,
-                UraItems.SILVER_UPGRADE
+                UraItems.SILVER_UPGRADE,
+                UraItems.IRIDIUM_ORE_BLOCK_ITEM,
+                UraItems.IRIDIUM_NUGGET
         );
     }
 

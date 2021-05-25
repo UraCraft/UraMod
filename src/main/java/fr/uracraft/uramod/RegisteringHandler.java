@@ -28,7 +28,7 @@ public class RegisteringHandler {
                 UraBlocks.NEODYMIUM_BLOCK,
                 UraBlocks.CASH_POINT,
                 UraBlocks.DIRT_STAIRS,
-                UraBlocks.IRIDIUM_ORE
+                UraBlocks.IRIDIUM_ORE,
                 UraBlocks.DIRT_HALFSLAB,
                 UraBlocks.DIRT_DOUBLESLAB
         );
@@ -83,7 +83,7 @@ public class RegisteringHandler {
                 UraItems.PAINT_BUCKET_GREEN,
                 UraItems.PAINT_BUCKET_RED,
                 UraItems.PAINT_BUCKET_BLACK,
-                UraItems.BLOCK_DIRT_SLAB
+                UraItems.BLOCK_DIRT_SLAB,
                 UraItems.URA_FURNACE_ITEM,
                 UraItems.DIAMOND_UPGRADE,
                 UraItems.URA_UPGRADE,

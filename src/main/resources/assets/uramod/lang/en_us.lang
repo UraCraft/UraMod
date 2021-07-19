@@ -4,7 +4,11 @@ itemGroup.events=Events
 
 debug.oreSpawnText=Ore Spawn :
 
+itemLore.world_selector_line0=Click to travel between
+itemLore.world_selector_line1=all the servers !
+
 item.uramod.hang_glider.name=Hang Glider
+item.uramod.world_selector.name=Server Selector
 item.uramod.ura_helmet.name=Ura Helmet
 item.uramod.ura_chestplate.name=Ura Chestplate
 item.uramod.ura_leggings.name=Ura Leggings
@@ -14,6 +18,7 @@ item.uramod.iridium_chestplate.name=Iridium Chestplate
 item.uramod.iridium_leggings.name=Iridium Leggings
 item.uramod.iridium_boots.name=Iridium Boots
 item.uramod.ura_ingot.name=Ura Ingot
+item.uramod.iridium_ingot.name=Iridium Ingot
 item.uramod.tin_ingot.name=Tin Ingot
 item.uramod.silver_ingot.name=Silver Ingot
 item.uramod.neodymium.name=Neodymium
@@ -48,6 +53,7 @@ tile.uramod.neodymium_ore.name=Neodymium Ore
 tile.uramod.silver_ore.name=Silver Ore
 tile.uramod.copper_ore.name=Copper Ore
 tile.uramod.ura_ore.name=Ura Ore
+tile.uramod.iridium_ore.name=Iridium Ore
 
 tile.uramod.tin_block.name=Tin Block
 tile.uramod.neodymium_block.name=Neodymium Block

@@ -27,8 +27,10 @@ public class UraItems {
     public static final ItemArmor.ArmorMaterial IRIDIUM_ARMOR = EnumHelper.addArmorMaterial("iridium_armor", UraMod.MODID+":iridium", 74, new int[] {3, 8, 6, 3}, 30, SoundEvents.ITEM_ARMOR_EQUIP_DIAMOND, 4F);
 
     public final static Item HANG_GLIDER = new ItemHang_Glider();
+    public final static Item WORLD_SELECTOR = new ItemWorld_Selector();
 
     public final static Item URA_INGOT = new SimpleItem("ura_ingot",URAMOD);
+    public final static Item IRIDIUM_INGOT = new SimpleItem("iridium_ingot",URAMOD);
     public final static Item NEODYMIUM = new SimpleItem("neodymium",URAMOD);
     public final static Item COPPER_INGOT = new SimpleItem("copper_ingot",URAMOD);
     public final static Item TIN_INGOT = new SimpleItem("tin_ingot",URAMOD);
@@ -111,6 +113,7 @@ public class UraItems {
         registerModel(IRIDIUM_UPGRADE,"upgrade");
 
         registerModel(HANG_GLIDER);
+        registerModel(WORLD_SELECTOR);
         registerModel(IRIDIUM_ORE_BLOCK_ITEM);
 
         registerModel(URA_HELMET);
@@ -123,6 +126,7 @@ public class UraItems {
         registerModel(IRIDIUM_BOOTS);
       
         registerModel(URA_INGOT);
+        registerModel(IRIDIUM_INGOT);
         registerModel(NEODYMIUM);
         registerModel(COPPER_INGOT);
         registerModel(TIN_INGOT);

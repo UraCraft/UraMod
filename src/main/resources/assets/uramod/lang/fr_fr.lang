@@ -4,7 +4,11 @@ itemGroup.events=Evénements
 
 debug.oreSpawnText=Apparaission des minerais :
 
+itemLore.world_selector_line0=Clic pour voyager entre
+itemLore.world_selector_line1=tout les serveurs !
+
 item.uramod.hang_glider.name=Planeur
+item.uramod.world_selector.name=Selecteur de serveur
 item.uramod.ura_helmet.name=Casque en Ura
 item.uramod.ura_chestplate.name=Plastron en Ura
 item.uramod.ura_leggings.name=Jambières en Ura
@@ -14,6 +18,7 @@ item.uramod.iridium_chestplate.name=Plastron en Iridium
 item.uramod.iridium_leggings.name=Jambières en Iridium
 item.uramod.iridium_boots.name=Bottes en Iridium
 item.uramod.ura_ingot.name=Lingot d'Ura
+item.uramod.iridium_ingot.name=Lingot d'iridium
 item.uramod.tin_ingot.name=Lingot d'Étain
 item.uramod.silver_ingot.name=Lingot d'Argent
 item.uramod.neodymium.name=Néodyme

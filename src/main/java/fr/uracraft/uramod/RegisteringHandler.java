@@ -4,10 +4,8 @@ import fr.uracraft.uramod.blocks.UraBlocks;
 import fr.uracraft.uramod.items.UraItems;
 import net.minecraft.block.Block;
 import net.minecraft.item.Item;
-import net.minecraft.item.ItemSlab;
 import net.minecraftforge.event.RegistryEvent;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
-import net.minecraftforge.fml.common.registry.ForgeRegistries;
 
 
 public class RegisteringHandler {
@@ -38,6 +36,7 @@ public class RegisteringHandler {
     public void registerItems(RegistryEvent.Register<Item> event) {
         event.getRegistry().registerAll(
                 UraItems.HANG_GLIDER,
+                UraItems.WORLD_SELECTOR,
                 UraItems.URA_HELMET,
                 UraItems.URA_CHESTPLATE,
                 UraItems.URA_LEGGINGS,
@@ -51,6 +50,7 @@ public class RegisteringHandler {
                 UraItems.TIN_NUGGET,
                 UraItems.COPPER_NUGGET,
                 UraItems.URA_INGOT,
+                UraItems.IRIDIUM_INGOT,
                 UraItems.NEODYMIUM,
                 UraItems.SILVER_INGOT,
                 UraItems.COPPER_INGOT,

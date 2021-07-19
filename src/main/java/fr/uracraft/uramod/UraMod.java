@@ -46,10 +46,10 @@ public class UraMod {
     public void preInit(FMLPreInitializationEvent event) {
         PatchVanillaArmors.armors(event);
         logger = event.getModLog();
-        MinecraftForge.EVENT_BUS.register(new EventCustomMainMenu());
-        MinecraftForge.EVENT_BUS.register(new DebugLayout());
         if (event.getSide().isClient()) {
             NetworkRegistry.INSTANCE.registerGuiHandler(this, new GuiHandler());
+            MinecraftForge.EVENT_BUS.register(new EventCustomMainMenu());
+            MinecraftForge.EVENT_BUS.register(new DebugLayout());
         }
         GameRegistry.registerTileEntity(TileEntityUraFurnace.class, "uramod:ura_furnace");
         MinecraftForge.EVENT_BUS.register(new EventHang_Glider());

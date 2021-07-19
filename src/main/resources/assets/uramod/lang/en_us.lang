@@ -44,6 +44,7 @@ item.uramod.silver_upgrade.name=Silver Upgrade
 item.uramod.diamond_upgrade.name=Diamond Upgrade
 item.uramod.neodymium_upgrade.name=Neodymium Upgrade
 item.uramod.iridium_upgrade.name=Iridium Upgrade
+item.uramod.iridium_nugget.name=Iridium Nugget
 
 tile.uramod.ura_furnace.name=Ura furnace
 container.uramod.ura_furnace=Ura furnace
@@ -53,7 +54,7 @@ tile.uramod.neodymium_ore.name=Neodymium Ore
 tile.uramod.silver_ore.name=Silver Ore
 tile.uramod.copper_ore.name=Copper Ore
 tile.uramod.ura_ore.name=Ura Ore
-tile.uramod.iridium_ore.name=Iridium Ore
+tile.uramod.iridium_ore=Iridium Ore
 
 tile.uramod.tin_block.name=Tin Block
 tile.uramod.neodymium_block.name=Neodymium Block

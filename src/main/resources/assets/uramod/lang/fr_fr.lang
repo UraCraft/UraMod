@@ -44,13 +44,14 @@ item.uramod.silver_upgrade.name=Amélioration en Argent
 item.uramod.diamond_upgrade.name=Amélioration en Diamant
 item.uramod.neodymium_upgrade.name=Amélioration en Néodyme
 item.uramod.iridium_upgrade.name=Amélioration en Iridium
+item.uramod.iridium_nugget.name=Pépite d'Iridium
 
 tile.uramod.tin_ore.name= Minerai d'Étain
 tile.uramod.neodymium_ore.name= Minerai de Néodyme
 tile.uramod.silver_ore.name= Minerai d'Argent
 tile.uramod.copper_ore.name= Minerai de Cuivre
 tile.uramod.ura_ore.name= Minerai d'Ura
-tile.uramod.iridium_ore.name=Minerais d'Iridium
+tile.uramod.iridium_ore=Minerai d'Iridium
 
 tile.uramod.ura_furnace.name=Four en Ura
 container.uramod.ura_furnace=Four en Ura

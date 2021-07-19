@@ -65,6 +65,7 @@ public class UraItems {
     public final static Item DIAMOND_UPGRADE = new ItemUpgrade("diamond_upgrade",400);
     public final static Item IRIDIUM_UPGRADE = new ItemUpgrade("iridium_upgrade",60000);
 
+    public final static Item IRIDIUM_NUGGET = new SimpleItem("iridium_nugget",URAMOD);
 
     public static final Item URA_HELMET = new UraArmor("ura_helmet", 1, EntityEquipmentSlot.HEAD);
     public static final Item URA_CHESTPLATE = new UraArmor("ura_chestplate", 1, EntityEquipmentSlot.CHEST);
@@ -90,6 +91,7 @@ public class UraItems {
     public final static Item TIN_BLOCK_ITEM = new SimpleItemBlock(UraBlocks.TIN_BLOCK);
     public final static Item COPPER_BLOCK_ITEM = new SimpleItemBlock(UraBlocks.COPPER_BLOCK);
     public final static Item NEODYMIUM_BLOCK_ITEM = new SimpleItemBlock(UraBlocks.NEODYMIUM_BLOCK);
+    public final static Item IRIDIUM_ORE_BLOCK_ITEM = new SimpleItemBlock(UraBlocks.IRIDIUM_ORE);
 
     public final static Item CASH_POINT_BLOCK_ITEM = new SimpleItemBlock(UraBlocks.CASH_POINT);
     public static final Item BLOCK_DIRT_STAIRS = new ItemBlock(UraBlocks.DIRT_STAIRS).setRegistryName(UraBlocks.DIRT_STAIRS.getRegistryName());
@@ -112,6 +114,7 @@ public class UraItems {
 
         registerModel(HANG_GLIDER);
         registerModel(WORLD_SELECTOR);
+        registerModel(IRIDIUM_ORE_BLOCK_ITEM);
 
         registerModel(URA_HELMET);
         registerModel(URA_CHESTPLATE);
@@ -128,6 +131,7 @@ public class UraItems {
         registerModel(COPPER_INGOT);
         registerModel(TIN_INGOT);
         registerModel(SILVER_INGOT);
+        registerModel(IRIDIUM_NUGGET);
 
         registerModel(URA_NUGGET);
         registerModel(SILVER_NUGGET);

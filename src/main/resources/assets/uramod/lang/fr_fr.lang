@@ -50,8 +50,8 @@ tile.uramod.tin_ore.name= Minerai d'Étain
 tile.uramod.neodymium_ore.name= Minerai de Néodyme
 tile.uramod.silver_ore.name= Minerai d'Argent
 tile.uramod.copper_ore.name= Minerai de Cuivre
-tile.uramod.ura_ore.name= Minerai d'Ura
-tile.uramod.iridium_ore=Minerai d'Iridium
+tile.uramod.ura_ore.name.name= Minerai d'Ura
+tile.uramod.iridium_ore.name=Minerai d'Iridium
 
 tile.uramod.ura_furnace.name=Four en Ura
 container.uramod.ura_furnace=Four en Ura

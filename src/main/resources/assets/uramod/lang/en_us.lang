@@ -54,7 +54,7 @@ tile.uramod.neodymium_ore.name=Neodymium Ore
 tile.uramod.silver_ore.name=Silver Ore
 tile.uramod.copper_ore.name=Copper Ore
 tile.uramod.ura_ore.name=Ura Ore
-tile.uramod.iridium_ore=Iridium Ore
+tile.uramod.iridium_ore.name=Iridium Ore
 
 tile.uramod.tin_block.name=Tin Block
 tile.uramod.neodymium_block.name=Neodymium Block

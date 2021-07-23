@@ -1,11 +1,13 @@
 package fr.uracraft.uramod.items;
 
 import fr.uracraft.uramod.UraMod;
+import fr.uracraft.uramod.blocks.BlockElevator;
 import fr.uracraft.uramod.blocks.UraBlocks;
 import fr.uracraft.uramod.items.armors.IridiumArmor;
 import fr.uracraft.uramod.items.armors.UraArmor;
 import fr.uracraft.uramod.items.utils.SimpleItem;
 import fr.uracraft.uramod.items.utils.SimpleItemBlock;
+import fr.uracraft.uramod.utils.ItemBlockMetadata;
 import net.minecraft.client.renderer.block.model.ModelResourceLocation;
 import net.minecraft.init.SoundEvents;
 import net.minecraft.inventory.EntityEquipmentSlot;
@@ -22,6 +24,8 @@ import static fr.uracraft.uramod.UraCreativeTabs.URAMOD;
 
 @Mod.EventBusSubscriber(value = Side.CLIENT, modid= UraMod.MODID)
 public class UraItems {
+
+    public static final Item BLOCK_ELEVATOR_ITEM = new ItemBlockMetadata(UraBlocks.BLOCK_ELEVATOR, new String[]{"elevator_block", "elevator_block_orange", "elevator_block_magenta", "elevator_block_light_blue", "elevator_block_yellow", "elevator_block_lime", "elevator_block_pink", "elevator_block_gray", "elevator_block_silver", "elevator_block_cyan", "elevator_block_purple", "elevator_block_blue", "elevator_block_brown", "elevator_block_green", "elevator_block_red", "elevator_block_black"} ).setRegistryName(UraBlocks.BLOCK_ELEVATOR.getRegistryName());
 
     public static final ItemArmor.ArmorMaterial URA_ARMOR = EnumHelper.addArmorMaterial("ura_armor", UraMod.MODID+":ura", 37, new int[] {3, 8, 6, 3}, 15, SoundEvents.ITEM_ARMOR_EQUIP_DIAMOND, 4F);
     public static final ItemArmor.ArmorMaterial IRIDIUM_ARMOR = EnumHelper.addArmorMaterial("iridium_armor", UraMod.MODID+":iridium", 74, new int[] {3, 8, 6, 3}, 30, SoundEvents.ITEM_ARMOR_EQUIP_DIAMOND, 4F);
@@ -41,22 +45,22 @@ public class UraItems {
     public final static Item TIN_NUGGET = new SimpleItem("tin_nugget",URAMOD);
     public final static Item COPPER_NUGGET = new SimpleItem("copper_nugget",URAMOD);
 
-    public final static Item PAINT_BUCKET_WHITE = new ItemPaint(0);
-    public final static Item PAINT_BUCKET_ORANGE = new ItemPaint(1);
-    public final static Item PAINT_BUCKET_MAGENTA = new ItemPaint(2);
-    public final static Item PAINT_BUCKET_LIGHT_BLUE = new ItemPaint(3);
-    public final static Item PAINT_BUCKET_YELLOW = new ItemPaint(4);
-    public final static Item PAINT_BUCKET_LIME = new ItemPaint(5);
-    public final static Item PAINT_BUCKET_PINK = new ItemPaint(6);
-    public final static Item PAINT_BUCKET_GRAY = new ItemPaint(7);
-    public final static Item PAINT_BUCKET_SILVER = new ItemPaint(8);
-    public final static Item PAINT_BUCKET_CYAN = new ItemPaint(9);
-    public final static Item PAINT_BUCKET_PURPLE = new ItemPaint(10);
-    public final static Item PAINT_BUCKET_BLUE = new ItemPaint(11);
-    public final static Item PAINT_BUCKET_BROWN = new ItemPaint(12);
-    public final static Item PAINT_BUCKET_GREEN = new ItemPaint(13);
-    public final static Item PAINT_BUCKET_RED = new ItemPaint(14);
-    public final static Item PAINT_BUCKET_BLACK = new ItemPaint(15);
+    public final static Item PAINT_BUCKET_WHITE = new ItemPaint(0, 15);
+    public final static Item PAINT_BUCKET_ORANGE = new ItemPaint(1, 14);
+    public final static Item PAINT_BUCKET_MAGENTA = new ItemPaint(2, 13);
+    public final static Item PAINT_BUCKET_LIGHT_BLUE = new ItemPaint(3, 12);
+    public final static Item PAINT_BUCKET_YELLOW = new ItemPaint(4, 11);
+    public final static Item PAINT_BUCKET_LIME = new ItemPaint(5, 10);
+    public final static Item PAINT_BUCKET_PINK = new ItemPaint(6, 9);
+    public final static Item PAINT_BUCKET_GRAY = new ItemPaint(7, 8);
+    public final static Item PAINT_BUCKET_SILVER = new ItemPaint(8, 7);
+    public final static Item PAINT_BUCKET_CYAN = new ItemPaint(9, 6);
+    public final static Item PAINT_BUCKET_PURPLE = new ItemPaint(10, 5);
+    public final static Item PAINT_BUCKET_BLUE = new ItemPaint(11, 4);
+    public final static Item PAINT_BUCKET_BROWN = new ItemPaint(12, 3);
+    public final static Item PAINT_BUCKET_GREEN = new ItemPaint(13, 2);
+    public final static Item PAINT_BUCKET_RED = new ItemPaint(14, 1);
+    public final static Item PAINT_BUCKET_BLACK = new ItemPaint(15, 0);
 
 
     public final static Item URA_UPGRADE = new ItemUpgrade("ura_upgrade",1600);
@@ -76,7 +80,6 @@ public class UraItems {
     public static final Item IRIDIUM_LEGGINGS = new IridiumArmor("iridium_leggings", 2, EntityEquipmentSlot.LEGS);
     public static final Item IRIDIUM_BOOTS = new IridiumArmor("iridium_boots", 1, EntityEquipmentSlot.FEET);
 
-
     public final static Item URA_ORE_ITEM = new SimpleItemBlock(UraBlocks.URA_ORE);
     public final static Item SILVER_ORE_ITEM = new SimpleItemBlock(UraBlocks.SILVER_ORE);
     public final static Item TIN_ORE_ITEM = new SimpleItemBlock(UraBlocks.TIN_ORE);
@@ -95,7 +98,11 @@ public class UraItems {
 
     public final static Item CASH_POINT_BLOCK_ITEM = new SimpleItemBlock(UraBlocks.CASH_POINT);
     public static final Item BLOCK_DIRT_STAIRS = new ItemBlock(UraBlocks.DIRT_STAIRS).setRegistryName(UraBlocks.DIRT_STAIRS.getRegistryName());
+    public static final Item BLOCK_OBSIDIAN_STAIRS = new ItemBlock(UraBlocks.OBSIDIAN_STAIRS).setRegistryName(UraBlocks.OBSIDIAN_STAIRS.getRegistryName());
+    public static final Item BLOCK_BEDROCK_STAIRS = new ItemBlock(UraBlocks.BEDROCK_STAIRS).setRegistryName(UraBlocks.BEDROCK_STAIRS.getRegistryName());
     public static final Item BLOCK_DIRT_SLAB = new ItemSlab(UraBlocks.DIRT_HALFSLAB, UraBlocks.DIRT_HALFSLAB, UraBlocks.DIRT_DOUBLESLAB).setRegistryName(UraBlocks.DIRT_HALFSLAB.getRegistryName());
+    public static final Item BLOCK_OBSIDIAN_SLAB = new ItemSlab(UraBlocks.OBSIDIAN_HALFSLAB, UraBlocks.OBSIDIAN_HALFSLAB, UraBlocks.OBSIDIAN_DOUBLESLAB).setRegistryName(UraBlocks.OBSIDIAN_HALFSLAB.getRegistryName());
+    public static final Item BLOCK_BEDROCK_SLAB = new ItemSlab(UraBlocks.BEDROCK_HALFSLAB, UraBlocks.BEDROCK_HALFSLAB, UraBlocks.BEDROCK_DOUBLESLAB).setRegistryName(UraBlocks.BEDROCK_HALFSLAB.getRegistryName());
 
     static {
         URA_ARMOR.setRepairItem(new ItemStack(UraItems.URA_INGOT));
@@ -152,7 +159,11 @@ public class UraItems {
 
         registerModel(CASH_POINT_BLOCK_ITEM);
         registerModel(BLOCK_DIRT_STAIRS);
+        registerModel(BLOCK_OBSIDIAN_STAIRS);
+        registerModel(BLOCK_BEDROCK_STAIRS);
         registerModel(BLOCK_DIRT_SLAB);
+        registerModel(BLOCK_OBSIDIAN_SLAB);
+        registerModel(BLOCK_BEDROCK_SLAB);
 
         registerModel(PAINT_BUCKET_WHITE,"paint");
         registerModel(PAINT_BUCKET_ORANGE,"paint");
@@ -173,6 +184,12 @@ public class UraItems {
 
         registerModel(URA_FURNACE_ITEM);
 
+        for (int i = 0; i < BlockElevator.EnumType.values().length; i++)
+            if(i == 0){
+                registerModel(BLOCK_ELEVATOR_ITEM, i, null, "uramod:elevator_block", "elevator");
+            }else {
+                registerModel(BLOCK_ELEVATOR_ITEM, i, null, "uramod:elevator_block_" + EnumDyeColor.byMetadata(i).getName(), "elevator");
+            }
     }
 
     public static void setItemName(Item item, String name) {
@@ -181,18 +198,18 @@ public class UraItems {
 
     @SideOnly(Side.CLIENT)
     public static void registerModel(Item item) {
-        registerModel(item, 0, null, null);
+        registerModel(item, 0, null, null , null);
     }
 
     @SideOnly(Side.CLIENT)
     public static void registerModel(Item item, String folderModel) {
-        registerModel(item, 0, null, folderModel);
+        registerModel(item, 0, null, null, folderModel);
     }
 
     @SideOnly(Side.CLIENT)
-    public static void registerModel(Item item, int metadata, String name, String folderModel) {
+    public static void registerModel(Item item, int metadata, String name, String resourceName, String folderModel) {
         if(metadata < 0) metadata = 0;
-        String resourceName = item.getUnlocalizedName().substring(5).replace(".", ":");
+        if(resourceName == null) resourceName = item.getUnlocalizedName().substring(5).replace(".", ":");
         if(name != null) resourceName += "_"+name;
         if(folderModel != null) resourceName = resourceName.split(":")[0] + ":" + folderModel + "/" + resourceName.split(":")[1];
 

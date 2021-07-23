@@ -2,13 +2,12 @@ package fr.uracraft.uramod;
 
 import fr.uracraft.uramod.events.DebugLayout;
 import fr.uracraft.uramod.events.EventCustomMainMenu;
+import fr.uracraft.uramod.events.EventElevator;
 import fr.uracraft.uramod.guis.GuiHandler;
 import fr.uracraft.uramod.events.EventHang_Glider;
 import fr.uracraft.uramod.items.armors.PatchVanillaArmors;
 import fr.uracraft.uramod.proxy.CommonProxy;
 import fr.uracraft.uramod.tileentity.TileEntityUraFurnace;
-import net.minecraft.block.Block;
-import net.minecraft.block.material.Material;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.SidedProxy;
@@ -24,7 +23,7 @@ public class UraMod {
 
     public static final String MODID = "uramod";
     public static final String NAME = "UraMod";
-    public static final String VERSION = "0.1";
+    public static final String VERSION = "5.0";
 
     private static Logger logger;
 
@@ -53,6 +52,7 @@ public class UraMod {
         }
         GameRegistry.registerTileEntity(TileEntityUraFurnace.class, "uramod:ura_furnace");
         MinecraftForge.EVENT_BUS.register(new EventHang_Glider());
+        MinecraftForge.EVENT_BUS.register(new EventElevator());
     }
 
     @Mod.EventHandler

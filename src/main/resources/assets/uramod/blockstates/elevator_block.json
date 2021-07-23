@@ -1,0 +1,52 @@
+{
+  "variants": {
+    "variant=elevator": {
+      "model": "uramod:elevator_block"
+    },
+    "variant=elevator_orange": {
+      "model": "uramod:elevator_block_orange"
+    },
+    "variant=elevator_magenta": {
+      "model": "uramod:elevator_block_magenta"
+    },
+    "variant=elevator_light_blue": {
+      "model": "uramod:elevator_block_light_blue"
+    },
+    "variant=elevator_yellow": {
+      "model": "uramod:elevator_block_yellow"
+    },
+    "variant=elevator_lime": {
+      "model": "uramod:elevator_block_lime"
+    },
+    "variant=elevator_pink": {
+      "model": "uramod:elevator_block_pink"
+    },
+    "variant=elevator_gray": {
+      "model": "uramod:elevator_block_gray"
+    },
+    "variant=elevator_silver": {
+      "model": "uramod:elevator_block_silver"
+    },
+    "variant=elevator_cyan": {
+      "model": "uramod:elevator_block_cyan"
+    },
+    "variant=elevator_purple": {
+      "model": "uramod:elevator_block_purple"
+    },
+    "variant=elevator_blue": {
+      "model": "uramod:elevator_block_blue"
+    },
+    "variant=elevator_brown": {
+      "model": "uramod:elevator_block_brown"
+    },
+    "variant=elevator_green": {
+      "model": "uramod:elevator_block_green"
+    },
+    "variant=elevator_red": {
+      "model": "uramod:elevator_block_red"
+    },
+    "variant=elevator_black": {
+      "model": "uramod:elevator_block_black"
+    }
+  }
+}

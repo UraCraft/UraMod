@@ -16,7 +16,7 @@ public class UraCreativeTabs {
 
         @Override
         public ItemStack getTabIconItem() {
-            return new ItemStack(UraItems.URA_INGOT);
+            return new ItemStack(UraItems.BLOCK_DIRT_STAIRS);
         }
     };
     public static final CreativeTabs EVENTS = new CreativeTabs("events") {

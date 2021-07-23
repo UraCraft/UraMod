@@ -9,6 +9,7 @@ import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 
 
 public class RegisteringHandler {
+
     @SubscribeEvent
     public void registerBlocks(RegistryEvent.Register<Block> event) {
         event.getRegistry().registerAll(
@@ -26,9 +27,16 @@ public class RegisteringHandler {
                 UraBlocks.NEODYMIUM_BLOCK,
                 UraBlocks.CASH_POINT,
                 UraBlocks.DIRT_STAIRS,
+                UraBlocks.BEDROCK_STAIRS,
                 UraBlocks.IRIDIUM_ORE,
                 UraBlocks.DIRT_HALFSLAB,
-                UraBlocks.DIRT_DOUBLESLAB
+                UraBlocks.DIRT_DOUBLESLAB,
+                UraBlocks.OBSIDIAN_STAIRS,
+                UraBlocks.OBSIDIAN_HALFSLAB,
+                UraBlocks.OBSIDIAN_DOUBLESLAB,
+                UraBlocks.BEDROCK_HALFSLAB,
+                UraBlocks.BEDROCK_DOUBLESLAB,
+                UraBlocks.BLOCK_ELEVATOR
         );
     }
 
@@ -84,6 +92,8 @@ public class RegisteringHandler {
                 UraItems.PAINT_BUCKET_RED,
                 UraItems.PAINT_BUCKET_BLACK,
                 UraItems.BLOCK_DIRT_SLAB,
+                UraItems.BLOCK_OBSIDIAN_SLAB,
+                UraItems.BLOCK_BEDROCK_SLAB,
                 UraItems.URA_FURNACE_ITEM,
                 UraItems.DIAMOND_UPGRADE,
                 UraItems.URA_UPGRADE,
@@ -91,7 +101,10 @@ public class RegisteringHandler {
                 UraItems.NEODYMIUM_UPGRADE,
                 UraItems.SILVER_UPGRADE,
                 UraItems.IRIDIUM_ORE_BLOCK_ITEM,
-                UraItems.IRIDIUM_NUGGET
+                UraItems.IRIDIUM_NUGGET,
+                UraItems.BLOCK_OBSIDIAN_STAIRS,
+                UraItems.BLOCK_BEDROCK_STAIRS,
+                UraItems.BLOCK_ELEVATOR_ITEM
         );
     }
 

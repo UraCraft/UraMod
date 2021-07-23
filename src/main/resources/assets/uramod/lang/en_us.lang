@@ -4,6 +4,8 @@ itemGroup.events=Events
 
 debug.oreSpawnText=Ore Spawn :
 
+uramod.key_movedown_elevator=Move Down Elevator
+
 itemLore.world_selector_line0=Click to travel between
 itemLore.world_selector_line1=all the servers !
 
@@ -64,7 +66,28 @@ tile.uramod.ura_block.name=Ura Block
 
 tile.uramod.cash_point.name=Cash Point
 tile.uramod.dirt_stairs.name=Dirt Stairs
+tile.uramod.obsidian_stairs.name=Obsidian Stairs
+tile.uramod.bedrock_stairs.name=Bedrock Stairs
 tile.uramod.dirt_halfslab.name=Dirt Slab
+tile.uramod.obsidian_halfslab.name=Obsidian Slab
+tile.uramod.bedrock_halfslab.name=Bedrock Slab
+
+uramod.elevator_block.name=Elevator
+uramod.elevator_block_orange.name=Orange Elevator
+uramod.elevator_block_magenta.name=Magenta Elevator
+uramod.elevator_block_light_blue.name=Light Blue Elevator
+uramod.elevator_block_yellow.name=Yellow Elevator
+uramod.elevator_block_lime.name=Lime Elevator
+uramod.elevator_block_pink.name=Pink Elevator
+uramod.elevator_block_gray.name=Gray Elevator
+uramod.elevator_block_silver.name=Silver Elevator
+uramod.elevator_block_cyan.name=Cyan Elevator
+uramod.elevator_block_purple.name=Purple Elevator
+uramod.elevator_block_blue.name=Blue Elevator
+uramod.elevator_block_brown.name=Brown Elevator
+uramod.elevator_block_green.name=Green Elevator
+uramod.elevator_block_red.name=Red Elevator
+uramod.elevator_block_black.name=Black Elevator
 
 item.uramod.ura_nugget.name=Ura Nugget
 item.uramod.silver_nugget.name=Silver Nugget

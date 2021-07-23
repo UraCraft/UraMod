@@ -1,0 +1,6 @@
+{
+  "variants": {
+    "half=bottom,variant=default": { "model": "uramod:bedrock_halfslab_bottom" },
+    "half=top,variant=default": { "model": "uramod:bedrock_halfslab_top" }
+  }
+}

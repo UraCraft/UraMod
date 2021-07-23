@@ -1,5 +1,5 @@
 {
-  "parent": "uramod:block/dirt_halfslab_bottom",
+  "parent": "uramod:block/obsidian_halfslab_bottom",
   "display": {
     "thirdperson": {
       "rotation": [

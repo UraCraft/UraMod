@@ -1,0 +1,6 @@
+{
+  "variants": {
+    "half=bottom,variant=default": { "model": "uramod:obsidian_halfslab_bottom" },
+    "half=top,variant=default": { "model": "uramod:obsidian_halfslab_top" }
+  }
+}

@@ -47,6 +47,11 @@ item.uramod.diamond_upgrade.name=Amélioration en Diamant
 item.uramod.neodymium_upgrade.name=Amélioration en Néodyme
 item.uramod.iridium_upgrade.name=Amélioration en Iridium
 item.uramod.iridium_nugget.name=Pépite d'Iridium
+item.uramod.random_ore_item.name=Minerais Aléatoire
+item.uramod.silver_particle.name=Particule d'Argent
+item.uramod.tin_particle.name=Particule d'Etain
+item.uramod.copper_particle.name=Particule de Cuivre
+item.uramod.ura_particle.name=Particule d'Ura
 
 tile.uramod.tin_ore.name= Minerai d'Étain
 tile.uramod.neodymium_ore.name= Minerai de Néodyme
@@ -54,6 +59,7 @@ tile.uramod.silver_ore.name= Minerai d'Argent
 tile.uramod.copper_ore.name= Minerai de Cuivre
 tile.uramod.ura_ore.name.name= Minerai d'Ura
 tile.uramod.iridium_ore.name=Minerai d'Iridium
+tile.uramod.random_ore.name=Minerai Aleatoire
 
 tile.uramod.ura_furnace.name=Four en Ura
 container.uramod.ura_furnace=Four en Ura
@@ -70,6 +76,9 @@ tile.uramod.bedrock_stairs.name=Escaliers en Bedrock
 tile.uramod.dirt_halfslab.name=Dalle en Terre
 tile.uramod.obsidian_halfslab.name=Dalle en Obsidienne
 tile.uramod.bedrock_halfslab.name=Dalle en Bedrock
+
+enchantment.stonebreaker=Casseur de Roche
+enchantment.telekinesis=Télékinésie
 
 uramod.elevator_block.name=Elevator
 uramod.elevator_block_orange.name=Elevator Orange

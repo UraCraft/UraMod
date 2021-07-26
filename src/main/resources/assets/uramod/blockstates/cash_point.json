@@ -1,7 +1,19 @@
 {
   "variants": {
-    "normal": {
+    "facing=north": {
       "model": "uramod:cash_point"
+    },
+    "facing=south": {
+      "model": "uramod:cash_point",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "uramod:cash_point",
+      "y": 270
+    },
+    "facing=east": {
+      "model": "uramod:cash_point",
+      "y": 90
     }
   }
 }

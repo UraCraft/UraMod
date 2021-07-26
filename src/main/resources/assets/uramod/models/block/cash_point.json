@@ -1,6 +1,12 @@
 {
-  "parent": "block/cube_all",
+  "parent": "block/orientable",
   "textures": {
-    "all": "uramod:blocks/cash_point"
+    "particle": "uramod:blocks/cash_point_sides",
+    "up": "uramod:blocks/cash_point_sides",
+    "down": "uramod:blocks/cash_point_sides",
+    "north": "uramod:blocks/cash_point_front",
+    "south": "uramod:blocks/cash_point_sides",
+    "east": "uramod:blocks/cash_point_side_left",
+    "west": "uramod:blocks/cash_point_side_right"
   }
 }

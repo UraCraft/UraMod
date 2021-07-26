@@ -1,11 +1,15 @@
 package fr.uracraft.uramod;
 
 import fr.uracraft.uramod.blocks.UraBlocks;
+import fr.uracraft.uramod.enchantments.EnchantmentTelekinesis;
+import fr.uracraft.uramod.enchantments.UraEnchantments;
 import fr.uracraft.uramod.items.UraItems;
 import net.minecraft.block.Block;
+import net.minecraft.enchantment.Enchantment;
 import net.minecraft.item.Item;
 import net.minecraftforge.event.RegistryEvent;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
+import net.minecraftforge.registries.IForgeRegistryEntry;
 
 
 public class RegisteringHandler {
@@ -36,6 +40,7 @@ public class RegisteringHandler {
                 UraBlocks.OBSIDIAN_DOUBLESLAB,
                 UraBlocks.BEDROCK_HALFSLAB,
                 UraBlocks.BEDROCK_DOUBLESLAB,
+                UraBlocks.RANDOM_ORE,
                 UraBlocks.BLOCK_ELEVATOR
         );
     }
@@ -104,7 +109,20 @@ public class RegisteringHandler {
                 UraItems.IRIDIUM_NUGGET,
                 UraItems.BLOCK_OBSIDIAN_STAIRS,
                 UraItems.BLOCK_BEDROCK_STAIRS,
+                UraItems.RANDOM_ORE_BLOCK_ITEM,
+                UraItems.SILVER_PARTICLE,
+                UraItems.COPPER_PARTICLE,
+                UraItems.TIN_PARTICLE,
+                UraItems.URA_PARTICLE,
                 UraItems.BLOCK_ELEVATOR_ITEM
+        );
+    }
+
+    @SubscribeEvent
+    public void registerEnchantments(RegistryEvent.Register<Enchantment> e) {
+        e.getRegistry().registerAll(
+                UraEnchantments.STONEBREAKER,
+                UraEnchantments.TELEKINESIS
         );
     }
 

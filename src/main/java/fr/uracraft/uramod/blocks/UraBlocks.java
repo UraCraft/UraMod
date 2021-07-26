@@ -20,6 +20,7 @@ public class UraBlocks {
     public final static Block TIN_ORE = new SimpleOre("tin_ore", 2, URAMOD);
     public final static Block COPPER_ORE = new SimpleOre("copper_ore", 2, URAMOD);
     public final static Block NEODYMIUM_ORE = new NeodymiumOre();
+    public final static Block RANDOM_ORE = new RandomOre();
     public final static Block IRIDIUM_ORE = new IridiumOre();
     public static final Block URA_FURNACE = new BlockUraFurnace(false);
     public static final Block URA_FURNACE_LIT = new BlockUraFurnace(true);
@@ -30,7 +31,7 @@ public class UraBlocks {
     public final static Block COPPER_BLOCK = new SimpleBlock("copper_block", URAMOD);
     public final static Block NEODYMIUM_BLOCK = new SimpleBlock("neodymium_block", URAMOD);
 
-    public final static Block CASH_POINT = new SimpleBlock("cash_point", URAMOD);
+    public final static Block CASH_POINT = new BlockCashPoint();
     public final static Block DIRT_STAIRS = new SimpleStairs(Blocks.DIRT.getDefaultState(), "dirt_stairs", 0.5F, 0.5F, "shovel", 0, SoundType.GROUND);
     public final static Block OBSIDIAN_STAIRS = new SimpleStairs(Blocks.OBSIDIAN.getDefaultState(), "obsidian_stairs", 50F, 1200F, "pickaxe", 3, SoundType.STONE);
     public final static Block BEDROCK_STAIRS = new SimpleStairs(Blocks.BEDROCK.getDefaultState(), "bedrock_stairs", -1F, 3600000F, "pickaxe", 3, SoundType.STONE);

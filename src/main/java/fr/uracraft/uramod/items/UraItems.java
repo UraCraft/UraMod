@@ -1,5 +1,6 @@
 package fr.uracraft.uramod.items;
 
+import akka.event.Logging;
 import fr.uracraft.uramod.UraMod;
 import fr.uracraft.uramod.blocks.BlockElevator;
 import fr.uracraft.uramod.blocks.UraBlocks;
@@ -8,6 +9,7 @@ import fr.uracraft.uramod.items.armors.UraArmor;
 import fr.uracraft.uramod.items.utils.SimpleItem;
 import fr.uracraft.uramod.items.utils.SimpleItemBlock;
 import fr.uracraft.uramod.utils.ItemBlockMetadata;
+import jdk.nashorn.internal.runtime.regexp.joni.Warnings;
 import net.minecraft.client.renderer.block.model.ModelResourceLocation;
 import net.minecraft.init.SoundEvents;
 import net.minecraft.inventory.EntityEquipmentSlot;
@@ -23,6 +25,7 @@ import net.minecraftforge.fml.relauncher.SideOnly;
 import static fr.uracraft.uramod.UraCreativeTabs.URAMOD;
 
 @Mod.EventBusSubscriber(value = Side.CLIENT, modid= UraMod.MODID)
+@SuppressWarnings("all")
 public class UraItems {
 
     public static final Item BLOCK_ELEVATOR_ITEM = new ItemBlockMetadata(UraBlocks.BLOCK_ELEVATOR, new String[]{"elevator_block", "elevator_block_orange", "elevator_block_magenta", "elevator_block_light_blue", "elevator_block_yellow", "elevator_block_lime", "elevator_block_pink", "elevator_block_gray", "elevator_block_silver", "elevator_block_cyan", "elevator_block_purple", "elevator_block_blue", "elevator_block_brown", "elevator_block_green", "elevator_block_red", "elevator_block_black"} ).setRegistryName(UraBlocks.BLOCK_ELEVATOR.getRegistryName());
@@ -44,6 +47,11 @@ public class UraItems {
     public final static Item SILVER_NUGGET = new SimpleItem("silver_nugget",URAMOD);
     public final static Item TIN_NUGGET = new SimpleItem("tin_nugget",URAMOD);
     public final static Item COPPER_NUGGET = new SimpleItem("copper_nugget",URAMOD);
+
+    public final static Item URA_PARTICLE = new SimpleItem("ura_particle",URAMOD);
+    public final static Item SILVER_PARTICLE = new SimpleItem("silver_particle",URAMOD);
+    public final static Item TIN_PARTICLE = new SimpleItem("tin_particle",URAMOD);
+    public final static Item COPPER_PARTICLE = new SimpleItem("copper_particle",URAMOD);
 
     public final static Item PAINT_BUCKET_WHITE = new ItemPaint(0, 15);
     public final static Item PAINT_BUCKET_ORANGE = new ItemPaint(1, 14);
@@ -95,6 +103,7 @@ public class UraItems {
     public final static Item COPPER_BLOCK_ITEM = new SimpleItemBlock(UraBlocks.COPPER_BLOCK);
     public final static Item NEODYMIUM_BLOCK_ITEM = new SimpleItemBlock(UraBlocks.NEODYMIUM_BLOCK);
     public final static Item IRIDIUM_ORE_BLOCK_ITEM = new SimpleItemBlock(UraBlocks.IRIDIUM_ORE);
+    public final static Item RANDOM_ORE_BLOCK_ITEM = new SimpleItemBlock(UraBlocks.RANDOM_ORE);
 
     public final static Item CASH_POINT_BLOCK_ITEM = new SimpleItemBlock(UraBlocks.CASH_POINT);
     public static final Item BLOCK_DIRT_STAIRS = new ItemBlock(UraBlocks.DIRT_STAIRS).setRegistryName(UraBlocks.DIRT_STAIRS.getRegistryName());
@@ -105,6 +114,7 @@ public class UraItems {
     public static final Item BLOCK_BEDROCK_SLAB = new ItemSlab(UraBlocks.BEDROCK_HALFSLAB, UraBlocks.BEDROCK_HALFSLAB, UraBlocks.BEDROCK_DOUBLESLAB).setRegistryName(UraBlocks.BEDROCK_HALFSLAB.getRegistryName());
 
     static {
+        assert URA_ARMOR != null;
         URA_ARMOR.setRepairItem(new ItemStack(UraItems.URA_INGOT));
     }
 
@@ -145,11 +155,17 @@ public class UraItems {
         registerModel(TIN_NUGGET);
         registerModel(COPPER_NUGGET);
 
+        registerModel(URA_PARTICLE);
+        registerModel(SILVER_PARTICLE);
+        registerModel(TIN_PARTICLE);
+        registerModel(COPPER_PARTICLE);
+
         registerModel(URA_ORE_ITEM);
         registerModel(SILVER_ORE_ITEM);
         registerModel(TIN_ORE_ITEM);
         registerModel(COPPER_ORE_ITEM);
         registerModel(NEODYMIUM_ORE_ITEM);
+        registerModel(RANDOM_ORE_BLOCK_ITEM);
 
         registerModel(URA_BLOCK_ITEM);
         registerModel(SILVER_BLOCK_ITEM);

@@ -9,7 +9,7 @@ import net.minecraft.item.Item;
 
 import java.util.Random;
 
-
+@SuppressWarnings("all")
 public class NeodymiumOre extends Block {
     public NeodymiumOre() {
         super(Material.ROCK);
@@ -22,5 +22,10 @@ public class NeodymiumOre extends Block {
     @Override
     public Item getItemDropped(IBlockState state, Random rand, int fortune) {
         return UraItems.NEODYMIUM;
+    }
+
+    public int quantityDropped(Random random)
+    {
+        return fr.uracraft.uramod.utils.Random.roll(1, 2);
     }
 }

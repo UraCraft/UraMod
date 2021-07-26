@@ -1,10 +1,7 @@
 package fr.uracraft.uramod;
 
-import fr.uracraft.uramod.events.DebugLayout;
-import fr.uracraft.uramod.events.EventCustomMainMenu;
-import fr.uracraft.uramod.events.EventElevator;
+import fr.uracraft.uramod.events.*;
 import fr.uracraft.uramod.guis.GuiHandler;
-import fr.uracraft.uramod.events.EventHang_Glider;
 import fr.uracraft.uramod.items.armors.PatchVanillaArmors;
 import fr.uracraft.uramod.proxy.CommonProxy;
 import fr.uracraft.uramod.tileentity.TileEntityUraFurnace;
@@ -18,6 +15,7 @@ import net.minecraftforge.fml.common.network.NetworkRegistry;
 import net.minecraftforge.fml.common.registry.GameRegistry;
 import org.apache.logging.log4j.Logger;
 
+@SuppressWarnings("all")
 @Mod(modid = UraMod.MODID, name = UraMod.NAME, version = UraMod.VERSION)
 public class UraMod {
 
@@ -53,6 +51,8 @@ public class UraMod {
         GameRegistry.registerTileEntity(TileEntityUraFurnace.class, "uramod:ura_furnace");
         MinecraftForge.EVENT_BUS.register(new EventHang_Glider());
         MinecraftForge.EVENT_BUS.register(new EventElevator());
+        MinecraftForge.EVENT_BUS.register(new EventGrass());
+        MinecraftForge.EVENT_BUS.register(new EventEnchantments());
     }
 
     @Mod.EventHandler

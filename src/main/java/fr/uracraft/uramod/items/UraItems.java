@@ -7,12 +7,11 @@ import fr.uracraft.uramod.items.armors.IridiumArmor;
 import fr.uracraft.uramod.items.armors.SilverArmor;
 import fr.uracraft.uramod.items.armors.UraArmor;
 import fr.uracraft.uramod.items.armors.UraArmorMaterials;
+import fr.uracraft.uramod.items.tools.*;
 import fr.uracraft.uramod.items.tools.ItemAxe;
 import fr.uracraft.uramod.items.tools.ItemHoe;
 import fr.uracraft.uramod.items.tools.ItemPickaxe;
-import fr.uracraft.uramod.items.tools.ItemShovel;
 import fr.uracraft.uramod.items.tools.ItemSword;
-import fr.uracraft.uramod.items.tools.UraToolMaterials;
 import fr.uracraft.uramod.items.utils.SimpleItem;
 import fr.uracraft.uramod.items.utils.SimpleItemBlock;
 import fr.uracraft.uramod.utils.ItemBlockMetadata;
@@ -98,15 +97,16 @@ public class UraItems {
     public static final Item URA_SWORD = new ItemSword(UraToolMaterials.URA_TOOL_MATERIAL, "ura_sword");
     public static final Item URA_PICKAXE = new ItemPickaxe(UraToolMaterials.URA_TOOL_MATERIAL, "ura_pickaxe");
     public static final Item URA_SHOVEL = new ItemShovel(UraToolMaterials.URA_TOOL_MATERIAL, "ura_shovel");
-    public static final Item URA_AXE = new ItemAxe(UraToolMaterials.URA_TOOL_MATERIAL, 10.0F, 1.0F, "ura_axe");
+    public static final Item URA_AXE = new ItemAxe(UraToolMaterials.URA_TOOL_MATERIAL, 10.0F, -3.0F, "ura_axe");
     public static final Item URA_HOE = new ItemHoe(UraToolMaterials.URA_TOOL_MATERIAL, "ura_hoe");
     public static final Item SILVER_SWORD = new ItemSword(UraToolMaterials.SILVER_TOOL_MATERIAL, "silver_sword");
     public static final Item SILVER_PICKAXE = new ItemPickaxe(UraToolMaterials.SILVER_TOOL_MATERIAL, "silver_pickaxe");
     public static final Item SILVER_SHOVEL = new ItemShovel(UraToolMaterials.SILVER_TOOL_MATERIAL, "silver_shovel");
-    public static final Item SILVER_AXE = new ItemAxe(UraToolMaterials.SILVER_TOOL_MATERIAL, 8.5F, 1.0F, "silver_axe");
+    public static final Item SILVER_AXE = new ItemAxe(UraToolMaterials.SILVER_TOOL_MATERIAL, 6.0F, -3.0F, "silver_axe");
     public static final Item SILVER_HOE = new ItemHoe(UraToolMaterials.SILVER_TOOL_MATERIAL, "silver_hoe");
     public static final Item IRIDIUM_SWORD = new ItemSword(UraToolMaterials.IRIDIUM_TOOL_MATERIAL, "iridium_sword");
     public static final Item IRIDIUM_PICKAXE = new ItemPickaxe(UraToolMaterials.IRIDIUM_TOOL_MATERIAL, "iridium_pickaxe");
+    public static final Item HAMMER = new ItemHammer(UraToolMaterials.HAMMER_TOOL_MATERIAL, "hammer");
 
     //Other
     public final static Item HANG_GLIDER = new ItemHang_Glider();
@@ -147,8 +147,11 @@ public class UraItems {
     public final static Item CASH_POINT_BLOCK_ITEM = new SimpleItemBlock(UraBlocks.CASH_POINT);
 
     static {
-        assert UraArmorMaterials.URA_ARMOR != null;
         UraArmorMaterials.URA_ARMOR.setRepairItem(new ItemStack(UraItems.URA_INGOT));
+        UraArmorMaterials.SILVER_ARMOR.setRepairItem(new ItemStack(UraItems.SILVER_INGOT));
+        UraToolMaterials.HAMMER_TOOL_MATERIAL.setRepairItem(new ItemStack(UraItems.URA_INGOT));
+        UraToolMaterials.URA_TOOL_MATERIAL.setRepairItem(new ItemStack(UraItems.URA_INGOT));
+        UraToolMaterials.SILVER_TOOL_MATERIAL.setRepairItem(new ItemStack(UraItems.SILVER_INGOT));
     }
 
 
@@ -229,6 +232,7 @@ public class UraItems {
         registerModel(SILVER_SWORD, "tools");
         registerModel(IRIDIUM_PICKAXE, "tools");
         registerModel(IRIDIUM_SWORD, "tools");
+        registerModel(HAMMER, "tools");
 
         //Other
         registerModel(HANG_GLIDER);

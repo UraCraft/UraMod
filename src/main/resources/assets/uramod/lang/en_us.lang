@@ -68,6 +68,7 @@ item.uramod.silver_axe.name=Silver Axe
 item.uramod.silver_hoe.name=Silver Hoe
 item.uramod.iridium_pickaxe.name=Iridium Pickaxe
 item.uramod.iridium_sword.name=Iridium Sword
+item.uramod.hammer.name=Hammer
 
 tile.uramod.ura_furnace.name=Ura furnace
 container.uramod.ura_furnace=Ura furnace

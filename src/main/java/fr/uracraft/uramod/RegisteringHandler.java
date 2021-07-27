@@ -117,6 +117,7 @@ public class RegisteringHandler {
                 UraItems.SILVER_HOE,
                 UraItems.IRIDIUM_PICKAXE,
                 UraItems.IRIDIUM_SWORD,
+                UraItems.HAMMER,
                 //Other
                 UraItems.HANG_GLIDER,
                 UraItems.WORLD_SELECTOR,

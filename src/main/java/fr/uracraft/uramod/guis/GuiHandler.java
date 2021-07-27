@@ -29,15 +29,6 @@ public class GuiHandler implements IGuiHandler {
                 }
             };
         }
-        if (id == UraGui.ANVIL) {
-            return new ContainerRepair(entityPlayer.inventory, world, new BlockPos(x, y, z), entityPlayer) {
-                @Override
-                public boolean canInteractWith(EntityPlayer playerIn) {
-                    return true;
-                }
-            };
-        }
-
         return null;
     }
 
@@ -49,9 +40,6 @@ public class GuiHandler implements IGuiHandler {
         }
         if (id == UraGui.CRAFTING) {
             return new GuiCrafting(entityPlayer.inventory, world);
-        }
-        if (id == UraGui.ANVIL) {
-            return new GuiRepair(entityPlayer.inventory, world);
         }
         return null;
     }

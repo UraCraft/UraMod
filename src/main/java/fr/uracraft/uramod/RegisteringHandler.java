@@ -1,7 +1,6 @@
 package fr.uracraft.uramod;
 
 import fr.uracraft.uramod.blocks.UraBlocks;
-import fr.uracraft.uramod.enchantments.EnchantmentTelekinesis;
 import fr.uracraft.uramod.enchantments.UraEnchantments;
 import fr.uracraft.uramod.items.UraItems;
 import net.minecraft.block.Block;
@@ -9,8 +8,6 @@ import net.minecraft.enchantment.Enchantment;
 import net.minecraft.item.Item;
 import net.minecraftforge.event.RegistryEvent;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
-import net.minecraftforge.registries.IForgeRegistryEntry;
-
 
 public class RegisteringHandler {
 
@@ -114,6 +111,23 @@ public class RegisteringHandler {
                 UraItems.COPPER_PARTICLE,
                 UraItems.TIN_PARTICLE,
                 UraItems.URA_PARTICLE,
+                UraItems.PORTABLE_WORKBENCH,
+                UraItems.URA_PICKAXE,
+                UraItems.URA_SWORD,
+                UraItems.URA_SHOVEL,
+                UraItems.URA_AXE,
+                UraItems.URA_HOE,
+                UraItems.SILVER_PICKAXE,
+                UraItems.SILVER_SWORD,
+                UraItems.SILVER_SHOVEL,
+                UraItems.SILVER_AXE,
+                UraItems.SILVER_HOE,
+                UraItems.IRIDIUM_PICKAXE,
+                UraItems.IRIDIUM_SWORD,
+                UraItems.SILVER_HELMET,
+                UraItems.SILVER_CHESTPLATE,
+                UraItems.SILVER_LEGGINGS,
+                UraItems.SILVER_BOOTS,
                 UraItems.BLOCK_ELEVATOR_ITEM
         );
     }

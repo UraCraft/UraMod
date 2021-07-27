@@ -12,7 +12,7 @@ import net.minecraft.world.World;
 
 public class IridiumArmor extends ItemArmor {
     public IridiumArmor(String name, int renderIndex, EntityEquipmentSlot equipmentSlot) {
-        super(UraItems.IRIDIUM_ARMOR, renderIndex, equipmentSlot);
+        super(UraArmorMaterials.IRIDIUM_ARMOR, renderIndex, equipmentSlot);
         setCreativeTab(UraCreativeTabs.URAMOD);
         UraItems.setItemName(this, name);
     }

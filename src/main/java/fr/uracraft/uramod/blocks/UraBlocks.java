@@ -13,8 +13,7 @@ import static fr.uracraft.uramod.UraCreativeTabs.URAMOD;
 
 public class UraBlocks {
 
-    public final static Block BLOCK_ELEVATOR = new BlockElevator();
-
+    //Ores
     public final static Block URA_ORE = new SimpleOre("ura_ore", 3, URAMOD);
     public final static Block SILVER_ORE = new SimpleOre("silver_ore", 2, URAMOD);
     public final static Block TIN_ORE = new SimpleOre("tin_ore", 2, URAMOD);
@@ -22,19 +21,26 @@ public class UraBlocks {
     public final static Block NEODYMIUM_ORE = new NeodymiumOre();
     public final static Block RANDOM_ORE = new RandomOre();
     public final static Block IRIDIUM_ORE = new IridiumOre();
-    public static final Block URA_FURNACE = new BlockUraFurnace(false);
-    public static final Block URA_FURNACE_LIT = new BlockUraFurnace(true);
 
+    //Ore Blocks
     public final static Block URA_BLOCK = new SimpleBlock("ura_block", URAMOD);
     public final static Block SILVER_BLOCK = new SimpleBlock("silver_block", URAMOD);
     public final static Block TIN_BLOCK = new SimpleBlock("tin_block", URAMOD);
     public final static Block COPPER_BLOCK = new SimpleBlock("copper_block", URAMOD);
     public final static Block NEODYMIUM_BLOCK = new SimpleBlock("neodymium_block", URAMOD);
 
-    public final static Block CASH_POINT = new BlockCashPoint();
+    //Stairs
     public final static Block DIRT_STAIRS = new SimpleStairs(Blocks.DIRT.getDefaultState(), "dirt_stairs", 0.5F, 0.5F, "shovel", 0, SoundType.GROUND);
     public final static Block OBSIDIAN_STAIRS = new SimpleStairs(Blocks.OBSIDIAN.getDefaultState(), "obsidian_stairs", 50F, 1200F, "pickaxe", 3, SoundType.STONE);
     public final static Block BEDROCK_STAIRS = new SimpleStairs(Blocks.BEDROCK.getDefaultState(), "bedrock_stairs", -1F, 3600000F, "pickaxe", 3, SoundType.STONE);
+
+    //Other
+    public static final Block URA_FURNACE = new BlockUraFurnace(false);
+    public static final Block URA_FURNACE_LIT = new BlockUraFurnace(true);
+    public final static Block BLOCK_ELEVATOR = new BlockElevator();
+    public final static Block CASH_POINT = new BlockCashPoint();
+
+    //Slabs
     public static final SimpleSlab DIRT_DOUBLESLAB = new SimpleDoubleSlab(Material.ROCK, "dirt_doubleslab", SoundType.GROUND);
     public static final SimpleSlab DIRT_HALFSLAB = new SimpleHalfSlab(Material.ROCK, "dirt_halfslab", SoundType.GROUND);
     public static final SimpleSlab OBSIDIAN_DOUBLESLAB = new SimpleDoubleSlab(Material.ROCK, "obsidian_doubleslab", SoundType.STONE);

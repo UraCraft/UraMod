@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "uramod:iron_chest"
+    },
+    "facing=south": {
+      "model": "uramod:iron_chest"
+    },
+    "facing=west": {
+      "model": "uramod:iron_chest"
+    },
+    "facing=east": {
+      "model": "uramod:iron_chest"
+    }
+  }
+}

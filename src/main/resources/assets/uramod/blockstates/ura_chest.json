@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "uramod:ura_chest"
+    },
+    "facing=south": {
+      "model": "uramod:ura_chest"
+    },
+    "facing=west": {
+      "model": "uramod:ura_chest"
+    },
+    "facing=east": {
+      "model": "uramod:ura_chest"
+    }
+  }
+}

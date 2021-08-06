@@ -4,7 +4,8 @@ import fr.uracraft.uramod.events.*;
 import fr.uracraft.uramod.guis.GuiHandler;
 import fr.uracraft.uramod.items.armors.PatchVanillaArmors;
 import fr.uracraft.uramod.proxy.CommonProxy;
-import fr.uracraft.uramod.tileentity.TileEntityUraFurnace;
+import fr.uracraft.uramod.tileentity.TileEntityInventoryRenderHelper;
+import net.minecraft.client.renderer.tileentity.TileEntityItemStackRenderer;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.SidedProxy;
@@ -12,10 +13,8 @@ import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 import net.minecraftforge.fml.common.network.NetworkRegistry;
-import net.minecraftforge.fml.common.registry.GameRegistry;
 import org.apache.logging.log4j.Logger;
 
-@SuppressWarnings("all")
 @Mod(modid = UraMod.MODID, name = UraMod.NAME, version = UraMod.VERSION)
 public class UraMod {
 
@@ -48,7 +47,9 @@ public class UraMod {
             MinecraftForge.EVENT_BUS.register(new EventCustomMainMenu());
             MinecraftForge.EVENT_BUS.register(new DebugLayout());
         }
-        GameRegistry.registerTileEntity(TileEntityUraFurnace.class, "uramod:ura_furnace");
+        TileEntityItemStackRenderer.instance = new TileEntityInventoryRenderHelper();
+        RegisteringHandler.registerTileEntities();
+        RegisteringHandler.registerRenders();
         MinecraftForge.EVENT_BUS.register(new EventHang_Glider());
         MinecraftForge.EVENT_BUS.register(new EventElevator());
         MinecraftForge.EVENT_BUS.register(new EventGrass());

@@ -1,6 +1,12 @@
 {
   "parent": "block/cube_all",
   "textures": {
-    "all": "uramod:blocks/elevator_yellow"
+    "particle": "uramod:blocks/elevator_yellow",
+    "up": "uramod:blocks/elevator_yellow",
+    "down": "uramod:blocks/elevator_yellow",
+    "north": "uramod:blocks/elevator_yellow_side",
+    "south": "uramod:blocks/elevator_yellow_side",
+    "east": "uramod:blocks/elevator_yellow_side",
+    "west": "uramod:blocks/elevator_yellow_side"
   }
 }

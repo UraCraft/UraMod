@@ -3,11 +3,18 @@ package fr.uracraft.uramod;
 import fr.uracraft.uramod.blocks.UraBlocks;
 import fr.uracraft.uramod.enchantments.UraEnchantments;
 import fr.uracraft.uramod.items.UraItems;
+import fr.uracraft.uramod.rendering.chests.*;
+import fr.uracraft.uramod.tileentity.TileEntityInventoryRenderHelper;
+import fr.uracraft.uramod.tileentity.TileEntityUraFurnace;
+import fr.uracraft.uramod.tileentity.chests.*;
 import net.minecraft.block.Block;
+import net.minecraft.client.renderer.tileentity.TileEntityItemStackRenderer;
 import net.minecraft.enchantment.Enchantment;
 import net.minecraft.item.Item;
 import net.minecraftforge.event.RegistryEvent;
+import net.minecraftforge.fml.client.registry.ClientRegistry;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
+import net.minecraftforge.fml.common.registry.GameRegistry;
 
 public class RegisteringHandler {
 
@@ -39,11 +46,19 @@ public class RegisteringHandler {
                 UraBlocks.BEDROCK_DOUBLESLAB,
                 UraBlocks.DIRT_HALFSLAB,
                 UraBlocks.DIRT_DOUBLESLAB,
+                //Chests
+                UraBlocks.URA_CHEST,
+                UraBlocks.DIAMOND_CHEST,
+                UraBlocks.SILVER_CHEST,
+                UraBlocks.GOLD_CHEST,
+                UraBlocks.IRON_CHEST,
+                UraBlocks.STONE_CHEST,
                 //Other
                 UraBlocks.URA_FURNACE_LIT,
                 UraBlocks.URA_FURNACE,
                 UraBlocks.CASH_POINT,
-                UraBlocks.BLOCK_ELEVATOR
+                UraBlocks.BLOCK_ELEVATOR,
+                UraBlocks.URA_CHEST
         );
     }
 
@@ -147,6 +162,13 @@ public class RegisteringHandler {
                 UraItems.BLOCK_DIRT_SLAB,
                 UraItems.BLOCK_OBSIDIAN_SLAB,
                 UraItems.BLOCK_BEDROCK_SLAB,
+                //Chests
+                UraItems.URA_CHEST_BLOCK_ITEM,
+                UraItems.DIAMOND_CHEST_BLOCK_ITEM,
+                UraItems.SILVER_CHEST_BLOCK_ITEM,
+                UraItems.GOLD_CHEST_BLOCK_ITEM,
+                UraItems.IRON_CHEST_BLOCK_ITEM,
+                UraItems.STONE_CHEST_BLOCK_ITEM,
                 //Others
                 UraItems.CASH_POINT_BLOCK_ITEM,
                 UraItems.URA_FURNACE_ITEM,
@@ -160,6 +182,25 @@ public class RegisteringHandler {
                 UraEnchantments.STONEBREAKER,
                 UraEnchantments.TELEKINESIS
         );
+    }
+
+    public static void registerTileEntities() {
+        GameRegistry.registerTileEntity(TileEntityUraFurnace.class, "uramod:ura_furnace");
+        GameRegistry.registerTileEntity(TileEntityUraChest.class, "uramod:ura_chest");
+        GameRegistry.registerTileEntity(TileEntityDiamondChest.class, "uramod:diamond_chest");
+        GameRegistry.registerTileEntity(TileEntitySilverChest.class, "uramod:silver_chest");
+        GameRegistry.registerTileEntity(TileEntityGoldChest.class, "uramod:gold_chest");
+        GameRegistry.registerTileEntity(TileEntityIronChest.class, "uramod:iron_chest");
+        GameRegistry.registerTileEntity(TileEntityStoneChest.class, "uramod:stone_chest");
+    }
+
+    public static void registerRenders() {
+        ClientRegistry.bindTileEntitySpecialRenderer(TileEntityUraChest.class, new RenderUraChest());
+        ClientRegistry.bindTileEntitySpecialRenderer(TileEntityDiamondChest.class, new RenderDiamondChest());
+        ClientRegistry.bindTileEntitySpecialRenderer(TileEntitySilverChest.class, new RenderSilverChest());
+        ClientRegistry.bindTileEntitySpecialRenderer(TileEntityGoldChest.class, new RenderGoldChest());
+        ClientRegistry.bindTileEntitySpecialRenderer(TileEntityIronChest.class, new RenderIronChest());
+        ClientRegistry.bindTileEntitySpecialRenderer(TileEntityStoneChest.class, new RenderStoneChest());
     }
 
     public static void registerEntities() {

@@ -1,13 +1,13 @@
 package fr.uracraft.uramod.blocks;
 
 import fr.uracraft.uramod.UraMod;
+import fr.uracraft.uramod.blocks.chests.*;
 import fr.uracraft.uramod.blocks.utils.*;
 import fr.uracraft.uramod.items.UraItems;
 import net.minecraft.block.Block;
 import net.minecraft.block.SoundType;
 import net.minecraft.block.material.Material;
 import net.minecraft.init.Blocks;
-import net.minecraft.item.EnumDyeColor;
 
 import static fr.uracraft.uramod.UraCreativeTabs.URAMOD;
 
@@ -23,16 +23,24 @@ public class UraBlocks {
     public final static Block IRIDIUM_ORE = new IridiumOre();
 
     //Ore Blocks
-    public final static Block URA_BLOCK = new SimpleBlock("ura_block", URAMOD);
-    public final static Block SILVER_BLOCK = new SimpleBlock("silver_block", URAMOD);
-    public final static Block TIN_BLOCK = new SimpleBlock("tin_block", URAMOD);
-    public final static Block COPPER_BLOCK = new SimpleBlock("copper_block", URAMOD);
-    public final static Block NEODYMIUM_BLOCK = new SimpleBlock("neodymium_block", URAMOD);
+    public final static Block URA_BLOCK = new SimpleBlock("ura_block", URAMOD, 5, 6, "pickaxe",2);
+    public final static Block SILVER_BLOCK = new SimpleBlock("silver_block", URAMOD, 5, 6, "pickaxe",2);
+    public final static Block TIN_BLOCK = new SimpleBlock("tin_block", URAMOD, 5, 6, "pickaxe",2);
+    public final static Block COPPER_BLOCK = new SimpleBlock("copper_block", URAMOD, 5, 6, "pickaxe",2);
+    public final static Block NEODYMIUM_BLOCK = new SimpleBlock("neodymium_block", URAMOD, 5, 6, "pickaxe",2);
 
     //Stairs
     public final static Block DIRT_STAIRS = new SimpleStairs(Blocks.DIRT.getDefaultState(), "dirt_stairs", 0.5F, 0.5F, "shovel", 0, SoundType.GROUND);
     public final static Block OBSIDIAN_STAIRS = new SimpleStairs(Blocks.OBSIDIAN.getDefaultState(), "obsidian_stairs", 50F, 1200F, "pickaxe", 3, SoundType.STONE);
     public final static Block BEDROCK_STAIRS = new SimpleStairs(Blocks.BEDROCK.getDefaultState(), "bedrock_stairs", -1F, 3600000F, "pickaxe", 3, SoundType.STONE);
+
+    //Chests
+    public final static Block URA_CHEST = new BlockUraChest();
+    public final static Block DIAMOND_CHEST = new BlockDiamondChest();
+    public final static Block SILVER_CHEST = new BlockSilverChest();
+    public final static Block GOLD_CHEST = new BlockGoldChest();
+    public final static Block IRON_CHEST = new BlockIronChest();
+    public final static Block STONE_CHEST = new BlockStoneChest();
 
     //Other
     public static final Block URA_FURNACE = new BlockUraFurnace(false);

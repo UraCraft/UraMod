@@ -141,6 +141,14 @@ public class UraItems {
     public static final Item BLOCK_OBSIDIAN_SLAB = new ItemSlab(UraBlocks.OBSIDIAN_HALFSLAB, UraBlocks.OBSIDIAN_HALFSLAB, UraBlocks.OBSIDIAN_DOUBLESLAB).setRegistryName(UraBlocks.OBSIDIAN_HALFSLAB.getRegistryName());
     public static final Item BLOCK_BEDROCK_SLAB = new ItemSlab(UraBlocks.BEDROCK_HALFSLAB, UraBlocks.BEDROCK_HALFSLAB, UraBlocks.BEDROCK_DOUBLESLAB).setRegistryName(UraBlocks.BEDROCK_HALFSLAB.getRegistryName());
 
+    //Chests
+    public final static Item URA_CHEST_BLOCK_ITEM = new SimpleItemBlock(UraBlocks.URA_CHEST);
+    public final static Item DIAMOND_CHEST_BLOCK_ITEM = new SimpleItemBlock(UraBlocks.DIAMOND_CHEST);
+    public final static Item SILVER_CHEST_BLOCK_ITEM = new SimpleItemBlock(UraBlocks.SILVER_CHEST);
+    public final static Item GOLD_CHEST_BLOCK_ITEM = new SimpleItemBlock(UraBlocks.GOLD_CHEST);
+    public final static Item IRON_CHEST_BLOCK_ITEM = new SimpleItemBlock(UraBlocks.IRON_CHEST);
+    public final static Item STONE_CHEST_BLOCK_ITEM = new SimpleItemBlock(UraBlocks.STONE_CHEST);
+
     //Other
     public static final Item BLOCK_ELEVATOR_ITEM = new ItemBlockMetadata(UraBlocks.BLOCK_ELEVATOR, new String[]{"elevator_block", "elevator_block_orange", "elevator_block_magenta", "elevator_block_light_blue", "elevator_block_yellow", "elevator_block_lime", "elevator_block_pink", "elevator_block_gray", "elevator_block_silver", "elevator_block_cyan", "elevator_block_purple", "elevator_block_blue", "elevator_block_brown", "elevator_block_green", "elevator_block_red", "elevator_block_black"} ).setRegistryName(UraBlocks.BLOCK_ELEVATOR.getRegistryName());
     public final static Item URA_FURNACE_ITEM = new SimpleItemBlock(UraBlocks.URA_FURNACE);
@@ -266,6 +274,14 @@ public class UraItems {
         registerModel(BLOCK_DIRT_SLAB);
         registerModel(BLOCK_OBSIDIAN_SLAB);
         registerModel(BLOCK_BEDROCK_SLAB);
+
+        //Chests
+        registerModel(URA_CHEST_BLOCK_ITEM, "chests");
+        registerModel(DIAMOND_CHEST_BLOCK_ITEM, "chests");
+        registerModel(SILVER_CHEST_BLOCK_ITEM, "chests");
+        registerModel(GOLD_CHEST_BLOCK_ITEM, "chests");
+        registerModel(IRON_CHEST_BLOCK_ITEM, "chests");
+        registerModel(STONE_CHEST_BLOCK_ITEM, "chests");
 
         //Other
         registerModel(CASH_POINT_BLOCK_ITEM);

@@ -23,11 +23,11 @@ public class TileEntityInventoryRenderHelper extends TileEntityItemStackRenderer
         if (block == UraBlocks.URA_CHEST) {
             TileEntityRendererDispatcher.instance.render(this.tileEntityUraChest, 0.0D, 0.0D, 0.0D, 0.0F);
         } else if (block == UraBlocks.DIAMOND_CHEST) {
-            TileEntityRendererDispatcher.instance.render(this.tileEntitySilverChest, 0.0D, 0.0D, 0.0D, 0.0F);
-        } else if (block == UraBlocks.SILVER_CHEST) {
-            TileEntityRendererDispatcher.instance.render(this.tileEntityGoldChest, 0.0D, 0.0D, 0.0D, 0.0F);
-        } else if (block == UraBlocks.GOLD_CHEST) {
             TileEntityRendererDispatcher.instance.render(this.tileEntityDiamondChest, 0.0D, 0.0D, 0.0D, 0.0F);
+        } else if (block == UraBlocks.SILVER_CHEST) {
+            TileEntityRendererDispatcher.instance.render(this.tileEntitySilverChest, 0.0D, 0.0D, 0.0D, 0.0F);
+        } else if (block == UraBlocks.GOLD_CHEST) {
+            TileEntityRendererDispatcher.instance.render(this.tileEntityGoldChest, 0.0D, 0.0D, 0.0D, 0.0F);
         } else if (block == UraBlocks.IRON_CHEST) {
             TileEntityRendererDispatcher.instance.render(this.tileEntityIronChest, 0.0D, 0.0D, 0.0D, 0.0F);
         } else if (block == UraBlocks.STONE_CHEST) {

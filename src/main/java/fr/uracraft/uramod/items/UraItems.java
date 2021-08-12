@@ -55,22 +55,22 @@ public class UraItems {
     public final static Item COPPER_PARTICLE = new SimpleItem("copper_particle",URAMOD);
 
     //Paint Buckets
-    public final static Item PAINT_BUCKET_WHITE = new ItemPaint(0, 15);
-    public final static Item PAINT_BUCKET_ORANGE = new ItemPaint(1, 14);
-    public final static Item PAINT_BUCKET_MAGENTA = new ItemPaint(2, 13);
-    public final static Item PAINT_BUCKET_LIGHT_BLUE = new ItemPaint(3, 12);
-    public final static Item PAINT_BUCKET_YELLOW = new ItemPaint(4, 11);
-    public final static Item PAINT_BUCKET_LIME = new ItemPaint(5, 10);
-    public final static Item PAINT_BUCKET_PINK = new ItemPaint(6, 9);
-    public final static Item PAINT_BUCKET_GRAY = new ItemPaint(7, 8);
-    public final static Item PAINT_BUCKET_SILVER = new ItemPaint(8, 7);
-    public final static Item PAINT_BUCKET_CYAN = new ItemPaint(9, 6);
-    public final static Item PAINT_BUCKET_PURPLE = new ItemPaint(10, 5);
-    public final static Item PAINT_BUCKET_BLUE = new ItemPaint(11, 4);
-    public final static Item PAINT_BUCKET_BROWN = new ItemPaint(12, 3);
-    public final static Item PAINT_BUCKET_GREEN = new ItemPaint(13, 2);
-    public final static Item PAINT_BUCKET_RED = new ItemPaint(14, 1);
-    public final static Item PAINT_BUCKET_BLACK = new ItemPaint(15, 0);
+    public final static Item PAINT_BUCKET_WHITE = new ItemPaint(0);
+    public final static Item PAINT_BUCKET_ORANGE = new ItemPaint(1);
+    public final static Item PAINT_BUCKET_MAGENTA = new ItemPaint(2);
+    public final static Item PAINT_BUCKET_LIGHT_BLUE = new ItemPaint(3);
+    public final static Item PAINT_BUCKET_YELLOW = new ItemPaint(4);
+    public final static Item PAINT_BUCKET_LIME = new ItemPaint(5);
+    public final static Item PAINT_BUCKET_PINK = new ItemPaint(6);
+    public final static Item PAINT_BUCKET_GRAY = new ItemPaint(7);
+    public final static Item PAINT_BUCKET_SILVER = new ItemPaint(8);
+    public final static Item PAINT_BUCKET_CYAN = new ItemPaint(9);
+    public final static Item PAINT_BUCKET_PURPLE = new ItemPaint(10);
+    public final static Item PAINT_BUCKET_BLUE = new ItemPaint(11);
+    public final static Item PAINT_BUCKET_BROWN = new ItemPaint(12);
+    public final static Item PAINT_BUCKET_GREEN = new ItemPaint(13);
+    public final static Item PAINT_BUCKET_RED = new ItemPaint(14);
+    public final static Item PAINT_BUCKET_BLACK = new ItemPaint(15);
 
     //Furnace Upgrades
     public final static Item URA_UPGRADE = new ItemUpgrade("ura_upgrade",1600);

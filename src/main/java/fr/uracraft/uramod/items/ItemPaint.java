@@ -18,13 +18,12 @@ import net.minecraft.world.World;
 import org.lwjgl.Sys;
 
 public class ItemPaint extends Item {
-    private int dye_id;
+
     private int dye_meta;
 
-    public ItemPaint(int id, int meta) {
-        dye_id = id;
+    public ItemPaint(int meta) {
         dye_meta = meta;
-        UraItems.setItemName(this, "paint_" + EnumDyeColor.byDyeDamage(id).getName());
+        UraItems.setItemName(this, "paint_" + EnumDyeColor.byMetadata(meta).getName());
         this.setMaxDamage(10);
         this.setCreativeTab(UraCreativeTabs.URAMOD);
     }
@@ -47,7 +46,7 @@ public class ItemPaint extends Item {
     public boolean itemInteractionForEntity(ItemStack stack, EntityPlayer playerIn, EntityLivingBase target, EnumHand hand) {
         if (target instanceof EntitySheep) {
             EntitySheep entitysheep = (EntitySheep) target;
-            EnumDyeColor enumdyecolor = EnumDyeColor.byDyeDamage(dye_id);
+            EnumDyeColor enumdyecolor = EnumDyeColor.byMetadata(dye_meta);
 
             if (!entitysheep.getSheared() && entitysheep.getFleeceColor() != enumdyecolor) {
                 entitysheep.setFleeceColor(enumdyecolor);

@@ -1,0 +1,46 @@
+{
+  "variants": {
+    "variant=stone_basic": {
+      "model": "uramod:stone"
+    },
+    "variant=stone_coal": {
+      "model": "uramod:stone"
+    },
+    "variant=stone_redstone": {
+      "model": "uramod:stone"
+    },
+    "variant=stone_iron": {
+      "model": "uramod:stone"
+    },
+    "variant=stone_gold": {
+      "model": "uramod:stone"
+    },
+    "variant=stone_lapis": {
+      "model": "uramod:stone"
+    },
+    "variant=stone_emerald": {
+      "model": "uramod:stone"
+    },
+    "variant=stone_diamond": {
+      "model": "uramod:stone"
+    },
+    "variant=stone_silver": {
+      "model": "uramod:stone"
+    },
+    "variant=stone_copper": {
+      "model": "uramod:stone"
+    },
+    "variant=stone_tin": {
+      "model": "uramod:stone"
+    },
+    "variant=stone_neodymium": {
+      "model": "uramod:stone"
+    },
+    "variant=stone_random": {
+      "model": "uramod:stone"
+    },
+    "variant=stone_ura": {
+      "model": "uramod:stone"
+    }
+  }
+}

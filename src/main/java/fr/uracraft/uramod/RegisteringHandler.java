@@ -58,7 +58,8 @@ public class RegisteringHandler {
                 UraBlocks.URA_FURNACE,
                 UraBlocks.CASH_POINT,
                 UraBlocks.BLOCK_ELEVATOR,
-                UraBlocks.URA_CHEST
+                UraBlocks.URA_CHEST,
+                UraBlocks.BLOCK_STONE
         );
     }
 

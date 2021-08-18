@@ -1,9 +1,12 @@
 package fr.uracraft.uramod.items;
 
 import fr.uracraft.uramod.UraCreativeTabs;
+import fr.uracraft.uramod.blocks.BlockBackground;
 import fr.uracraft.uramod.blocks.BlockElevator;
 import fr.uracraft.uramod.blocks.UraBlocks;
 import net.minecraft.block.Block;
+import net.minecraft.block.properties.IProperty;
+import net.minecraft.block.properties.PropertyEnum;
 import net.minecraft.block.state.IBlockState;
 import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.entity.passive.EntitySheep;
@@ -30,9 +33,13 @@ public class ItemPaint extends Item {
 
     public EnumActionResult onItemUse(EntityPlayer player, World worldIn, BlockPos pos, EnumHand hand, EnumFacing facing, float hitX, float hitY, float hitZ) {
         Block block = worldIn.getBlockState(pos).getBlock();
-        if (block instanceof BlockElevator) {
+        if (block instanceof BlockElevator || block instanceof BlockBackground) {
             if (block.getMetaFromState(worldIn.getBlockState(pos)) != dye_meta) {
-                worldIn.setBlockState(pos, BlockElevator.getBlockStateFromMeta(dye_meta));
+                if(block instanceof BlockBackground){
+                    worldIn.setBlockState(pos, block.getDefaultState().withProperty(BlockBackground.VARIANT, BlockBackground.EnumType.byMetadata(dye_meta)));
+                }else {
+                    worldIn.setBlockState(pos, block.getDefaultState().withProperty(BlockElevator.VARIANT, BlockElevator.EnumType.byMetadata(dye_meta)));
+                }
                 if (isEmpty(player.getHeldItem(hand))) {
                     player.setHeldItem(hand, new ItemStack(Items.BUCKET));
                 } else {

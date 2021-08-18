@@ -4,8 +4,6 @@ itemGroup.events=Events
 
 debug.oreSpawnText=Ore Spawn :
 
-uramod.key_movedown_elevator=Move Down Elevator
-
 itemLore.world_selector_line0=Click to travel between
 itemLore.world_selector_line1=all the servers !
 
@@ -110,22 +108,38 @@ tile.uramod.bedrock_halfslab.name=Bedrock Slab
 enchantment.stonebreaker=StoneBreaker
 enchantment.telekinesis=Telekinesis
 
-uramod.elevator_block.name=Elevator
-uramod.elevator_block_orange.name=Orange Elevator
-uramod.elevator_block_magenta.name=Magenta Elevator
-uramod.elevator_block_light_blue.name=Light Blue Elevator
-uramod.elevator_block_yellow.name=Yellow Elevator
-uramod.elevator_block_lime.name=Lime Elevator
-uramod.elevator_block_pink.name=Pink Elevator
-uramod.elevator_block_gray.name=Gray Elevator
-uramod.elevator_block_silver.name=Silver Elevator
-uramod.elevator_block_cyan.name=Cyan Elevator
-uramod.elevator_block_purple.name=Purple Elevator
-uramod.elevator_block_blue.name=Blue Elevator
-uramod.elevator_block_brown.name=Brown Elevator
-uramod.elevator_block_green.name=Green Elevator
-uramod.elevator_block_red.name=Red Elevator
-uramod.elevator_block_black.name=Black Elevator
+uramod.elevator.name=Elevator
+uramod.elevator_orange.name=Orange Elevator
+uramod.elevator_magenta.name=Magenta Elevator
+uramod.elevator_light_blue.name=Light Blue Elevator
+uramod.elevator_yellow.name=Yellow Elevator
+uramod.elevator_lime.name=Lime Elevator
+uramod.elevator_pink.name=Pink Elevator
+uramod.elevator_gray.name=Gray Elevator
+uramod.elevator_silver.name=Silver Elevator
+uramod.elevator_cyan.name=Cyan Elevator
+uramod.elevator_purple.name=Purple Elevator
+uramod.elevator_blue.name=Blue Elevator
+uramod.elevator_brown.name=Brown Elevator
+uramod.elevator_green.name=Green Elevator
+uramod.elevator_red.name=Red Elevator
+uramod.elevator_black.name=Black Elevator
+uramod.background.name=Bright Background
+uramod.background_orange.name=Bright Orange Background
+uramod.background_magenta.name=Bright Magenta Background
+uramod.background_light_blue.name=Bright Light Blue Background
+uramod.background_yellow.name=Bright Yellow Background
+uramod.background_lime.name=Bright Lime Background
+uramod.background_pink.name=Bright Pink Background
+uramod.background_gray.name=Bright Gray Background
+uramod.background_silver.name=Bright Silver Background
+uramod.background_cyan.name=Bright Cyan Background
+uramod.background_purple.name=Bright Purple Background
+uramod.background_blue.name=Bright Blue Background
+uramod.background_brown.name=Bright Brown Background
+uramod.background_green.name=Bright Green Background
+uramod.background_red.name=Bright Red Background
+uramod.background_black.name=Bright Black Background
 
 item.uramod.ura_nugget.name=Ura Nugget
 item.uramod.silver_nugget.name=Silver Nugget

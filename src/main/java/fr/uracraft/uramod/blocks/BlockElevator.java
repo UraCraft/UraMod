@@ -15,16 +15,12 @@ import net.minecraft.util.NonNullList;
 public class BlockElevator extends Block {
 
     public static int MAX_RANGE = 16;
-
-    public static final String NAME = "elevator_block";
     public static final PropertyEnum<BlockElevator.EnumType> VARIANT = PropertyEnum.create("variant", BlockElevator.EnumType.class);
 
     public BlockElevator() {
         super(Material.ROCK);
-
-        UraBlocks.setBlockName(this, NAME);
+        UraBlocks.setBlockName(this, "elevator");
         setDefaultState(this.blockState.getBaseState().withProperty(VARIANT, EnumType.WHITE));
-
         setResistance(5.0F);
         setHardness(3.0F);
         setCreativeTab(UraCreativeTabs.BUILDING);
@@ -58,32 +54,30 @@ public class BlockElevator extends Block {
     }
 
     public enum EnumType implements IStringSerializable {
-        WHITE(0, "elevator", "elevator_block"),
-        ORANGE(1, "elevator_orange", "elevator_block_orange"),
-        MAGENTA(2, "elevator_magenta", "elevator_block_magenta"),
-        LIGHT_BLUE(3, "elevator_light_blue", "elevator_block_light_blue"),
-        YELLOW(4, "elevator_yellow", "elevator_block_yellow"),
-        LIME(5, "elevator_lime", "elevator_block_lime"),
-        PINK(6, "elevator_pink", "elevator_block_pink"),
-        GRAY(7, "elevator_gray", "elevator_block_gray"),
-        SILVER(8, "elevator_silver", "elevator_block_silver"),
-        CYAN(9, "elevator_cyan", "elevator_block_cyan"),
-        PURPLE(10, "elevator_purple", "elevator_block_purple"),
-        BLUE(11, "elevator_blue", "elevator_block_blue"),
-        BROWN(12, "elevator_brown", "elevator_block_brown"),
-        GREEN(13, "elevator_green", "elevator_block_green"),
-        RED(14, "elevator_red", "elevator_block_red"),
-        BLACK(15, "elevator_black", "elevator_block_black");
+        WHITE(0, "elevator"),
+        ORANGE(1, "elevator_orange"),
+        MAGENTA(2, "elevator_magenta"),
+        LIGHT_BLUE(3, "elevator_light_blue"),
+        YELLOW(4, "elevator_yellow"),
+        LIME(5, "elevator_lime"),
+        PINK(6, "elevator_pink"),
+        GRAY(7, "elevator_gray"),
+        SILVER(8, "elevator_silver"),
+        CYAN(9, "elevator_cyan"),
+        PURPLE(10, "elevator_purple"),
+        BLUE(11, "elevator_blue"),
+        BROWN(12, "elevator_brown"),
+        GREEN(13, "elevator_green"),
+        RED(14, "elevator_red"),
+        BLACK(15, "elevator_black");
 
         private static final BlockElevator.EnumType[] META_LOOKUP = new BlockElevator.EnumType[values().length];
         private final int meta;
         private final String name;
-        private final String unlocalizedName;
 
-        EnumType(int metaIn, String nameIn, String unlocalizedIn) {
+        EnumType(int metaIn, String nameIn) {
             this.meta = metaIn;
             this.name = nameIn;
-            this.unlocalizedName = unlocalizedIn;
         }
 
         public int getMetadata() {
@@ -96,10 +90,6 @@ public class BlockElevator extends Block {
             }
 
             return META_LOOKUP[meta];
-        }
-
-        public String toString() {
-            return this.name;
         }
 
         @Override

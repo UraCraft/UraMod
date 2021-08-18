@@ -152,7 +152,8 @@ public class UraItems {
     public final static Item STONE_CHEST_BLOCK_ITEM = new SimpleItemBlock(UraBlocks.STONE_CHEST);
 
     //Other
-    public static final Item BLOCK_ELEVATOR_ITEM = new ItemBlockMetadata(UraBlocks.BLOCK_ELEVATOR, new String[]{"elevator_block", "elevator_block_orange", "elevator_block_magenta", "elevator_block_light_blue", "elevator_block_yellow", "elevator_block_lime", "elevator_block_pink", "elevator_block_gray", "elevator_block_silver", "elevator_block_cyan", "elevator_block_purple", "elevator_block_blue", "elevator_block_brown", "elevator_block_green", "elevator_block_red", "elevator_block_black"}).setRegistryName(UraBlocks.BLOCK_ELEVATOR.getRegistryName());
+    public static final Item BLOCK_ELEVATOR_ITEM = new ItemBlockMetadata(UraBlocks.BLOCK_ELEVATOR, new String[]{"elevator", "elevator_orange", "elevator_magenta", "elevator_light_blue", "elevator_yellow", "elevator_lime", "elevator_pink", "elevator_gray", "elevator_silver", "elevator_cyan", "elevator_purple", "elevator_blue", "elevator_brown", "elevator_green", "elevator_red", "elevator_black"}).setRegistryName(UraBlocks.BLOCK_ELEVATOR.getRegistryName());
+    public static final Item BLOCK_BACKGROUND_ITEM = new ItemBlockMetadata(UraBlocks.BLOCK_BACKGROUND, new String[]{"background", "background_orange", "background_magenta", "background_light_blue", "background_yellow", "background_lime", "background_pink", "background_gray", "background_silver", "background_cyan", "background_purple", "background_blue", "background_brown", "background_green", "background_red", "background_black"}).setRegistryName(UraBlocks.BLOCK_BACKGROUND.getRegistryName());
     public final static Item URA_FURNACE_ITEM = new SimpleItemBlock(UraBlocks.URA_FURNACE);
     public final static Item CASH_POINT_BLOCK_ITEM = new SimpleItemBlock(UraBlocks.CASH_POINT);
     static {
@@ -288,12 +289,15 @@ public class UraItems {
         registerModel(CASH_POINT_BLOCK_ITEM);
         registerModel(URA_FURNACE_ITEM);
 
-        for (int i = 0; i < BlockElevator.EnumType.values().length; i++)
+        for (int i = 0; i < EnumDyeColor.values().length; i++)
             if (i == 0) {
-                registerModel(BLOCK_ELEVATOR_ITEM, i, null, "uramod:elevator_block", "elevator");
+                registerModel(BLOCK_ELEVATOR_ITEM, i, null, "uramod:elevator", "elevator");
+                registerModel(BLOCK_BACKGROUND_ITEM, i, null, "uramod:background", "background");
             } else {
-                registerModel(BLOCK_ELEVATOR_ITEM, i, null, "uramod:elevator_block_" + EnumDyeColor.byMetadata(i).getName(), "elevator");
+                registerModel(BLOCK_ELEVATOR_ITEM, i, null, "uramod:elevator_" + EnumDyeColor.byMetadata(i).getName(), "elevator");
+                registerModel(BLOCK_BACKGROUND_ITEM, i, null, "uramod:background_" + EnumDyeColor.byMetadata(i).getName(), "background");
             }
+
     }
 
     public static void setItemName(Item item, String name) {

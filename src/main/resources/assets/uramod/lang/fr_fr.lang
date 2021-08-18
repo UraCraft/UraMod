@@ -4,8 +4,6 @@ itemGroup.events=Evénements
 
 debug.oreSpawnText=Apparaission des minerais :
 
-uramod.key_movedown_elevator=Descendre en Elevator
-
 itemLore.world_selector_line0=Clic pour voyager entre
 itemLore.world_selector_line1=tout les serveurs !
 
@@ -109,22 +107,38 @@ tile.uramod.bedrock_halfslab.name=Dalle en Bedrock
 enchantment.stonebreaker=Casseur de Roche
 enchantment.telekinesis=Télékinésie
 
-uramod.elevator_block.name=Elevator
-uramod.elevator_block_orange.name=Elevator Orange
-uramod.elevator_block_magenta.name=Elevator Magenta
-uramod.elevator_block_light_blue.name=Elevator Bleu Clair
-uramod.elevator_block_yellow.name=Elevator Jaune
-uramod.elevator_block_lime.name=Elevator Vert Clair
-uramod.elevator_block_pink.name=Elevator Rose
-uramod.elevator_block_gray.name=Elevator Gris
-uramod.elevator_block_silver.name=Elevator Gris Clair
-uramod.elevator_block_cyan.name=Elevator Cyan
-uramod.elevator_block_purple.name=Elevator Violet
-uramod.elevator_block_blue.name=Elevator Bleu
-uramod.elevator_block_brown.name=Elevator Marron
-uramod.elevator_block_green.name=Elevator Vert
-uramod.elevator_block_red.name=Elevator Rouge
-uramod.elevator_block_black.name=Elevator Noir
+uramod.elevator.name=Elevator
+uramod.elevator_orange.name=Elevator Orange
+uramod.elevator_magenta.name=Elevator Magenta
+uramod.elevator_light_blue.name=Elevator Bleu Clair
+uramod.elevator_yellow.name=Elevator Jaune
+uramod.elevator_lime.name=Elevator Vert Clair
+uramod.elevator_pink.name=Elevator Rose
+uramod.elevator_gray.name=Elevator Gris
+uramod.elevator_silver.name=Elevator Gris Clair
+uramod.elevator_cyan.name=Elevator Cyan
+uramod.elevator_purple.name=Elevator Violet
+uramod.elevator_blue.name=Elevator Bleu
+uramod.elevator_brown.name=Elevator Marron
+uramod.elevator_green.name=Elevator Vert
+uramod.elevator_red.name=Elevator Rouge
+uramod.elevator_black.name=Elevator Noir
+uramod.background.name=Fond lumineux
+uramod.background_orange.name=Fond lumineux Orange
+uramod.background_magenta.name=Fond lumineux Magenta
+uramod.background_light_blue.name=Fond lumineux Bleu Clair
+uramod.background_yellow.name=Fond lumineux Jaune
+uramod.background_lime.name=Fond lumineux Vert Clair
+uramod.background_pink.name=Fond lumineux Rose
+uramod.background_gray.name=Fond lumineux Gris
+uramod.background_silver.name=Fond lumineux Gris Clair
+uramod.background_cyan.name=Fond lumineux Cyan
+uramod.background_purple.name=Fond lumineux Violet
+uramod.background_blue.name=Fond lumineux Bleu
+uramod.background_brown.name=Fond lumineux Marron
+uramod.background_green.name=Fond lumineux Vert
+uramod.background_red.name=Fond lumineux Rouge
+uramod.background_black.name=Fond lumineux Noir
 
 item.uramod.ura_nugget.name=Pépite d'Ura
 item.uramod.silver_nugget.name=Pépite d'Argent

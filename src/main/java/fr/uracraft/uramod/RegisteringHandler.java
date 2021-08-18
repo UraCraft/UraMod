@@ -59,7 +59,8 @@ public class RegisteringHandler {
                 UraBlocks.CASH_POINT,
                 UraBlocks.BLOCK_ELEVATOR,
                 UraBlocks.URA_CHEST,
-                UraBlocks.BLOCK_STONE
+                UraBlocks.BLOCK_STONE,
+                UraBlocks.BLOCK_BACKGROUND
         );
     }
 
@@ -173,7 +174,8 @@ public class RegisteringHandler {
                 //Others
                 UraItems.CASH_POINT_BLOCK_ITEM,
                 UraItems.URA_FURNACE_ITEM,
-                UraItems.BLOCK_ELEVATOR_ITEM
+                UraItems.BLOCK_ELEVATOR_ITEM,
+                UraItems.BLOCK_BACKGROUND_ITEM
         );
     }
 

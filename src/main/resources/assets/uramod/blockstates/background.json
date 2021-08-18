@@ -1,0 +1,52 @@
+{
+  "variants": {
+    "variant=background": {
+      "model": "uramod:background"
+    },
+    "variant=background_orange": {
+      "model": "uramod:background_orange"
+    },
+    "variant=background_magenta": {
+      "model": "uramod:background_magenta"
+    },
+    "variant=background_light_blue": {
+      "model": "uramod:background_light_blue"
+    },
+    "variant=background_yellow": {
+      "model": "uramod:background_yellow"
+    },
+    "variant=background_lime": {
+      "model": "uramod:background_lime"
+    },
+    "variant=background_pink": {
+      "model": "uramod:background_pink"
+    },
+    "variant=background_gray": {
+      "model": "uramod:background_gray"
+    },
+    "variant=background_silver": {
+      "model": "uramod:background_silver"
+    },
+    "variant=background_cyan": {
+      "model": "uramod:background_cyan"
+    },
+    "variant=background_purple": {
+      "model": "uramod:background_purple"
+    },
+    "variant=background_blue": {
+      "model": "uramod:background_blue"
+    },
+    "variant=background_brown": {
+      "model": "uramod:background_brown"
+    },
+    "variant=background_green": {
+      "model": "uramod:background_green"
+    },
+    "variant=background_red": {
+      "model": "uramod:background_red"
+    },
+    "variant=background_black": {
+      "model": "uramod:background_black"
+    }
+  }
+}

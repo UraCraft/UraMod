@@ -61,6 +61,7 @@ public class UraMod {
         MinecraftForge.EVENT_BUS.register(new EventEnchantments());
         MinecraftForge.EVENT_BUS.register(new EventStone());
         MinecraftForge.EVENT_BUS.register(new UraWorldGenerator());
+        MinecraftForge.EVENT_BUS.register(new EventGlass());
     }
 
     @Mod.EventHandler

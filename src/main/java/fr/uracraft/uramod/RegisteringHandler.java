@@ -139,6 +139,7 @@ public class RegisteringHandler {
                 UraItems.HANG_GLIDER,
                 UraItems.WORLD_SELECTOR,
                 UraItems.PORTABLE_WORKBENCH,
+                UraItems.GLASS_SHARD,
 
                 //////////////////////////////////////////Items Blocks//////////////////////////////////////////////////
 

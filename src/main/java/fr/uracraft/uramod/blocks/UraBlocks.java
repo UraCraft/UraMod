@@ -48,6 +48,7 @@ public class UraBlocks {
     public final static Block BLOCK_ELEVATOR = new BlockElevator();
     public final static Block CASH_POINT = new BlockCashPoint();
     public final static Block BLOCK_STONE = new BlockStone();
+    public final static Block BLOCK_BACKGROUND = new BlockBackground();
 
     //Slabs
     public static final SimpleSlab DIRT_DOUBLESLAB = new SimpleDoubleSlab(Material.ROCK, "dirt_doubleslab", SoundType.GROUND);

@@ -2,6 +2,7 @@ package fr.uracraft.uramod.blocks;
 
 import fr.uracraft.uramod.UraCreativeTabs;
 import net.minecraft.block.Block;
+import net.minecraft.block.SoundType;
 import net.minecraft.block.material.Material;
 import net.minecraft.block.properties.IProperty;
 import net.minecraft.block.properties.PropertyEnum;
@@ -12,18 +13,21 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.util.IStringSerializable;
 import net.minecraft.util.NonNullList;
 
-public class BlockElevator extends Block {
+public class BlockBackground extends Block {
 
-    public static int MAX_RANGE = 16;
-    public static final PropertyEnum<BlockElevator.EnumType> VARIANT = PropertyEnum.create("variant", BlockElevator.EnumType.class);
+    public static final PropertyEnum<BlockBackground.EnumType> VARIANT = PropertyEnum.create("variant", BlockBackground.EnumType.class);
 
-    public BlockElevator() {
-        super(Material.ROCK);
-        UraBlocks.setBlockName(this, "elevator");
-        setDefaultState(this.blockState.getBaseState().withProperty(VARIANT, EnumType.WHITE));
-        setResistance(5.0F);
-        setHardness(3.0F);
+    public BlockBackground() {
+        super(Material.GLASS);
+        UraBlocks.setBlockName(this, "background");
+        setDefaultState(this.blockState.getBaseState().withProperty(VARIANT, BlockBackground.EnumType.WHITE));
         setCreativeTab(UraCreativeTabs.BUILDING);
+        setHardness(0.3F);
+        setResistance(1.5F);
+        setLightLevel(1.0F);
+        setHarvestLevel("pickaxe", 2);
+        useNeighborBrightness = true;
+        setSoundType(SoundType.GLASS);
     }
 
     @Override
@@ -33,14 +37,14 @@ public class BlockElevator extends Block {
 
     @Override
     public void getSubBlocks(CreativeTabs tab, NonNullList<ItemStack> items) {
-        for (BlockElevator.EnumType type : BlockElevator.EnumType.values()) {
+        for (BlockBackground.EnumType type : BlockBackground.EnumType.values()) {
             items.add(new ItemStack(this, 1, type.getMetadata()));
         }
     }
 
     @Override
     public IBlockState getStateFromMeta(int meta) {
-        return this.getDefaultState().withProperty(VARIANT, BlockElevator.EnumType.byMetadata(meta));
+        return this.getDefaultState().withProperty(VARIANT, BlockBackground.EnumType.byMetadata(meta));
     }
 
     @Override
@@ -54,24 +58,24 @@ public class BlockElevator extends Block {
     }
 
     public enum EnumType implements IStringSerializable {
-        WHITE(0, "elevator"),
-        ORANGE(1, "elevator_orange"),
-        MAGENTA(2, "elevator_magenta"),
-        LIGHT_BLUE(3, "elevator_light_blue"),
-        YELLOW(4, "elevator_yellow"),
-        LIME(5, "elevator_lime"),
-        PINK(6, "elevator_pink"),
-        GRAY(7, "elevator_gray"),
-        SILVER(8, "elevator_silver"),
-        CYAN(9, "elevator_cyan"),
-        PURPLE(10, "elevator_purple"),
-        BLUE(11, "elevator_blue"),
-        BROWN(12, "elevator_brown"),
-        GREEN(13, "elevator_green"),
-        RED(14, "elevator_red"),
-        BLACK(15, "elevator_black");
+        WHITE(0, "background"),
+        ORANGE(1, "background_orange"),
+        MAGENTA(2, "background_magenta"),
+        LIGHT_BLUE(3, "background_light_blue"),
+        YELLOW(4, "background_yellow"),
+        LIME(5, "background_lime"),
+        PINK(6, "background_pink"),
+        GRAY(7, "background_gray"),
+        SILVER(8, "background_silver"),
+        CYAN(9, "background_cyan"),
+        PURPLE(10, "background_purple"),
+        BLUE(11, "background_blue"),
+        BROWN(12, "background_brown"),
+        GREEN(13, "background_green"),
+        RED(14, "background_red"),
+        BLACK(15, "background_black");
 
-        private static final BlockElevator.EnumType[] META_LOOKUP = new BlockElevator.EnumType[values().length];
+        private static final BlockBackground.EnumType[] META_LOOKUP = new BlockBackground.EnumType[values().length];
         private final int meta;
         private final String name;
 
@@ -84,7 +88,7 @@ public class BlockElevator extends Block {
             return this.meta;
         }
 
-        public static BlockElevator.EnumType byMetadata(int meta) {
+        public static BlockBackground.EnumType byMetadata(int meta) {
             if (meta < 0 || meta >= META_LOOKUP.length) {
                 meta = 0;
             }
@@ -98,7 +102,7 @@ public class BlockElevator extends Block {
         }
 
         static {
-            for (BlockElevator.EnumType type : values()) {
+            for (BlockBackground.EnumType type : values()) {
                 META_LOOKUP[type.getMetadata()] = type;
             }
         }

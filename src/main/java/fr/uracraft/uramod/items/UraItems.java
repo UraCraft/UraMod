@@ -1,8 +1,6 @@
 package fr.uracraft.uramod.items;
 
 import fr.uracraft.uramod.UraMod;
-import fr.uracraft.uramod.blocks.BlockElevator;
-import fr.uracraft.uramod.blocks.BlockStone;
 import fr.uracraft.uramod.blocks.UraBlocks;
 import fr.uracraft.uramod.items.armors.IridiumArmor;
 import fr.uracraft.uramod.items.armors.SilverArmor;
@@ -17,13 +15,10 @@ import fr.uracraft.uramod.items.utils.SimpleItem;
 import fr.uracraft.uramod.items.utils.SimpleItemBlock;
 import fr.uracraft.uramod.utils.ItemBlockMetadata;
 import net.minecraft.client.renderer.block.model.ModelResourceLocation;
-import net.minecraft.init.Blocks;
-import net.minecraft.init.SoundEvents;
 import net.minecraft.inventory.EntityEquipmentSlot;
 import net.minecraft.item.*;
 import net.minecraftforge.client.event.ModelRegistryEvent;
 import net.minecraftforge.client.model.ModelLoader;
-import net.minecraftforge.common.util.EnumHelper;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 import net.minecraftforge.fml.relauncher.Side;
@@ -114,6 +109,7 @@ public class UraItems {
     public final static Item HANG_GLIDER = new ItemHang_Glider();
     public final static Item WORLD_SELECTOR = new ItemWorld_Selector();
     public final static Item PORTABLE_WORKBENCH = new ItemPortable_Workbench();
+    public static final Item GLASS_SHARD = new ItemGlassShard();
 
     ////////////////////////////////////////////////Items Blocks////////////////////////////////////////////////////////
 
@@ -152,9 +148,11 @@ public class UraItems {
     public final static Item STONE_CHEST_BLOCK_ITEM = new SimpleItemBlock(UraBlocks.STONE_CHEST);
 
     //Other
-    public static final Item BLOCK_ELEVATOR_ITEM = new ItemBlockMetadata(UraBlocks.BLOCK_ELEVATOR, new String[]{"elevator_block", "elevator_block_orange", "elevator_block_magenta", "elevator_block_light_blue", "elevator_block_yellow", "elevator_block_lime", "elevator_block_pink", "elevator_block_gray", "elevator_block_silver", "elevator_block_cyan", "elevator_block_purple", "elevator_block_blue", "elevator_block_brown", "elevator_block_green", "elevator_block_red", "elevator_block_black"}).setRegistryName(UraBlocks.BLOCK_ELEVATOR.getRegistryName());
+    public static final Item BLOCK_ELEVATOR_ITEM = new ItemBlockMetadata(UraBlocks.BLOCK_ELEVATOR, new String[]{"elevator", "elevator_orange", "elevator_magenta", "elevator_light_blue", "elevator_yellow", "elevator_lime", "elevator_pink", "elevator_gray", "elevator_silver", "elevator_cyan", "elevator_purple", "elevator_blue", "elevator_brown", "elevator_green", "elevator_red", "elevator_black"}).setRegistryName(UraBlocks.BLOCK_ELEVATOR.getRegistryName());
+    public static final Item BLOCK_BACKGROUND_ITEM = new ItemBlockMetadata(UraBlocks.BLOCK_BACKGROUND, new String[]{"background", "background_orange", "background_magenta", "background_light_blue", "background_yellow", "background_lime", "background_pink", "background_gray", "background_silver", "background_cyan", "background_purple", "background_blue", "background_brown", "background_green", "background_red", "background_black"}).setRegistryName(UraBlocks.BLOCK_BACKGROUND.getRegistryName());
     public final static Item URA_FURNACE_ITEM = new SimpleItemBlock(UraBlocks.URA_FURNACE);
     public final static Item CASH_POINT_BLOCK_ITEM = new SimpleItemBlock(UraBlocks.CASH_POINT);
+
     static {
         UraArmorMaterials.URA_ARMOR.setRepairItem(new ItemStack(UraItems.URA_INGOT));
         UraArmorMaterials.SILVER_ARMOR.setRepairItem(new ItemStack(UraItems.SILVER_INGOT));
@@ -247,6 +245,8 @@ public class UraItems {
         registerModel(HANG_GLIDER);
         registerModel(WORLD_SELECTOR);
         registerModel(PORTABLE_WORKBENCH);
+        for (int i = 0; i < ItemGlassShard.EnumType.values().length; i++)
+            registerModel(GLASS_SHARD, i, null, "uramod:" + ItemGlassShard.EnumType.byMetadata(i).getName(), "glass_shard");
 
         //////////////////////////////////////////////Items Blocks//////////////////////////////////////////////////////
 
@@ -288,12 +288,15 @@ public class UraItems {
         registerModel(CASH_POINT_BLOCK_ITEM);
         registerModel(URA_FURNACE_ITEM);
 
-        for (int i = 0; i < BlockElevator.EnumType.values().length; i++)
+        for (int i = 0; i < EnumDyeColor.values().length; i++)
             if (i == 0) {
-                registerModel(BLOCK_ELEVATOR_ITEM, i, null, "uramod:elevator_block", "elevator");
+                registerModel(BLOCK_ELEVATOR_ITEM, i, null, "uramod:elevator", "elevator");
+                registerModel(BLOCK_BACKGROUND_ITEM, i, null, "uramod:background", "background");
             } else {
-                registerModel(BLOCK_ELEVATOR_ITEM, i, null, "uramod:elevator_block_" + EnumDyeColor.byMetadata(i).getName(), "elevator");
+                registerModel(BLOCK_ELEVATOR_ITEM, i, null, "uramod:elevator_" + EnumDyeColor.byMetadata(i).getName(), "elevator");
+                registerModel(BLOCK_BACKGROUND_ITEM, i, null, "uramod:background_" + EnumDyeColor.byMetadata(i).getName(), "background");
             }
+
     }
 
     public static void setItemName(Item item, String name) {

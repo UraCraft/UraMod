@@ -26,6 +26,6 @@ public class ItemBlockMetadata extends ItemBlock
     @Override
     public String getUnlocalizedName(ItemStack stack)
     {
-        return UraMod.MODID + "." + unlocalizedNames[stack.getMetadata()];
+        return "tile." + UraMod.MODID + "." + unlocalizedNames[stack.getMetadata()];
     }
 }

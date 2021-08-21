@@ -1,14 +1,10 @@
 package fr.uracraft.uramod;
 
-import fr.uracraft.uramod.events.*;
 import fr.uracraft.uramod.guis.GuiHandler;
 import fr.uracraft.uramod.items.armors.PatchVanillaArmors;
 import fr.uracraft.uramod.proxy.CommonProxy;
 import fr.uracraft.uramod.tileentity.TileEntityInventoryRenderHelper;
-import net.minecraft.block.BlockStone;
 import net.minecraft.client.renderer.tileentity.TileEntityItemStackRenderer;
-import net.minecraft.world.gen.feature.WorldGenWaterlily;
-import net.minecraft.world.gen.feature.WorldGenerator;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.SidedProxy;
@@ -49,19 +45,11 @@ public class UraMod {
         GameRegistry.registerWorldGenerator(new UraWorldGenerator(), 0);
         if (event.getSide().isClient()) {
             NetworkRegistry.INSTANCE.registerGuiHandler(this, new GuiHandler());
-            MinecraftForge.EVENT_BUS.register(new EventCustomMainMenu());
-            MinecraftForge.EVENT_BUS.register(new DebugLayout());
         }
-        TileEntityItemStackRenderer.instance = new TileEntityInventoryRenderHelper();
+        RegisteringHandler.registerEvents(event.getSide());
         RegisteringHandler.registerTileEntities();
         RegisteringHandler.registerRenders();
-        MinecraftForge.EVENT_BUS.register(new EventHang_Glider());
-        MinecraftForge.EVENT_BUS.register(new EventElevator());
-        MinecraftForge.EVENT_BUS.register(new EventGrass());
-        MinecraftForge.EVENT_BUS.register(new EventEnchantments());
-        MinecraftForge.EVENT_BUS.register(new EventStone());
-        MinecraftForge.EVENT_BUS.register(new UraWorldGenerator());
-        MinecraftForge.EVENT_BUS.register(new EventGlass());
+        TileEntityItemStackRenderer.instance = new TileEntityInventoryRenderHelper();
     }
 
     @Mod.EventHandler

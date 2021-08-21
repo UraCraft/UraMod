@@ -95,6 +95,8 @@ tile.uramod.neodymium_block.name=Bloc de Neodyme
 tile.uramod.silver_block.name=Bloc d'Argent
 tile.uramod.copper_block.name=Bloc de Cuivre
 tile.uramod.ura_block.name=Bloc d'Ura
+tile.uramod.fertilized_dirt_tilled.name=Terre fertilisée
+tile.uramod.fertilized_dirt.name=Terre fertilisée
 
 tile.uramod.cash_point.name=Distributeur de billets
 tile.uramod.dirt_stairs.name=Escaliers en Terre

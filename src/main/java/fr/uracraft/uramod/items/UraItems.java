@@ -152,6 +152,7 @@ public class UraItems {
     public static final Item BLOCK_BACKGROUND_ITEM = new ItemBlockMetadata(UraBlocks.BLOCK_BACKGROUND, new String[]{"background", "background_orange", "background_magenta", "background_light_blue", "background_yellow", "background_lime", "background_pink", "background_gray", "background_silver", "background_cyan", "background_purple", "background_blue", "background_brown", "background_green", "background_red", "background_black"}).setRegistryName(UraBlocks.BLOCK_BACKGROUND.getRegistryName());
     public final static Item URA_FURNACE_ITEM = new SimpleItemBlock(UraBlocks.URA_FURNACE);
     public final static Item CASH_POINT_BLOCK_ITEM = new SimpleItemBlock(UraBlocks.CASH_POINT);
+    public final static Item FERTILIZED_DIRT_ITEM = new SimpleItemBlock(UraBlocks.FERTILIZED_DIRT);
 
     static {
         UraArmorMaterials.URA_ARMOR.setRepairItem(new ItemStack(UraItems.URA_INGOT));
@@ -287,6 +288,7 @@ public class UraItems {
         //Other
         registerModel(CASH_POINT_BLOCK_ITEM);
         registerModel(URA_FURNACE_ITEM);
+        registerModel(FERTILIZED_DIRT_ITEM);
 
         for (int i = 0; i < EnumDyeColor.values().length; i++)
             if (i == 0) {

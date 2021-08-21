@@ -2,6 +2,8 @@ package fr.uracraft.uramod;
 
 import fr.uracraft.uramod.blocks.UraBlocks;
 import fr.uracraft.uramod.enchantments.UraEnchantments;
+import fr.uracraft.uramod.events.*;
+import fr.uracraft.uramod.guis.GuiHandler;
 import fr.uracraft.uramod.items.UraItems;
 import fr.uracraft.uramod.rendering.chests.*;
 import fr.uracraft.uramod.tileentity.TileEntityInventoryRenderHelper;
@@ -11,10 +13,13 @@ import net.minecraft.block.Block;
 import net.minecraft.client.renderer.tileentity.TileEntityItemStackRenderer;
 import net.minecraft.enchantment.Enchantment;
 import net.minecraft.item.Item;
+import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.RegistryEvent;
 import net.minecraftforge.fml.client.registry.ClientRegistry;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
+import net.minecraftforge.fml.common.network.NetworkRegistry;
 import net.minecraftforge.fml.common.registry.GameRegistry;
+import net.minecraftforge.fml.relauncher.Side;
 
 public class RegisteringHandler {
 
@@ -60,7 +65,9 @@ public class RegisteringHandler {
                 UraBlocks.BLOCK_ELEVATOR,
                 UraBlocks.URA_CHEST,
                 UraBlocks.BLOCK_STONE,
-                UraBlocks.BLOCK_BACKGROUND
+                UraBlocks.BLOCK_BACKGROUND,
+                UraBlocks.FERTILIZED_DIRT,
+                UraBlocks.FERTILIZED_DIRT_TILLED
         );
     }
 
@@ -176,7 +183,8 @@ public class RegisteringHandler {
                 UraItems.CASH_POINT_BLOCK_ITEM,
                 UraItems.URA_FURNACE_ITEM,
                 UraItems.BLOCK_ELEVATOR_ITEM,
-                UraItems.BLOCK_BACKGROUND_ITEM
+                UraItems.BLOCK_BACKGROUND_ITEM,
+                UraItems.FERTILIZED_DIRT_ITEM
         );
     }
 
@@ -209,6 +217,21 @@ public class RegisteringHandler {
 
     public static void registerEntities() {
 
+    }
+
+    public static void registerEvents(Side side) {
+        if (side.isClient()) {
+            MinecraftForge.EVENT_BUS.register(new EventCustomMainMenu());
+            MinecraftForge.EVENT_BUS.register(new DebugLayout());
+        }
+        MinecraftForge.EVENT_BUS.register(new EventHang_Glider());
+        MinecraftForge.EVENT_BUS.register(new EventElevator());
+        MinecraftForge.EVENT_BUS.register(new EventGrass());
+        MinecraftForge.EVENT_BUS.register(new EventEnchantments());
+        MinecraftForge.EVENT_BUS.register(new EventStone());
+        MinecraftForge.EVENT_BUS.register(new UraWorldGenerator());
+        MinecraftForge.EVENT_BUS.register(new EventGlass());
+        MinecraftForge.EVENT_BUS.register(new EventFertilizedDirt());
     }
 
     public static void registerRecipes() {

@@ -70,11 +70,6 @@ public class BlockFertilizedDirt extends Block {
     }
 
     @Override
-    public AxisAlignedBB getCollisionBoundingBox(IBlockState blockState, IBlockAccess worldIn, BlockPos pos) {
-        return FULL_BLOCK_AABB;
-    }
-
-    @Override
     public Item getItemDropped(IBlockState state, Random rand, int fortune) {
         return Item.getItemFromBlock(UraBlocks.FERTILIZED_DIRT);
     }

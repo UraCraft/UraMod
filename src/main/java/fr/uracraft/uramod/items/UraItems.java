@@ -147,6 +147,9 @@ public class UraItems {
     public final static Item IRON_CHEST_BLOCK_ITEM = new SimpleItemBlock(UraBlocks.IRON_CHEST);
     public final static Item STONE_CHEST_BLOCK_ITEM = new SimpleItemBlock(UraBlocks.STONE_CHEST);
 
+    //Energy
+    public final static Item ENERGY_REGULATOR_ITEM = new SimpleItemBlock(UraBlocks.ENERGY_REGULATOR);
+
     //Other
     public static final Item BLOCK_ELEVATOR_ITEM = new ItemBlockMetadata(UraBlocks.BLOCK_ELEVATOR, new String[]{"elevator", "elevator_orange", "elevator_magenta", "elevator_light_blue", "elevator_yellow", "elevator_lime", "elevator_pink", "elevator_gray", "elevator_silver", "elevator_cyan", "elevator_purple", "elevator_blue", "elevator_brown", "elevator_green", "elevator_red", "elevator_black"}).setRegistryName(UraBlocks.BLOCK_ELEVATOR.getRegistryName());
     public static final Item BLOCK_BACKGROUND_ITEM = new ItemBlockMetadata(UraBlocks.BLOCK_BACKGROUND, new String[]{"background", "background_orange", "background_magenta", "background_light_blue", "background_yellow", "background_lime", "background_pink", "background_gray", "background_silver", "background_cyan", "background_purple", "background_blue", "background_brown", "background_green", "background_red", "background_black"}).setRegistryName(UraBlocks.BLOCK_BACKGROUND.getRegistryName());
@@ -284,6 +287,9 @@ public class UraItems {
         registerModel(GOLD_CHEST_BLOCK_ITEM, "chests");
         registerModel(IRON_CHEST_BLOCK_ITEM, "chests");
         registerModel(STONE_CHEST_BLOCK_ITEM, "chests");
+
+        //Energy
+        registerModel(ENERGY_REGULATOR_ITEM, "energy");
 
         //Other
         registerModel(CASH_POINT_BLOCK_ITEM);

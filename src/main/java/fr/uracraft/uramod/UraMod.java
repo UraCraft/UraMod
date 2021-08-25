@@ -1,5 +1,6 @@
 package fr.uracraft.uramod;
 
+import fr.uracraft.uramod.packets.PacketEnergyRegulator;
 import fr.uracraft.uramod.guis.GuiHandler;
 import fr.uracraft.uramod.items.armors.PatchVanillaArmors;
 import fr.uracraft.uramod.proxy.CommonProxy;
@@ -12,11 +13,15 @@ import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 import net.minecraftforge.fml.common.network.NetworkRegistry;
+import net.minecraftforge.fml.common.network.simpleimpl.SimpleNetworkWrapper;
 import net.minecraftforge.fml.common.registry.GameRegistry;
+import net.minecraftforge.fml.relauncher.Side;
 import org.apache.logging.log4j.Logger;
 
 @Mod(modid = UraMod.MODID, name = UraMod.NAME, version = UraMod.VERSION)
 public class UraMod {
+
+    public static SimpleNetworkWrapper network;
 
     public static final String MODID = "uramod";
     public static final String NAME = "UraMod";
@@ -50,6 +55,8 @@ public class UraMod {
         RegisteringHandler.registerTileEntities();
         RegisteringHandler.registerRenders();
         TileEntityItemStackRenderer.instance = new TileEntityInventoryRenderHelper();
+        network = NetworkRegistry.INSTANCE.newSimpleChannel("UraMod");
+        network.registerMessage(PacketEnergyRegulator.Handler.class, PacketEnergyRegulator.class, 0, Side.SERVER);
     }
 
     @Mod.EventHandler

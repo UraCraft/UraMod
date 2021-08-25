@@ -1,6 +1,7 @@
 itemGroup.uramod=UraMod
 itemGroup.building=Construction
 itemGroup.events=Evénements
+itemGroup.energy=Energie
 
 debug.oreSpawnText=Apparaission des minerais :
 
@@ -164,3 +165,4 @@ item.uramod.silver_nugget.name=Pépite d'Argent
 item.uramod.tin_nugget.name=Pépite d'Etain
 item.uramod.copper_nugget.name=Pépite de Cuivre
 
+tile.uramod.energy_regulator.name=Régulateur d'énergie

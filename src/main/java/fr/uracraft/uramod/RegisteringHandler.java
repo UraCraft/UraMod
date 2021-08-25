@@ -6,6 +6,7 @@ import fr.uracraft.uramod.events.*;
 import fr.uracraft.uramod.guis.GuiHandler;
 import fr.uracraft.uramod.items.UraItems;
 import fr.uracraft.uramod.rendering.chests.*;
+import fr.uracraft.uramod.tileentity.TileEntityEnergyRegulator;
 import fr.uracraft.uramod.tileentity.TileEntityInventoryRenderHelper;
 import fr.uracraft.uramod.tileentity.TileEntityUraFurnace;
 import fr.uracraft.uramod.tileentity.chests.*;
@@ -58,6 +59,8 @@ public class RegisteringHandler {
                 UraBlocks.GOLD_CHEST,
                 UraBlocks.IRON_CHEST,
                 UraBlocks.STONE_CHEST,
+                //Energy
+                UraBlocks.ENERGY_REGULATOR,
                 //Other
                 UraBlocks.URA_FURNACE_LIT,
                 UraBlocks.URA_FURNACE,
@@ -179,6 +182,8 @@ public class RegisteringHandler {
                 UraItems.GOLD_CHEST_BLOCK_ITEM,
                 UraItems.IRON_CHEST_BLOCK_ITEM,
                 UraItems.STONE_CHEST_BLOCK_ITEM,
+                //Energy
+                UraItems.ENERGY_REGULATOR_ITEM,
                 //Others
                 UraItems.CASH_POINT_BLOCK_ITEM,
                 UraItems.URA_FURNACE_ITEM,
@@ -204,6 +209,7 @@ public class RegisteringHandler {
         GameRegistry.registerTileEntity(TileEntityGoldChest.class, "uramod:gold_chest");
         GameRegistry.registerTileEntity(TileEntityIronChest.class, "uramod:iron_chest");
         GameRegistry.registerTileEntity(TileEntityStoneChest.class, "uramod:stone_chest");
+        GameRegistry.registerTileEntity(TileEntityEnergyRegulator.class, "uramod:energy_regulator");
     }
 
     public static void registerRenders() {

@@ -2,6 +2,7 @@ package fr.uracraft.uramod.blocks;
 
 import fr.uracraft.uramod.UraMod;
 import fr.uracraft.uramod.blocks.chests.*;
+import fr.uracraft.uramod.blocks.energy.EnergyRegulator;
 import fr.uracraft.uramod.blocks.utils.*;
 import fr.uracraft.uramod.items.UraItems;
 import net.minecraft.block.Block;
@@ -41,6 +42,9 @@ public class UraBlocks {
     public final static Block GOLD_CHEST = new BlockGoldChest();
     public final static Block IRON_CHEST = new BlockIronChest();
     public final static Block STONE_CHEST = new BlockStoneChest();
+
+    //Energy
+    public final static Block ENERGY_REGULATOR = new EnergyRegulator();
 
     //Other
     public static final Block URA_FURNACE = new BlockUraFurnace(false);

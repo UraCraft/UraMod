@@ -3,6 +3,7 @@ package fr.uracraft.uramod.guis;
 import fr.uracraft.uramod.container.chests.*;
 import fr.uracraft.uramod.container.ContainerUraFurnace;
 import fr.uracraft.uramod.guis.chests.*;
+import fr.uracraft.uramod.tileentity.TileEntityEnergyRegulator;
 import fr.uracraft.uramod.tileentity.chests.*;
 import fr.uracraft.uramod.tileentity.TileEntityUraFurnace;
 import net.minecraft.client.gui.inventory.GuiCrafting;
@@ -29,22 +30,22 @@ public class GuiHandler implements IGuiHandler {
                 }
             };
         }
-        if(id == UraGui.GUI_URA_CHEST) {
+        if (id == UraGui.GUI_URA_CHEST) {
             return new ContainerUraChest(entityPlayer.inventory, (TileEntityUraChest) world.getTileEntity(new BlockPos(x, y, z)), entityPlayer);
         }
-        if(id == UraGui.GUI_DIAMOND_CHEST) {
+        if (id == UraGui.GUI_DIAMOND_CHEST) {
             return new ContainerDiamondChest(entityPlayer.inventory, (TileEntityDiamondChest) world.getTileEntity(new BlockPos(x, y, z)), entityPlayer);
         }
-        if(id == UraGui.GUI_GOLD_CHEST) {
+        if (id == UraGui.GUI_GOLD_CHEST) {
             return new ContainerGoldChest(entityPlayer.inventory, (TileEntityGoldChest) world.getTileEntity(new BlockPos(x, y, z)), entityPlayer);
         }
-        if(id == UraGui.GUI_IRON_CHEST) {
+        if (id == UraGui.GUI_IRON_CHEST) {
             return new ContainerIronChest(entityPlayer.inventory, (TileEntityIronChest) world.getTileEntity(new BlockPos(x, y, z)), entityPlayer);
         }
-        if(id == UraGui.GUI_SILVER_CHEST) {
+        if (id == UraGui.GUI_SILVER_CHEST) {
             return new ContainerSilverChest(entityPlayer.inventory, (TileEntitySilverChest) world.getTileEntity(new BlockPos(x, y, z)), entityPlayer);
         }
-        if(id == UraGui.GUI_STONE_CHEST) {
+        if (id == UraGui.GUI_STONE_CHEST) {
             return new ContainerStoneChest(entityPlayer.inventory, (TileEntityStoneChest) world.getTileEntity(new BlockPos(x, y, z)), entityPlayer);
         }
         return null;
@@ -59,23 +60,26 @@ public class GuiHandler implements IGuiHandler {
         if (id == UraGui.CRAFTING) {
             return new GuiCrafting(entityPlayer.inventory, world);
         }
-        if(id == UraGui.GUI_URA_CHEST){
-            return new GuiUraChest(entityPlayer.inventory, (TileEntityUraChest)world.getTileEntity(new BlockPos(x,y,z)), entityPlayer);
+        if (id == UraGui.GUI_URA_CHEST) {
+            return new GuiUraChest(entityPlayer.inventory, (TileEntityUraChest) world.getTileEntity(new BlockPos(x, y, z)), entityPlayer);
         }
-        if(id == UraGui.GUI_DIAMOND_CHEST){
-            return new GuiDiamondChest(entityPlayer.inventory, (TileEntityDiamondChest) world.getTileEntity(new BlockPos(x,y,z)), entityPlayer);
+        if (id == UraGui.GUI_DIAMOND_CHEST) {
+            return new GuiDiamondChest(entityPlayer.inventory, (TileEntityDiamondChest) world.getTileEntity(new BlockPos(x, y, z)), entityPlayer);
         }
-        if(id == UraGui.GUI_GOLD_CHEST){
-            return new GuiGoldChest(entityPlayer.inventory, (TileEntityGoldChest) world.getTileEntity(new BlockPos(x,y,z)), entityPlayer);
+        if (id == UraGui.GUI_GOLD_CHEST) {
+            return new GuiGoldChest(entityPlayer.inventory, (TileEntityGoldChest) world.getTileEntity(new BlockPos(x, y, z)), entityPlayer);
         }
-        if(id == UraGui.GUI_IRON_CHEST){
-            return new GuiIronChest(entityPlayer.inventory, (TileEntityIronChest) world.getTileEntity(new BlockPos(x,y,z)), entityPlayer);
+        if (id == UraGui.GUI_IRON_CHEST) {
+            return new GuiIronChest(entityPlayer.inventory, (TileEntityIronChest) world.getTileEntity(new BlockPos(x, y, z)), entityPlayer);
         }
-        if(id == UraGui.GUI_SILVER_CHEST){
-            return new GuiSilverChest(entityPlayer.inventory, (TileEntitySilverChest) world.getTileEntity(new BlockPos(x,y,z)), entityPlayer);
+        if (id == UraGui.GUI_SILVER_CHEST) {
+            return new GuiSilverChest(entityPlayer.inventory, (TileEntitySilverChest) world.getTileEntity(new BlockPos(x, y, z)), entityPlayer);
         }
-        if(id == UraGui.GUI_STONE_CHEST){
-            return new GuiStoneChest(entityPlayer.inventory, (TileEntityStoneChest) world.getTileEntity(new BlockPos(x,y,z)), entityPlayer);
+        if (id == UraGui.GUI_STONE_CHEST) {
+            return new GuiStoneChest(entityPlayer.inventory, (TileEntityStoneChest) world.getTileEntity(new BlockPos(x, y, z)), entityPlayer);
+        }
+        if (id == UraGui.GUI_ENERGY_REGULATOR) {
+            return new GuiEnergyRegulator(new BlockPos(x, y, z));
         }
         return null;
     }

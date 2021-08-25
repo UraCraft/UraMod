@@ -1,6 +1,7 @@
 itemGroup.uramod=UraMod
 itemGroup.building=Building
 itemGroup.events=Events
+itemGroup.energy=Energy
 
 debug.oreSpawnText=Ore Spawn :
 
@@ -164,3 +165,5 @@ item.uramod.ura_nugget.name=Ura Nugget
 item.uramod.silver_nugget.name=Silver Nugget
 item.uramod.tin_nugget.name=Tin Nugget
 item.uramod.copper_nugget.name=Copper Nugget
+
+tile.uramod.energy_regulator.name=Energy Regulator

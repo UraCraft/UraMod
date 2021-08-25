@@ -19,6 +19,13 @@ public class UraCreativeTabs {
             return new ItemStack(UraItems.BLOCK_DIRT_STAIRS);
         }
     };
+    public static final CreativeTabs ENERGY = new CreativeTabs("energy") {
+
+        @Override
+        public ItemStack getTabIconItem() {
+            return new ItemStack(UraItems.ENERGY_REGULATOR_ITEM);
+        }
+    };
     public static final CreativeTabs EVENTS = new CreativeTabs("events") {
 
         @Override

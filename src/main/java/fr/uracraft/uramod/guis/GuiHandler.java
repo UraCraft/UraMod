@@ -78,9 +78,6 @@ public class GuiHandler implements IGuiHandler {
         if (id == UraGui.GUI_STONE_CHEST) {
             return new GuiStoneChest(entityPlayer.inventory, (TileEntityStoneChest) world.getTileEntity(new BlockPos(x, y, z)), entityPlayer);
         }
-        if (id == UraGui.GUI_ENERGY_REGULATOR) {
-            return new GuiEnergyRegulator(new BlockPos(x, y, z));
-        }
         return null;
     }
 }

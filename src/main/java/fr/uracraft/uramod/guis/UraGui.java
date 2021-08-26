@@ -8,5 +8,4 @@ public class UraGui {
     public static final int GUI_SILVER_CHEST = 5;
     public static final int GUI_STONE_CHEST = 6;
     public static final int GUI_IRON_CHEST = 7;
-    public static final int GUI_ENERGY_REGULATOR = 8;
 }

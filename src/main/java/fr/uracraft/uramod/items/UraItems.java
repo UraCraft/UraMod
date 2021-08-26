@@ -101,8 +101,8 @@ public class UraItems {
     public static final Item SILVER_SHOVEL = new ItemShovel(UraToolMaterials.SILVER_TOOL_MATERIAL, "silver_shovel");
     public static final Item SILVER_AXE = new ItemAxe(UraToolMaterials.SILVER_TOOL_MATERIAL, 6.0F, -3.0F, "silver_axe");
     public static final Item SILVER_HOE = new ItemHoe(UraToolMaterials.SILVER_TOOL_MATERIAL, "silver_hoe");
-    public static final Item IRIDIUM_SWORD = new ItemSword(UraToolMaterials.IRIDIUM_TOOL_MATERIAL, "iridium_sword");
-    public static final Item IRIDIUM_PICKAXE = new ItemPickaxe(UraToolMaterials.IRIDIUM_TOOL_MATERIAL, "iridium_pickaxe");
+    public static final Item IRIDIUM_SWORD = new ItemIridiumSword();
+    public static final Item IRIDIUM_PICKAXE = new ItemPickaxe(UraToolMaterials.IRIDIUM_TOOL_MATERIAL, "iridium_pickaxe").setMaxDamage(0);
     public static final Item HAMMER = new ItemHammer(UraToolMaterials.HAMMER_TOOL_MATERIAL, "hammer");
 
     //Other
@@ -242,7 +242,6 @@ public class UraItems {
         registerModel(SILVER_SHOVEL, "tools");
         registerModel(SILVER_SWORD, "tools");
         registerModel(IRIDIUM_PICKAXE, "tools");
-        registerModel(IRIDIUM_SWORD, "tools");
         registerModel(HAMMER, "tools");
 
         //Other
@@ -251,6 +250,8 @@ public class UraItems {
         registerModel(PORTABLE_WORKBENCH);
         for (int i = 0; i < ItemGlassShard.EnumType.values().length; i++)
             registerModel(GLASS_SHARD, i, null, "uramod:" + ItemGlassShard.EnumType.byMetadata(i).getName(), "glass_shard");
+        for (int i = 0; i < ItemIridiumSword.ores.length; i++)
+            registerModel(IRIDIUM_SWORD, i, null, "uramod:" + ItemIridiumSword.byMetadata(i), "tools");
 
         //////////////////////////////////////////////Items Blocks//////////////////////////////////////////////////////
 

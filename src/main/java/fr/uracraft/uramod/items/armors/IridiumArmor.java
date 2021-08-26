@@ -15,6 +15,7 @@ public class IridiumArmor extends ItemArmor {
         super(UraArmorMaterials.IRIDIUM_ARMOR, renderIndex, equipmentSlot);
         setCreativeTab(UraCreativeTabs.URAMOD);
         UraItems.setItemName(this, name);
+        setMaxDamage(0);
     }
 
     public void onArmorTick(World world, EntityPlayer player, ItemStack stack) {

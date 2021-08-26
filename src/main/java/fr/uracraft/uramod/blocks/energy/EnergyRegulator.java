@@ -3,12 +3,14 @@ package fr.uracraft.uramod.blocks.energy;
 import fr.uracraft.uramod.UraCreativeTabs;
 import fr.uracraft.uramod.UraMod;
 import fr.uracraft.uramod.blocks.UraBlocks;
+import fr.uracraft.uramod.guis.GuiEnergyRegulator;
 import fr.uracraft.uramod.guis.UraGui;
 import fr.uracraft.uramod.tileentity.TileEntityEnergyRegulator;
 import net.minecraft.block.BlockContainer;
 import net.minecraft.block.SoundType;
 import net.minecraft.block.material.Material;
 import net.minecraft.block.state.IBlockState;
+import net.minecraft.client.Minecraft;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.tileentity.TileEntity;
 import net.minecraft.util.EnumBlockRenderType;
@@ -51,7 +53,7 @@ public class EnergyRegulator extends BlockContainer {
     @Override
     public boolean onBlockActivated(World worldIn, BlockPos pos, IBlockState state, EntityPlayer playerIn, EnumHand hand, EnumFacing facing, float hitX, float hitY, float hitZ) {
         if (worldIn.isRemote) {
-            playerIn.openGui(UraMod.instance, UraGui.GUI_ENERGY_REGULATOR, worldIn, pos.getX(), pos.getY(), pos.getZ());
+            Minecraft.getMinecraft().displayGuiScreen(new GuiEnergyRegulator(pos));
         }
         return true;
     }

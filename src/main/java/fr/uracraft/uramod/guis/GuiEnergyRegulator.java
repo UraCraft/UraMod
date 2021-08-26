@@ -23,7 +23,7 @@ public class GuiEnergyRegulator extends GuiScreen {
     private static int networkValue;
     private int timing;
 
-    protected GuiEnergyRegulator(BlockPos pos) {
+    public GuiEnergyRegulator(BlockPos pos) {
         blockPos = pos;
     }
 

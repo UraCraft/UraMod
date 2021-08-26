@@ -238,6 +238,7 @@ public class RegisteringHandler {
         MinecraftForge.EVENT_BUS.register(new UraWorldGenerator());
         MinecraftForge.EVENT_BUS.register(new EventGlass());
         MinecraftForge.EVENT_BUS.register(new EventFertilizedDirt());
+        MinecraftForge.EVENT_BUS.register(new EventAnvil());
     }
 
     public static void registerRecipes() {

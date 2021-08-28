@@ -12,10 +12,12 @@ public class EventAnvil {
     @SubscribeEvent
     public void createExcalibur(AnvilUpdateEvent e) {
         if (e.getLeft().getItem() == UraItems.IRIDIUM_SWORD && e.getLeft().getMetadata() == 0) {
-            if(e.getRight().getItem() == Item.getItemFromBlock(Blocks.COBBLESTONE)){
-                e.setOutput(new ItemStack(UraItems.IRIDIUM_SWORD, 1, 1));
-                e.setCost(88);
-                e.setMaterialCost(64);
+            if (e.getRight().getItem() == Item.getItemFromBlock(Blocks.COBBLESTONE)) {
+                if (e.getName().equalsIgnoreCase("Arthur")) {
+                    e.setOutput(new ItemStack(UraItems.IRIDIUM_SWORD, 1, 1));
+                    e.setCost(88);
+                    e.setMaterialCost(64);
+                }
             }
         }
     }

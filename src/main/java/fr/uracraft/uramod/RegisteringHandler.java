@@ -5,6 +5,7 @@ import fr.uracraft.uramod.enchantments.UraEnchantments;
 import fr.uracraft.uramod.events.*;
 import fr.uracraft.uramod.guis.GuiHandler;
 import fr.uracraft.uramod.items.UraItems;
+import fr.uracraft.uramod.items.armors.IridiumArmor;
 import fr.uracraft.uramod.rendering.chests.*;
 import fr.uracraft.uramod.tileentity.TileEntityEnergyRegulator;
 import fr.uracraft.uramod.tileentity.TileEntityInventoryRenderHelper;
@@ -239,6 +240,7 @@ public class RegisteringHandler {
         MinecraftForge.EVENT_BUS.register(new EventGlass());
         MinecraftForge.EVENT_BUS.register(new EventFertilizedDirt());
         MinecraftForge.EVENT_BUS.register(new EventAnvil());
+        MinecraftForge.EVENT_BUS.register(new EventIridiumArmor());
     }
 
     public static void registerRecipes() {

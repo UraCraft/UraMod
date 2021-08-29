@@ -8,6 +8,14 @@ debug.oreSpawnText=Apparaission des minerais :
 itemLore.world_selector_line0=Clic pour voyager entre
 itemLore.world_selector_line1=tout les serveurs !
 
+excalibur.mode.normal=Excalibur : Mode flames désactivé !
+excalibur.mode.flame=Excalibur : Mode flames activé !
+pickaxe_of_the_gods.mode.normal=Pickaxe of the Gods : Mode Classique
+pickaxe_of_the_gods.mode.tunnel=Pickaxe of the Gods : Mode Tunnel
+pickaxe_of_the_gods.mode.hammer.3x3x1=Pickaxe of the Gods : Mode Hammer 3x3x1
+pickaxe_of_the_gods.mode.hammer.3x3x3=Pickaxe of the Gods : Mode Hammer 3x3x3
+pickaxe_of_the_gods.mode.hammer.5x5x1=Pickaxe of the Gods : Mode Hammer 5x5x1
+
 item.uramod.hang_glider.name=Planeur
 item.uramod.world_selector.name=Selecteur de serveur
 item.uramod.ura_helmet.name=Casque en Ura
@@ -66,6 +74,7 @@ item.uramod.silver_shovel.name=Pelle en Argent
 item.uramod.silver_axe.name=Hache en Argent
 item.uramod.silver_hoe.name=Houe en Argent
 item.uramod.iridium_pickaxe.name=Pioche en Iridium
+item.uramod.pickaxe_of_the_gods.name=Pioche des Dieux
 item.uramod.iridium_sword.name=Epée en Iridium
 item.uramod.excalibur.name=Excalibur
 item.uramod.hammer.name=Marteau

@@ -1,6 +1,7 @@
 package fr.uracraft.uramod.items.tools;
 
 import fr.uracraft.uramod.UraCreativeTabs;
+import fr.uracraft.uramod.blocks.UraBlocks;
 import fr.uracraft.uramod.enchantments.UraEnchantments;
 import fr.uracraft.uramod.items.UraItems;
 import net.minecraft.block.state.IBlockState;
@@ -84,7 +85,7 @@ public class ItemHammer extends net.minecraft.item.ItemPickaxe {
     private void destroyAndDropBlock(World w, EntityPlayer p, ItemStack breaker, int x, int y, int z) {
         BlockPos pos = new BlockPos(x, y, z);
 
-        if (w.getBlockState(pos).getBlock() == Blocks.STONE) {
+        if (w.getBlockState(pos).getBlock() == Blocks.STONE || w.getBlockState(pos).getBlock() == UraBlocks.BLOCK_STONE) {
             w.getBlockState(pos).getBlock().harvestBlock(w, p, pos, w.getBlockState(pos), w.getTileEntity(pos), breaker);
             w.setBlockToAir(pos);
         }

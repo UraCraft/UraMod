@@ -8,6 +8,14 @@ debug.oreSpawnText=Ore Spawn :
 itemLore.world_selector_line0=Click to travel between
 itemLore.world_selector_line1=all the servers !
 
+excalibur.mode.normal=Excalibur : Flame mode Disable !
+excalibur.mode.flame=Excalibur : Flame mode Enable !
+pickaxe_of_the_gods.mode.normal=Pickaxe of the Gods : Classic Mode
+pickaxe_of_the_gods.mode.tunnel=Pickaxe of the Gods : Tunnel Mode
+pickaxe_of_the_gods.mode.hammer.3x3x1=Pickaxe of the Gods : 3x3x1 Hammer Mode
+pickaxe_of_the_gods.mode.hammer.3x3x3=Pickaxe of the Gods : 3x3x3 Hammer Mode
+pickaxe_of_the_gods.mode.hammer.5x5x1=Pickaxe of the Gods : 5x5x1 Hammer Mode
+
 item.uramod.hang_glider.name=Hang Glider
 item.uramod.world_selector.name=Server Selector
 item.uramod.ura_helmet.name=Ura Helmet
@@ -66,6 +74,7 @@ item.uramod.silver_shovel.name=Silver Shovel
 item.uramod.silver_axe.name=Silver Axe
 item.uramod.silver_hoe.name=Silver Hoe
 item.uramod.iridium_pickaxe.name=Iridium Pickaxe
+item.uramod.pickaxe_of_the_gods.name=Pickaxe of the Gods
 item.uramod.iridium_sword.name=Iridium Sword
 item.uramod.excalibur.name=Excalibur
 item.uramod.hammer.name=Hammer

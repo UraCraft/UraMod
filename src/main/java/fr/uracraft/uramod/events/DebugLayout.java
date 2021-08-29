@@ -1,7 +1,6 @@
 package fr.uracraft.uramod.events;
 
 import fr.uracraft.uramod.UraMod;
-import fr.uracraft.uramod.utils.UraWorldGeneratorConfiguration;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.gui.FontRenderer;
 import net.minecraft.client.resources.I18n;
@@ -11,27 +10,62 @@ import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
 
+import java.awt.*;
+
+import static java.lang.String.valueOf;
+
+import static fr.uracraft.uramod.utils.UraWorldGeneratorConfiguration.uraMinY;
+import static fr.uracraft.uramod.utils.UraWorldGeneratorConfiguration.uraMaxY;
+import static fr.uracraft.uramod.utils.UraWorldGeneratorConfiguration.neodymiumMinY;
+import static fr.uracraft.uramod.utils.UraWorldGeneratorConfiguration.neodymiumMaxY;
+import static fr.uracraft.uramod.utils.UraWorldGeneratorConfiguration.silverMinY;
+import static fr.uracraft.uramod.utils.UraWorldGeneratorConfiguration.silverMaxY;
+import static fr.uracraft.uramod.utils.UraWorldGeneratorConfiguration.copperMinY;
+import static fr.uracraft.uramod.utils.UraWorldGeneratorConfiguration.copperMaxY;
+import static fr.uracraft.uramod.utils.UraWorldGeneratorConfiguration.tinMinY;
+import static fr.uracraft.uramod.utils.UraWorldGeneratorConfiguration.tinMaxY;
+import static fr.uracraft.uramod.utils.UraWorldGeneratorConfiguration.randomMinY;
+import static fr.uracraft.uramod.utils.UraWorldGeneratorConfiguration.randomMaxY;
+import static fr.uracraft.uramod.utils.UraWorldGeneratorConfiguration.ironMinY;
+import static fr.uracraft.uramod.utils.UraWorldGeneratorConfiguration.ironMaxY;
+import static fr.uracraft.uramod.utils.UraWorldGeneratorConfiguration.diamondMinY;
+import static fr.uracraft.uramod.utils.UraWorldGeneratorConfiguration.diamondMaxY;
+import static fr.uracraft.uramod.utils.UraWorldGeneratorConfiguration.coalMinY;
+import static fr.uracraft.uramod.utils.UraWorldGeneratorConfiguration.coalMaxY;
+import static fr.uracraft.uramod.utils.UraWorldGeneratorConfiguration.emeraldMinY;
+import static fr.uracraft.uramod.utils.UraWorldGeneratorConfiguration.emeraldMaxY;
+import static fr.uracraft.uramod.utils.UraWorldGeneratorConfiguration.goldMinY;
+import static fr.uracraft.uramod.utils.UraWorldGeneratorConfiguration.goldMaxY;
+import static fr.uracraft.uramod.utils.UraWorldGeneratorConfiguration.redstoneMinY;
+import static fr.uracraft.uramod.utils.UraWorldGeneratorConfiguration.redstoneMaxY;
+import static fr.uracraft.uramod.utils.UraWorldGeneratorConfiguration.lapisMinY;
+import static fr.uracraft.uramod.utils.UraWorldGeneratorConfiguration.lapisMaxY;
+
 public class DebugLayout {
 
     private static String ores[][] = new String[][]{
-            {"tile.uramod.ura_ore.name", String.valueOf(UraWorldGeneratorConfiguration.uraMinY), String.valueOf(UraWorldGeneratorConfiguration.uraMaxY), "12211667"},
-            {"tile.uramod.neodymium_ore.name", String.valueOf(UraWorldGeneratorConfiguration.neodymiumMinY), String.valueOf(UraWorldGeneratorConfiguration.neodymiumMaxY), "16760358"},
-            {"tile.uramod.silver_ore.name", String.valueOf(UraWorldGeneratorConfiguration.silverMinY), String.valueOf(UraWorldGeneratorConfiguration.silverMaxY), "12566463"},
-            {"tile.uramod.copper_ore.name", String.valueOf(UraWorldGeneratorConfiguration.copperMinY), String.valueOf(UraWorldGeneratorConfiguration.copperMaxY), "12565546"},
-            {"tile.uramod.tin_ore.name", String.valueOf(UraWorldGeneratorConfiguration.tinMinY), String.valueOf(UraWorldGeneratorConfiguration.tinMaxY), "12565546"},
-            {"tile.uramod.random_ore.name", String.valueOf(UraWorldGeneratorConfiguration.randomMinY), String.valueOf(UraWorldGeneratorConfiguration.randomMaxY), "12565546"},
-            {"tile.oreIron.name", String.valueOf(UraWorldGeneratorConfiguration.ironMinY), String.valueOf(UraWorldGeneratorConfiguration.ironMaxY), "14200723"},
-            {"tile.oreDiamond.name", String.valueOf(UraWorldGeneratorConfiguration.diamondMinY), String.valueOf(UraWorldGeneratorConfiguration.diamondMaxY), "965309"},
-            {"tile.oreCoal.name", String.valueOf(UraWorldGeneratorConfiguration.coalMinY), String.valueOf(UraWorldGeneratorConfiguration.coalMaxY), "1381653"},
-            {"tile.oreEmerald.name", String.valueOf(UraWorldGeneratorConfiguration.emeraldMinY), String.valueOf(UraWorldGeneratorConfiguration.emeraldMaxY), "9096077"},
-            {"tile.oreGold.name", String.valueOf(UraWorldGeneratorConfiguration.goldMinY), String.valueOf(UraWorldGeneratorConfiguration.goldMaxY), "16755200"},
-            {"tile.oreRedstone.name", String.valueOf(UraWorldGeneratorConfiguration.redstoneMinY), String.valueOf(UraWorldGeneratorConfiguration.redstoneMaxY), "15081480"},
-            {"tile.oreLapis.name", String.valueOf(UraWorldGeneratorConfiguration.lapisMinY), String.valueOf(UraWorldGeneratorConfiguration.lapisMaxY), "1594813"}};
+            {"tile.oreIron.name", valueOf(ironMinY), valueOf(ironMaxY), "0xbc9980"},
+            {"tile.oreCoal.name", valueOf(coalMinY), valueOf(coalMaxY), "0x454545"},
+            {"tile.oreEmerald.name", valueOf(emeraldMinY), valueOf(emeraldMaxY), "0x17dd62"},
+            {"tile.oreGold.name", valueOf(goldMinY), valueOf(goldMaxY), "0xf8af2b"},
+            {"tile.uramod.silver_ore.name", valueOf(silverMinY), valueOf(silverMaxY), "0xd3d3d3"},
+            {"tile.uramod.copper_ore.name", valueOf(copperMinY), valueOf(copperMaxY), "0xe3826c"},
+            {"tile.uramod.tin_ore.name", valueOf(tinMinY), valueOf(tinMaxY),"0x7992ab"},
+            {"tile.uramod.random_ore.name", valueOf(randomMinY), valueOf(randomMaxY), "0x7f7f7f"},
+            {"tile.oreRedstone.name", valueOf(redstoneMinY), valueOf(redstoneMaxY), "0xb80505"},
+            {"tile.oreLapis.name", valueOf(lapisMinY), valueOf(lapisMaxY), "0x2463b1"},
+            {"tile.oreDiamond.name", valueOf(diamondMinY), valueOf(diamondMaxY),"0x5decf5"},
+            {"tile.uramod.ura_ore.name", valueOf(uraMinY), valueOf(uraMaxY), "0xb55699"},
+            {"tile.uramod.neodymium_ore.name", valueOf(neodymiumMinY), valueOf(neodymiumMaxY), "0xdda117"}};
+
+
+
+
+
 
     @SideOnly(Side.CLIENT)
     @SubscribeEvent
-    public void onPreRender(RenderGameOverlayEvent.Pre event)
-    {
+    public void onPreRender(RenderGameOverlayEvent.Pre event) {
         if (event.getType() == RenderGameOverlayEvent.ElementType.DEBUG) {
             Minecraft minecraft = Minecraft.getMinecraft();
             event.setCanceled(true);
@@ -106,7 +140,7 @@ public class DebugLayout {
         int draw_y = 120;
         for (int i = 0; i < ores.length; i++) {
             if (Integer.parseInt(ores[i][1]) < y && Integer.parseInt(ores[i][2]) > y) {
-                this.drawString(minecraft.fontRenderer, I18n.format(ores[i][0]), 10, draw_y, Integer.parseInt(ores[i][3]));
+                this.drawString(minecraft.fontRenderer, I18n.format(ores[i][0]), 10, draw_y, Color.decode(ores[i][3]).hashCode());
                 draw_y = draw_y + 10;
             }
         }

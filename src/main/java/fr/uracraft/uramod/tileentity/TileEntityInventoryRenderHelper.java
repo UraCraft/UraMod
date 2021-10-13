@@ -6,15 +6,18 @@ import net.minecraft.block.Block;
 import net.minecraft.client.renderer.tileentity.TileEntityItemStackRenderer;
 import net.minecraft.client.renderer.tileentity.TileEntityRendererDispatcher;
 import net.minecraft.item.ItemStack;
+import net.minecraftforge.fml.relauncher.Side;
+import net.minecraftforge.fml.relauncher.SideOnly;
 
+@SideOnly(Side.CLIENT)
 public class TileEntityInventoryRenderHelper extends TileEntityItemStackRenderer {
 
-    private TileEntityUraChest tileEntityUraChest = new TileEntityUraChest();
-    private TileEntitySilverChest tileEntitySilverChest = new TileEntitySilverChest();
-    private TileEntityGoldChest tileEntityGoldChest = new TileEntityGoldChest();
-    private TileEntityDiamondChest tileEntityDiamondChest = new TileEntityDiamondChest();
-    private TileEntityIronChest tileEntityIronChest = new TileEntityIronChest();
-    private TileEntityStoneChest tileEntityStoneChest = new TileEntityStoneChest();
+    private final TileEntityUraChest tileEntityUraChest = new TileEntityUraChest();
+    private final TileEntitySilverChest tileEntitySilverChest = new TileEntitySilverChest();
+    private final TileEntityGoldChest tileEntityGoldChest = new TileEntityGoldChest();
+    private final TileEntityDiamondChest tileEntityDiamondChest = new TileEntityDiamondChest();
+    private final TileEntityIronChest tileEntityIronChest = new TileEntityIronChest();
+    private final TileEntityStoneChest tileEntityStoneChest = new TileEntityStoneChest();
 
     @Override
     public void renderByItem(ItemStack itemStack) {

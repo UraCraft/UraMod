@@ -1,17 +1,17 @@
 package fr.uracraft.uramod;
 
-import fr.uracraft.uramod.packets.PacketEnergyRegulator;
+import fr.uracraft.uramod.commands.CommandGetItemID;
 import fr.uracraft.uramod.guis.GuiHandler;
 import fr.uracraft.uramod.items.armors.PatchVanillaArmors;
+import fr.uracraft.uramod.packets.PacketEnergyRegulator;
 import fr.uracraft.uramod.proxy.CommonProxy;
-import fr.uracraft.uramod.tileentity.TileEntityInventoryRenderHelper;
-import net.minecraft.client.renderer.tileentity.TileEntityItemStackRenderer;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.SidedProxy;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
+import net.minecraftforge.fml.common.event.FMLServerStartingEvent;
 import net.minecraftforge.fml.common.network.NetworkRegistry;
 import net.minecraftforge.fml.common.network.simpleimpl.SimpleNetworkWrapper;
 import net.minecraftforge.fml.common.registry.GameRegistry;
@@ -39,22 +39,15 @@ public class UraMod {
     public static final int port = 25565;
     public final boolean singleplayer = true;
 
-    public UraMod() {
-        MinecraftForge.EVENT_BUS.register(new RegisteringHandler());
-    }
-
     @Mod.EventHandler
     public void preInit(FMLPreInitializationEvent event) {
         PatchVanillaArmors.armors(event);
         logger = event.getModLog();
         GameRegistry.registerWorldGenerator(new UraWorldGenerator(), 0);
-        if (event.getSide().isClient()) {
-            NetworkRegistry.INSTANCE.registerGuiHandler(this, new GuiHandler());
-        }
+        NetworkRegistry.INSTANCE.registerGuiHandler(this, new GuiHandler());
+        MinecraftForge.EVENT_BUS.register(new RegisteringHandler());
         RegisteringHandler.registerEvents(event.getSide());
         RegisteringHandler.registerTileEntities();
-        RegisteringHandler.registerRenders();
-        TileEntityItemStackRenderer.instance = new TileEntityInventoryRenderHelper();
         network = NetworkRegistry.INSTANCE.newSimpleChannel("UraMod");
         network.registerMessage(PacketEnergyRegulator.Handler.class, PacketEnergyRegulator.class, 0, Side.SERVER);
     }
@@ -69,5 +62,10 @@ public class UraMod {
     @Mod.EventHandler
     public void postInit(FMLPostInitializationEvent event) {
 
+    }
+
+    @Mod.EventHandler
+    public void serverStarting(FMLServerStartingEvent event) {
+        event.registerServerCommand(new CommandGetItemID());
     }
 }

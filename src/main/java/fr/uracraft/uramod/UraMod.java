@@ -1,6 +1,5 @@
 package fr.uracraft.uramod;
 
-import fr.uracraft.uramod.commands.CommandGetItemID;
 import fr.uracraft.uramod.guis.GuiHandler;
 import fr.uracraft.uramod.items.armors.PatchVanillaArmors;
 import fr.uracraft.uramod.packets.PacketEnergyRegulator;
@@ -62,10 +61,5 @@ public class UraMod {
     @Mod.EventHandler
     public void postInit(FMLPostInitializationEvent event) {
 
-    }
-
-    @Mod.EventHandler
-    public void serverStarting(FMLServerStartingEvent event) {
-        event.registerServerCommand(new CommandGetItemID());
     }
 }

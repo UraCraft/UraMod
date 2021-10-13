@@ -22,7 +22,6 @@ public class EventAnvil {
                         excalibur.setTagCompound(new NBTTagCompound());
                     }
                     excalibur.getTagCompound().setString("owner", Minecraft.getMinecraft().player.getName());
-                    excalibur.getTagCompound().setInteger("id", 0);
                     e.setOutput(excalibur);
                     e.setCost(88);
                     e.setMaterialCost(64);

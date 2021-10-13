@@ -3,23 +3,16 @@ package fr.uracraft.uramod;
 import fr.uracraft.uramod.blocks.UraBlocks;
 import fr.uracraft.uramod.enchantments.UraEnchantments;
 import fr.uracraft.uramod.events.*;
-import fr.uracraft.uramod.guis.GuiHandler;
 import fr.uracraft.uramod.items.UraItems;
-import fr.uracraft.uramod.items.armors.IridiumArmor;
-import fr.uracraft.uramod.rendering.chests.*;
 import fr.uracraft.uramod.tileentity.TileEntityEnergyRegulator;
-import fr.uracraft.uramod.tileentity.TileEntityInventoryRenderHelper;
 import fr.uracraft.uramod.tileentity.TileEntityUraFurnace;
 import fr.uracraft.uramod.tileentity.chests.*;
 import net.minecraft.block.Block;
-import net.minecraft.client.renderer.tileentity.TileEntityItemStackRenderer;
 import net.minecraft.enchantment.Enchantment;
 import net.minecraft.item.Item;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.RegistryEvent;
-import net.minecraftforge.fml.client.registry.ClientRegistry;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
-import net.minecraftforge.fml.common.network.NetworkRegistry;
 import net.minecraftforge.fml.common.registry.GameRegistry;
 import net.minecraftforge.fml.relauncher.Side;
 
@@ -211,15 +204,6 @@ public class RegisteringHandler {
         GameRegistry.registerTileEntity(TileEntityIronChest.class, "uramod:iron_chest");
         GameRegistry.registerTileEntity(TileEntityStoneChest.class, "uramod:stone_chest");
         GameRegistry.registerTileEntity(TileEntityEnergyRegulator.class, "uramod:energy_regulator");
-    }
-
-    public static void registerRenders() {
-        ClientRegistry.bindTileEntitySpecialRenderer(TileEntityUraChest.class, new RenderUraChest());
-        ClientRegistry.bindTileEntitySpecialRenderer(TileEntityDiamondChest.class, new RenderDiamondChest());
-        ClientRegistry.bindTileEntitySpecialRenderer(TileEntitySilverChest.class, new RenderSilverChest());
-        ClientRegistry.bindTileEntitySpecialRenderer(TileEntityGoldChest.class, new RenderGoldChest());
-        ClientRegistry.bindTileEntitySpecialRenderer(TileEntityIronChest.class, new RenderIronChest());
-        ClientRegistry.bindTileEntitySpecialRenderer(TileEntityStoneChest.class, new RenderStoneChest());
     }
 
     public static void registerEntities() {

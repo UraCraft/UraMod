@@ -7,6 +7,7 @@ debug.oreSpawnText=Apparaission des minerais :
 
 itemLore.world_selector_line0=Clic pour voyager entre
 itemLore.world_selector_line1=tout les serveurs !
+swordOwner=Propriétaire :
 
 excalibur.mode.normal=Excalibur : Mode flames désactivé !
 excalibur.mode.flame=Excalibur : Mode flames activé !

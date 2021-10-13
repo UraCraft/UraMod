@@ -5,6 +5,7 @@ import fr.uracraft.uramod.UraMod;
 import fr.uracraft.uramod.items.tools.UraToolMaterials;
 import fr.uracraft.uramod.utils.Random;
 import net.minecraft.client.resources.I18n;
+import net.minecraft.client.util.ITooltipFlag;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.EntityLivingBase;
@@ -34,6 +35,14 @@ public class ItemIridiumSword extends net.minecraft.item.ItemSword {
         setCreativeTab(UraCreativeTabs.URAMOD);
         setMaxDamage(0);
         this.setHasSubtypes(true);
+    }
+
+    public void addInformation(ItemStack stack, World worldIn, List tooltip, ITooltipFlag flagIn) {
+        if(stack.getMetadata() == 1) {
+            if(stack.hasTagCompound()) {
+                tooltip.add(I18n.format("swordOwner") + " " + stack.getTagCompound().getString("owner"));
+            }
+        }
     }
 
     @Override

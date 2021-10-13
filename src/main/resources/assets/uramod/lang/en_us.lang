@@ -7,6 +7,7 @@ debug.oreSpawnText=Ore Spawn :
 
 itemLore.world_selector_line0=Click to travel between
 itemLore.world_selector_line1=all the servers !
+swordOwner=Owner :
 
 excalibur.mode.normal=Excalibur : Flame mode Disable !
 excalibur.mode.flame=Excalibur : Flame mode Enable !

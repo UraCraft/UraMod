@@ -10,7 +10,6 @@ import net.minecraft.util.ResourceLocation;
 import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
 
-@SideOnly(Side.CLIENT)
 public class RenderDiamondChest extends TileEntitySpecialRenderer<TileEntityDiamondChest>
     {
         private static final ResourceLocation TEXTURE = new ResourceLocation(UraMod.MODID + ":textures/models/chest/diamond_chest.png");
